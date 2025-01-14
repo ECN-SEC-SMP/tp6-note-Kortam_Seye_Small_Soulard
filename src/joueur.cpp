@@ -1,10 +1,9 @@
 #include "joueur.hpp"
 
-Joueur :: Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) :
-en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0)
-{
-    
-}
+Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) :
+en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0);
+
+Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
 void Joueur::jouerTour() {
     // Implementation of jouerTour

@@ -18,7 +18,7 @@ int main() {
         string nom;
         cout << "Entrez le nom du joueur " << i + 1 << ": ";
         cin >> nom;
-        joueurs.emplace_back(nom);
+        joueurs[i].setNom(nom);
     }
 
     //mélange les joueurs
@@ -27,6 +27,7 @@ int main() {
 
 
     cout << "Ordre de passage des joueurs:" << endl;
+
     for (const auto& joueur : joueurs) {
         cout << joueur.getNom() << endl;
     }

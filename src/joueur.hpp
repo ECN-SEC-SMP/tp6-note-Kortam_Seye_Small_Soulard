@@ -19,6 +19,7 @@ class Joueur{
     public : 
     
         Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
+        Joueur();
         //getter setter
         bool getEnVie() const;
         void setEnVie(bool en_vie);
