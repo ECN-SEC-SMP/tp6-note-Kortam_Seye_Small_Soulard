@@ -1,6 +1,6 @@
-#include "plateau.h"
-#include "case.h"
-#include "joueur.h"
+#include "plateau.hpp"
+#include "case.hpp"
+#include "joueur.hpp"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -24,7 +24,7 @@ int main() {
     //mélange les joueurs
     unsigned seed = chrono::system_clock::now().time_since_epoch().count();
     shuffle(joueurs.begin(), joueurs.end(), default_random_engine(seed));
-    
+
 
     cout << "Ordre de passage des joueurs:" << endl;
     for (const auto& joueur : joueurs) {

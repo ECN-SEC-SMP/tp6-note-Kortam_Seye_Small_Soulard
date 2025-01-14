@@ -1,6 +1,7 @@
-#include "plateau.h"
-#include "case.h"
-#include "joueur.h"
+
+#include "case.hpp"
+#include "joueur.hpp"
+#include "plateau.hpp"
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -26,7 +27,7 @@ void Plateau::commencerJeu() {
             }
             cout << joueur.getNom() << ", c'est votre tour." << endl;
             joueur.jouerTour();
-            if (joueur.getArgent() <= 0) {
+            if (joueur.getSolde() <= 0) {
                 joueur.setFaillite(true);
                 cout << joueur.getNom() << " est en faillite !" << endl;
             }

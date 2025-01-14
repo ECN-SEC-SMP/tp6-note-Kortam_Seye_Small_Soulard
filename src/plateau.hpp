@@ -1,8 +1,8 @@
 #ifndef PLATEAU_H
 #define PLATEAU_H
 
-#include "case.h"
-#include "joueur.h"
+#include "case.hpp"
+#include "joueur.hpp"
 #include <vector>
 #include <string>
 using namespace std;
