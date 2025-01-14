@@ -5,24 +5,18 @@
 
 using namespace std; 
 
-class Case
 
-{
-private:
-    /* data */
-    int numero;
-    string nom; 
-    bool achetable; // à revoir  
-    
+class Case {
+protected:
+    std::string nom;
+
 public:
-    //Case();
-    Case(int numero,  string nom);
-    
-    ~Case();
+    explicit Case(const std::string& nom);
+    virtual ~Case() = default;
+
+    virtual void action() const;
+    std::string getNom() const;
 };
-
-
-
 
 
 
