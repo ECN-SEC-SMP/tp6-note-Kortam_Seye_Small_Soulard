@@ -8,18 +8,15 @@ using namespace std;
 
 class Case {
 protected:
-    std::string nom;
+    string nom;
 
 public:
-    explicit Case(const std::string& nom);
+    explicit Case(const string& nom);
     virtual ~Case() = default;
 
     virtual void action() const;
-    std::string getNom() const;
+    string getNom() const;
 };
-
-
-
 
 
 #endif
