@@ -9,10 +9,8 @@
 using namespace std;
 
 void Plateau::initialiser(const vector<Joueur>& Joueurs) {
-    joueurs = Joueurs;
-    for (int i = 0; i < 40; ++i) {
-        cases.push_back(new Case("Case " + to_string(i)));
-    }
+    joueurs = Joueurs; //initialise le tableau de joueurs
+
     //ici faut récupérer les cases
     cout << "Plateau initialise avec " << cases.size() << " cases." << endl;
 }
@@ -22,44 +20,35 @@ void Plateau::commencerJeu() {
     int tour = 0;
     while (!jeuTermine) {
         cout << "\n==== Tour " << tour + 1 << " ====" << endl;
-        for (auto& joueur : joueurs) {
+        for (auto& joueur : joueurs) { //pour chaque joueur
             if (joueur.estEnFaillite()) {
                 continue;
             }
             cout << joueur.getNom() << ", c'est votre tour." << endl;
-            int de1 = lancerDe();
-            int de2 = lancerDe();
-            int totalDe = de1 + de2;
-            cout << "Vous avez obtenu " << de1 << " et " << de2 << " (total: " << totalDe << ")." << endl;
-            joueur.avancer(totalDe, cases.size());
-            Case* caseActuelle = cases[joueur.getPosition()];
-            cout << "Vous êtes maintenant sur la case : " << caseActuelle->getNom() << endl;
-            caseActuelle->action(joueur);
+            joueur.jouerTour();
             if (joueur.getArgent() <= 0) {
                 joueur.setFaillite(true);
                 cout << joueur.getNom() << " est en faillite !" << endl;
             }
         }
-        int joueursRestants = count_if(joueurs.begin(), joueurs.end(), [](const Joueur& joueur) {
-            return !joueur.estEnFaillite();
-        });
+
+        int joueursRestants = 0; //compte le nombre de joueurs restants
+        for (const auto& joueur : joueurs) {
+            if (!joueur.estEnFaillite()) {
+            ++joueursRestants;
+            }
+        }
+        //si il reste un joueur ou moins, le jeu est terminé
         if (joueursRestants <= 1) {
             jeuTermine = true;
         }
         ++tour;
     }
     for (const auto& joueur : joueurs) {
-        if (!joueur.estEnFaillite()) {
+        if (!joueur.estEnFaillite()) {//si le joueur n'est pas en faillite
             cout << "\nFélicitations, " << joueur.getNom() << " a gagné la partie !" << endl;
             break;
         }
     }
-}
-
-int Plateau::lancerDe() {
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_int_distribution<> dis(1, 6);
-    return dis(gen);
 }
 
