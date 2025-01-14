@@ -8,16 +8,16 @@
 using namespace std;
 
 class Plateau {
-private:
-    vector<Joueur> joueurs;        // Liste des joueurs
-    vector<Case*> cases;          // Liste des cases du plateau
-
 public:
-    Plateau() = default;
-    ~Plateau();
     void initialiser(const vector<Joueur>& Joueurs);
     void commencerJeu();
-    int lancerDe();
+
+private:
+    vector<Joueur> joueurs;
+    vector<Case> cases;
 };
 
 #endif // PLATEAU_H
+
+
+
