@@ -20,11 +20,11 @@ void Joueur::jouerTour() {
 }
 
 
-bool Joueur::getEnVie() const {
+bool Joueur::geten_vie() const {
     return en_vie;
 }
 
-void Joueur::setEnVie(bool en_vie) {
+void Joueur::seten_vie(bool en_vie) {
     this->en_vie = en_vie;
 }
 

@@ -2,7 +2,7 @@
 #ifndef Service_Public_H
 #define Service_Public_H
 
-#include "Case"
+#include "Case.hpp"
 #include "Case_Achetable.hpp"
 
 #include <iostream>

@@ -1,5 +1,5 @@
 
-#include "Case"
+#include "Case.hpp"
 #include "Case_Achetable.hpp"
 #include "Service_Public.hpp"
 

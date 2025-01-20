@@ -1,6 +1,6 @@
 #ifndef joueur_hpp
 #define joueur_hpp
-
+#include "case.hpp"
 #include <stdexcept>
 #include <string>
 #include <iostream>
@@ -33,7 +33,6 @@ class Joueur{
         bool getEnPrison() const;
         void setEnPrison(bool en_prison);
         void jouerTour();
-        bool estEnFaillite() const;
         void contruire( case& case);
         int* lancer_des(void);
         

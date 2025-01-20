@@ -22,20 +22,20 @@ void Plateau::commencerJeu() {
     while (!jeuTermine) {
         cout << "\n==== Tour " << tour + 1 << " ====" << endl;
         for (auto& joueur : joueurs) { //pour chaque joueur
-            if (joueur.getEnVie()) {
+            if (joueur.geten_vie()) {
                 continue;
             }
             cout << joueur.getNom() << ", c'est votre tour." << endl;
             joueur.jouerTour();
             if (joueur.getSolde() <= 0) {
-                joueur.setFaillite(true);
+                joueur.seten_vie(false);
                 cout << joueur.getNom() << " est en faillite !" << endl;
             }
         }
 
         int joueursRestants = 0; //compte le nombre de joueurs restants
         for (const auto& joueur : joueurs) {
-            if (!joueur.getEnVie()) {
+            if (joueur.geten_vie()) {
             ++joueursRestants;
             }
         }
@@ -46,7 +46,7 @@ void Plateau::commencerJeu() {
         ++tour;
     }
     for (const auto& joueur : joueurs) {
-        if (!joueur.getEnVie()) {//si le joueur n'est pas en faillite
+        if (joueur.geten_vie()) {//si le joueur n'est pas en faillite
             cout << "\nFélicitations, " << joueur.getNom() << " a gagné la partie !" << endl;
             break;
         }
