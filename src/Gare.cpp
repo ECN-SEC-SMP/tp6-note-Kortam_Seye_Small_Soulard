@@ -7,14 +7,14 @@
 #include <iostream>
 using namespace std;
 
-Gare::Gare(loyer):loyer_m(loyer){}
+Gare::Gare(loyer):loyer(loyer){}
 
 int Gare::calculer_loyer(){
-    if !(Gare.hypo_m()){
+    if !(Gare.hypo()){
         return(0);
     }
     else{
-        return loyer_m; 
+        return loyer; 
     }
     
     

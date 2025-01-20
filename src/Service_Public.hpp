@@ -11,9 +11,9 @@ using namespace std;
 
 class Service_Public: public Case_Achetable{
 private: 
-    int loyer_m ;
+    int loyer ;
 public: 
-    Service_Public(loyer_m);
+    Service_Public(loyer);
     calculer_loyer(); 
 }
 #endif

@@ -1,9 +1,9 @@
 #include "CaseTerrain.hpp"
 
-CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer_m(loyer), groupe_m(groupe), construction_m(construction) {}
+CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer(loyer), groupe(groupe), construction(construction) {}
 
 
-CaseTerrain::CaseTerrain(): loyer_m(0) {}
+CaseTerrain::CaseTerrain(): loyer(0) {}
 
 
 

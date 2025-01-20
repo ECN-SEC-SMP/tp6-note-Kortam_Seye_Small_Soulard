@@ -10,7 +10,7 @@ using namespace std;
 
 class Gare: public Case_Achetable{
 protected:
-    int loyer_m;
+    int loyer;
 public:
     Gare(loyer);
     int calculer_loyer();

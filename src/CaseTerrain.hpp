@@ -10,7 +10,7 @@ private:
     int groupe;
     int construction;
 public:
-    CaseTerrain(int loyer_m, int groupe_m, int construction_m);
+    CaseTerrain(int loyer, int groupe, int construction);
     CaseTerrain();
     calculer_loyer(); 
     
