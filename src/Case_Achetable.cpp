@@ -14,6 +14,8 @@ using namespace std;
 /// @param prix 
 /// @param hypo 
 
+Case_Achetable::Case_Achetable() : proprio_m(""), prix_m(0), hypo_m(false) {}
+
 Case_Achetable::Case_Achetable(string proprio, int prix, bool hypo):proprio_m(proprio), prix_m(prix), hypo_m(hypo){} //string
 
 Case_Achetable::~Case_Achetable()

@@ -6,10 +6,9 @@
 
 class CaseTerrain : public Case {
 private:
-    int proprietaire; // -1 si non possédé
     int loyer;
-    bool estHypotheque;
-
+    int groupe;
+    int construction;
 public:
     CaseTerrain(const std::string& nom, int loyer);
     

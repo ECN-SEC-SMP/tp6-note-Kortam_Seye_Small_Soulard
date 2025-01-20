@@ -57,11 +57,3 @@ bool Joueur::getEnPrison() const {
 void Joueur::setEnPrison(bool en_prison) {
     this->en_prison = en_prison;
 }
-
-void Joueur::setFaillite(bool faillite) {
-    // Implementation of setFaillite
-}
-
-bool Joueur::estEnFaillite() const {
-    // Implementation of estEnFaillite
-}
