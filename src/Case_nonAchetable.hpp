@@ -3,9 +3,10 @@
 
 #include <string>
 #include <iostream>
-#include "Joueur.h"  // Inclure votre classe Joueur si nécessaire
+#include "Joueur.hpp" 
 
-class Case_NonAchetable : public Case {
+class Case_NonAchetable: public Case 
+{
 public:
     // Enum interne représentant les types de cases non achetables
     enum class TypeCaseNonAchetable {

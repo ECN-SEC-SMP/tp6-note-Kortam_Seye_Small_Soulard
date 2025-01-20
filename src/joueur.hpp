@@ -17,7 +17,7 @@ class Joueur{
         bool en_prison;
 
     public : 
-    
+        Joueur();
         Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
         //getter setter
         bool geten_vie() const;
@@ -33,7 +33,7 @@ class Joueur{
         bool getEnPrison() const;
         void setEnPrison(bool en_prison);
         void jouerTour();
-        void contruire( case& case);
+        void construire(Case& Case);
         int* lancer_des(void);
         
         

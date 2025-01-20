@@ -45,7 +45,4 @@ bool Case_Achetable::getHypo() const {
 }
 
 
-
-
-
 #endif

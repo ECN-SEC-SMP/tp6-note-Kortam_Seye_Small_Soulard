@@ -3,8 +3,10 @@
 #define CASETERRAIN_H
 #include <iostream>
 #include "Case.hpp"
+#include "Case_Achetable.hpp"
 
-class CaseTerrain : public Case_Achetable {
+class CaseTerrain: public Case_Achetable 
+{
 private:
     int loyer;
     int groupe;

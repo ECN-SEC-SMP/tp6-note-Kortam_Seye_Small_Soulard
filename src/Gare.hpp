@@ -1,7 +1,7 @@
 #ifndef Gare_H
 #define Gare_H
 
-#include "Case"
+#include "case.hpp"
 #include "Case_Achetable.hpp"
 
 #include <iostream>
@@ -12,27 +12,10 @@ class Gare: public Case_Achetable{
 protected:
     int loyer;
 public:
-    Gare(loyer);
+    Gare(int loyer);
     int calculer_loyer();
     
-} 
+};
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#endif
+#endif // Gare_H

@@ -2,7 +2,7 @@
 #ifndef Service_Public_H
 #define Service_Public_H
 
-#include "Case.hpp"
+#include "case.hpp"
 #include "Case_Achetable.hpp"
 
 #include <iostream>
@@ -10,10 +10,10 @@ using namespace std;
 
 
 class Service_Public: public Case_Achetable{
-private: 
+protected: 
     int loyer ;
 public: 
-    Service_Public(loyer);
+    Service_Public(int loyer);
     calculer_loyer(); 
-}
-#endif
+};
+#endif  // Service_Public_H
