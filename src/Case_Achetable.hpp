@@ -12,9 +12,10 @@ class Case_Achetable: public Case
 private:
     string proprio_m;
     int prix_m;
-    bool hypothèque_m;
+    bool hypo_m;
 
 public:
+    Case_Achetable();
     Case_Achetable(string proprio, int prix, bool hypo);
     
     ~Case_Achetable();
