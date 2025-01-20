@@ -34,8 +34,6 @@ class Joueur{
         bool getEnPrison() const;
         void setEnPrison(bool en_prison);
         void jouerTour();
-        void setFaillite(bool faillite);
-        bool estEnFaillite() const;
 
 };
 
