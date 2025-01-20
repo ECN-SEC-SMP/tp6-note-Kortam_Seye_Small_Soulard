@@ -18,9 +18,6 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
 }
 
 
-
-
-
 void Plateau::commencerJeu()
 {
     bool jeuTermine = false;
@@ -66,14 +63,15 @@ void Plateau::commencerJeu()
 
             }
 
-            ++tour;
-            cout << "\n"<< "Fin du tour " << tour << ". ";
-            for (const auto &joueur : joueurs)
-            {
-                cout <<"\n"<< joueur.getNom() << " a " << joueur.getSolde() << "monos ";
-            }
-            cout << endl;
+
         }
+        ++tour;
+        cout << "\n"<< "Fin du tour " << tour << ". ";
+        for (const auto &joueur : joueurs)
+        {
+            cout <<"\n"<< joueur.getNom() << " a " << joueur.getSolde() << "monos ";
+        }
+        cout << endl;
     }
 
 
