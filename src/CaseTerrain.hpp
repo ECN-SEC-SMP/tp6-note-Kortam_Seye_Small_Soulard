@@ -1,23 +1,17 @@
 
 #ifndef CASETERRAIN_H
 #define CASETERRAIN_H
-
+#include <iostream>
 #include "Case.hpp"
 
-class CaseTerrain : public Case {
+class CaseTerrain : public Case_Achetable {
 private:
     int loyer;
     int groupe;
     int construction;
 public:
-    CaseTerrain(const std::string& nom, int loyer);
-    
-    void action() const override;
-    void setProprietaire(int joueur);
-    int getProprietaire() const;
-    void hypothequer();
-    void desHypothequer();
-    
+    CaseTerrain(int loyer, int groupe, int construction);
+    CaseTerrain();
 };
 
 #endif // CASETERRAIN_H
