@@ -1,17 +1,17 @@
 #include "CaseTerrain.hpp"
-#include <iostream>
+
+CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer_m(loyer), groupe_m(groupe), construction_m(construction) {}
+
+
+CaseTerrain::CaseTerrain(): loyer_m(0) {}
+
+
+
+
+
+
+
 /*
-CaseTerrain::CaseTerrain(const std::string& nom, int loyer)
-    : Case_Achetable(nom), proprietaire(-1), loyer(loyer), estHypotheque(false) {}
-
-CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer(loyer), groupe(groupe), construction(construction) {}
-
-
-CaseTerrain::CaseTerrain()
-    : Case_Achetable(), loyer(0) {}
-
-
-
 
 CaseTerrain::CaseTerrain(const std::string& nom, int loyer)
     : Case_Achetable(nom), proprietaire(-1), loyer(loyer), estHypotheque(false) {}
