@@ -12,12 +12,13 @@ private:
 
 public:
     CaseTerrain(const std::string& nom, int loyer);
-
+    
     void action() const override;
     void setProprietaire(int joueur);
     int getProprietaire() const;
     void hypothequer();
     void desHypothequer();
+    
 };
 
 #endif // CASETERRAIN_H
