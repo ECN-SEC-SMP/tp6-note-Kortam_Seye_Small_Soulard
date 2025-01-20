@@ -1,4 +1,4 @@
-#include "NonAchetable.h"
+#include "Case_NonAchetable.hpp"
 
 // Constructeur
 NonAchetable::NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case)
