@@ -9,7 +9,7 @@ using namespace std;
 
 class Joueur{
     private :
-        bool faillite;
+        bool en_vie;
         string nom;
         int solde;
         int position;
@@ -18,10 +18,10 @@ class Joueur{
 
     public : 
     
-        Joueur(bool faillite, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
+        Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
         //getter setter
-        bool getFaillite() const;
-        void setFaillite(bool faillite);
+        bool geten_vie() const;
+        void seten_vie(bool en_vie);
         string getNom() const;
         void setNom(string nom);
         int getSolde() const;
