@@ -1,4 +1,14 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include "joueur.hpp"
+
+
+struct ResultatLancer {
+    int de1;  // Résultat du premier dé
+    int de2;  // Résultat du deuxième dé
+    int somme;  // Somme des deux dés
+};
 
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) :
 en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0);
@@ -58,10 +68,18 @@ void Joueur::setEnPrison(bool en_prison) {
     this->en_prison = en_prison;
 }
 
-void Joueur::setFaillite(bool faillite) {
-    // Implementation of setFaillite
-}
+// Fonction pour lancer les dés
+ResultatLancer lancer_des() {
+    // Initialisation du générateur de nombres aléatoires (avec une graine)
+    std::srand(static_cast<unsigned int>(std::time(0)));
 
-bool Joueur::estEnFaillite() const {
-    // Implementation of estEnFaillite
+    // Lancer des dés à 6 faces
+    int de1 = std::rand() % 6 + 1;  // Premier dé (valeurs entre 1 et 6)
+    int de2 = std::rand() % 6 + 1;  // Deuxième dé (valeurs entre 1 et 6)
+
+    // Calcul de la somme des deux dés
+    int somme = de1 + de2;
+
+    // Retourner le résultat sous forme d'un struct
+    return {de1, de2, somme};
 }

@@ -1,7 +1,20 @@
 #include "CaseTerrain.hpp"
 
+CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer(loyer), groupe(groupe), construction(construction) {}
+
+
+CaseTerrain::CaseTerrain()
+    : Case_Achetable(), loyer(0) {}
+
+
+/*
+
 CaseTerrain::CaseTerrain(const std::string& nom, int loyer)
-    : Case(nom), proprietaire(-1), loyer(loyer), estHypotheque(false) {}
+    : Case_Achetable(nom), proprietaire(-1), loyer(loyer), estHypotheque(false) {}
+
+
+
+
 
 void CaseTerrain::action() const {
     if (proprietaire == -1) {
@@ -28,3 +41,5 @@ void CaseTerrain::hypothequer() {
 void CaseTerrain::desHypothequer() {
     estHypotheque = false;
 }
+
+*/
