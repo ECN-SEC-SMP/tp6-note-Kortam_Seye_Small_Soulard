@@ -3,11 +3,12 @@
 #include <ctime>
 #include "joueur.hpp"
 
+using namespace std;
 
 struct ResultatLancer {
-    int de1;  // Résultat du premier dé
-    int de2;  // Résultat du deuxième dé
-    int somme;  // Somme des deux dés
+    int de1;  // Resultat du premier de
+    int de2;  // Resultat du deuxième de
+    int somme;  // Somme des deux des
 };
 
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) :
@@ -15,8 +16,49 @@ en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cart
 Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
 void Joueur::jouerTour() {
-    // Implementation of jouerTour
+    /*
+    if (peutConstruireMaisons()) {
+        construireMaisons();
+    }
+    if (en_prison) {
+        gererPrison();
+        return;
+    }
+    */
+    int nbdoubles = 0;
+    bool tourTermine = false;
+
+    while (!tourTermine) {
+
+        srand(static_cast<unsigned int>(time(0)));
+
+        int de1 = rand() % 6 + 1; 
+        int de2 = rand() % 6 + 1;  
+
+        int somme = de1 + de2;
+
+        cout << "Lancer des des: " << de1 << " et " << de2 << endl;
+
+        if (de1 == de2) {
+            nbdoubles++;
+            if (nbdoubles == 3) {
+                cout << "Trois doubles consecutifs! Le joueur va en prison." << endl;
+                setPosition(10); 
+                setEnPrison(true);
+                return;
+            }
+        } else {
+            tourTermine = true;
+        }
+
+        position = (position + somme) % 40; 
+        
+        cout << "Nouvelle position: " << position << endl;
+
+        //agirEnFonctionDeLaCase
+    }
 }
+
 
 
 bool Joueur::geten_vie() const {
@@ -71,18 +113,3 @@ void Joueur::setEnPrison(bool en_prison) {
     this->en_prison = en_prison;
 }
 
-// Fonction pour lancer les dés
-ResultatLancer lancer_des() {
-    // Initialisation du générateur de nombres aléatoires (avec une graine)
-    std::srand(static_cast<unsigned int>(std::time(0)));
-
-    // Lancer des dés à 6 faces
-    int de1 = std::rand() % 6 + 1;  // Premier dé (valeurs entre 1 et 6)
-    int de2 = std::rand() % 6 + 1;  // Deuxième dé (valeurs entre 1 et 6)
-
-    // Calcul de la somme des deux dés
-    int somme = de1 + de2;
-
-    // Retourner le résultat sous forme d'un struct
-    return {de1, de2, somme};
-}

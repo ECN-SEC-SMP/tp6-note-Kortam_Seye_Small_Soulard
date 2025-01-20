@@ -4,14 +4,14 @@
 Case_NonAchetable::Case_NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case)
     : Case(nom), type_case(type_case) {}
 
-// Méthode pour convertir l'énumération en chaîne de caractères
+// Methode pour convertir l'enumeration en chaîne de caractères
 const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
     switch (type) {
-        case TypeCaseNonAchetable::DEPART: return "Départ";
+        case TypeCaseNonAchetable::DEPART: return "Depart";
         case TypeCaseNonAchetable::PRISON: return "Prison";
         case TypeCaseNonAchetable::ALLEZ_EN_PRISON: return "Allez en Prison";
         case TypeCaseNonAchetable::CHANCE: return "Chance";
-        case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE: return "Caisse de Communauté";
+        case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE: return "Caisse de Communaute";
         case TypeCaseNonAchetable::IMPOT: return "Impôt";
         case TypeCaseNonAchetable::TAXE_DE_LUXE: return "Taxe de Luxe";
         case TypeCaseNonAchetable::PARC_GRATUIT: return "Parc Gratuit";
@@ -19,12 +19,12 @@ const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
     }
 }
 
-// Méthode action
+// Methode action
 void Case_NonAchetable::action(Joueur& joueur) {
     switch (type_case) {
         case TypeCaseNonAchetable::DEPART:
             joueur.addSolde(200);
-            std::cout << joueur.getNom() << " passe par la case Départ et gagne 200 monos." << std::endl;
+            std::cout << joueur.getNom() << " passe par la case Depart et gagne 200 monos." << std::endl;
             break;
         case TypeCaseNonAchetable::PRISON:
             std::cout << joueur.getNom() << " est en prison !" << std::endl;
@@ -33,7 +33,7 @@ void Case_NonAchetable::action(Joueur& joueur) {
             std::cout << joueur.getNom() << " pioche une carte Chance." << std::endl;
             break;
         case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE:
-            std::cout << joueur.getNom() << " pioche une carte Caisse de Communauté." << std::endl;
+            std::cout << joueur.getNom() << " pioche une carte Caisse de Communaute." << std::endl;
             break;
         case TypeCaseNonAchetable::IMPOT:
             joueur.addSolde(-200);

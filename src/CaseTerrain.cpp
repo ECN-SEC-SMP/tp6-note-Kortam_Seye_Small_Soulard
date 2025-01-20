@@ -24,9 +24,9 @@ void CaseTerrain::action() const {
     if (proprietaire == -1) {
         std::cout << "Le terrain \"" << nom << "\" est libre, vous pouvez l'acheter !\n";
     } else if (estHypotheque) {
-        std::cout << "Le terrain \"" << nom << "\" est hypothéqué, aucun loyer à payer.\n";
+        std::cout << "Le terrain \"" << nom << "\" est hypotheque, aucun loyer à payer.\n";
     } else {
-        std::cout << "Vous payez " << loyer << " monos au propriétaire (joueur " << proprietaire << ").\n";
+        std::cout << "Vous payez " << loyer << " monos au proprietaire (joueur " << proprietaire << ").\n";
     }
 }
 

@@ -8,7 +8,7 @@
 class Case_NonAchetable: public Case 
 {
 public:
-    // Enum interne représentant les types de cases non achetables
+    // Enum interne representant les types de cases non achetables
     enum class TypeCaseNonAchetable {
         DEPART,
         PRISON,
@@ -25,7 +25,7 @@ public:
 
 private:
     TypeCaseNonAchetable type_case;
-    static const char* typeToString(TypeCaseNonAchetable type);  // Méthode utilitaire pour afficher les types de cases
+    static const char* typeToString(TypeCaseNonAchetable type);  // Methode utilitaire pour afficher les types de cases
 };
 
 #endif

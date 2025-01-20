@@ -10,18 +10,30 @@ using namespace std;
 
 int main() {
     int nombreJoueurs;
-    cout << "Entrez le nombre de joueurs: ";
-    cin >> nombreJoueurs;
+    do {
+        cout << "Entrez le nombre de joueurs (entre 2 et 4): ";
+        cin >> nombreJoueurs;
+        if (cin.fail() || nombreJoueurs < 2 || nombreJoueurs > 4) {
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << "Nombre de joueurs invalide. Veuillez reessayer." << endl;
+        }
+    } while (nombreJoueurs < 2 || nombreJoueurs > 4);
+
 
     vector<Joueur> joueurs;
     for (int i = 0; i < nombreJoueurs; ++i) {
         string nom;
         cout << "Entrez le nom du joueur " << i + 1 << ": ";
         cin >> nom;
-        joueurs[i].setNom(nom);
+        Joueur nouveaujoueur(true,nom, 1500, 0, 0, false);
+        joueurs.push_back(nouveaujoueur);
     }
 
-    //mélange les joueurs
+
+
+    cout << "chabababa" << endl;
+    //melange les joueurs
     unsigned seed = chrono::system_clock::now().time_since_epoch().count();
     shuffle(joueurs.begin(), joueurs.end(), default_random_engine(seed));
 
