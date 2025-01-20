@@ -11,8 +11,7 @@ struct ResultatLancer {
 };
 
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) :
-en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0);
-
+en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0){}
 Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
 void Joueur::jouerTour() {
@@ -42,6 +41,10 @@ int Joueur::getSolde() const {
 
 void Joueur::setSolde(int solde) {
     this->solde = solde;
+}
+
+void Joueur::addSolde(int add) {
+    this->solde = this->solde + add;
 }
 
 int Joueur::getPosition() const {

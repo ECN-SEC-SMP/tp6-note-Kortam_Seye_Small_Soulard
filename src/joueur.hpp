@@ -26,6 +26,7 @@ class Joueur{
         void setNom(string nom);
         int getSolde() const;
         void setSolde(int solde);
+        void addSolde(int add);
         int getPosition() const;
         void setPosition(int position);
         int getNbCartesLiberte() const;

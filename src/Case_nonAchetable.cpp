@@ -1,11 +1,11 @@
 #include "Case_NonAchetable.hpp"
 
 // Constructeur
-NonAchetable::NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case)
+Case_NonAchetable::Case_NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case)
     : Case(nom), type_case(type_case) {}
 
 // Méthode pour convertir l'énumération en chaîne de caractères
-const char* NonAchetable::typeToString(TypeCaseNonAchetable type) {
+const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
     switch (type) {
         case TypeCaseNonAchetable::DEPART: return "Départ";
         case TypeCaseNonAchetable::PRISON: return "Prison";
@@ -20,10 +20,10 @@ const char* NonAchetable::typeToString(TypeCaseNonAchetable type) {
 }
 
 // Méthode action
-void NonAchetable::action(Joueur& joueur) {
+void Case_NonAchetable::action(Joueur& joueur) {
     switch (type_case) {
         case TypeCaseNonAchetable::DEPART:
-            joueur.recevoir(200);
+            joueur.addSolde(200);
             std::cout << joueur.getNom() << " passe par la case Départ et gagne 200 monos." << std::endl;
             break;
         case TypeCaseNonAchetable::PRISON:
@@ -36,11 +36,11 @@ void NonAchetable::action(Joueur& joueur) {
             std::cout << joueur.getNom() << " pioche une carte Caisse de Communauté." << std::endl;
             break;
         case TypeCaseNonAchetable::IMPOT:
-            joueur.payer(200);
+            joueur.addSolde(-200);
             std::cout << joueur.getNom() << " paie 200 monos pour l'Impôt." << std::endl;
             break;
         case TypeCaseNonAchetable::TAXE_DE_LUXE:
-            joueur.payer(75);
+            joueur.addSolde(-75);
             std::cout << joueur.getNom() << " paie 75 monos pour la Taxe de Luxe." << std::endl;
             break;
         case TypeCaseNonAchetable::PARC_GRATUIT:

@@ -20,7 +20,7 @@ public:
         PARC_GRATUIT
     };
 
-    NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case);
+    Case_NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case);
     void action(Joueur& joueur);
 
 private:

@@ -10,7 +10,7 @@ Service_Public::Service_Public(int loyer):loyer(loyer){}
 
 Service_Public::calculer_loyer()
 {
-    if (!gethypo()){
+    if (!getHypo()){
         return(0);
     }
     else{
