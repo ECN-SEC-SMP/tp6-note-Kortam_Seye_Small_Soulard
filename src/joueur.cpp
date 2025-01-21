@@ -52,6 +52,8 @@ void Joueur::jouerTour()
         if (de1 == de2)
         {
             nbdoubles++;
+            cout << "Double ! Nouveau tour" << endl;
+
             if (nbdoubles == 3)
             {
                 cout << "Trois doubles consecutifs! Le joueur va en prison." << endl;

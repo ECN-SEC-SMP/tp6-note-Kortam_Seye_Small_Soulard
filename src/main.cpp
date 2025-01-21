@@ -32,21 +32,19 @@ int main() {
 
 
 
-    cout << "chabababa" << endl;
-    //melange les joueurs
     unsigned seed = chrono::system_clock::now().time_since_epoch().count();
     shuffle(joueurs.begin(), joueurs.end(), default_random_engine(seed));
 
 
     cout << "Ordre de passage des joueurs:" << endl;
 
-    for (const auto& joueur : joueurs) {
-        cout << joueur.getNom() << endl;
+    for (size_t i = 0; i < joueurs.size(); ++i) {
+        cout << "Joueur " << i + 1 << ": " << joueurs[i].getNom() << endl;
     }
 
-
     Plateau plateau;
-    plateau.initialiser(joueurs);
+    vector<Case> cases;
+    plateau.initialiser(joueurs,cases);
     plateau.commencerJeu();
 
     return 0;

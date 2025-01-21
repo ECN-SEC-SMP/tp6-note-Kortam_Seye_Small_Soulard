@@ -9,7 +9,7 @@ using namespace std;
 
 class Plateau {
 public:
-    void initialiser(const vector<Joueur>& Joueurs);
+    void initialiser(const vector<Joueur> &Joueurs,const vector<Case> &Cases);
     void commencerJeu();
 
 private:
