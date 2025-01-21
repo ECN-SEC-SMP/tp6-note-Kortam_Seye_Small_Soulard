@@ -20,7 +20,7 @@ const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
 }
 
 // Methode action
-void Case_NonAchetable::action(Joueur& joueur) {
+void Case_NonAchetable::actioncase(Joueur& joueur) {
     switch (type_case) {
         case TypeCaseNonAchetable::DEPART:
             joueur.addSolde(200);
