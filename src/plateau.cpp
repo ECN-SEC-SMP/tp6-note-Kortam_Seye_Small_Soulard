@@ -346,8 +346,10 @@ void Plateau::commencerJeu()
         }
         cout << endl;
 
-        // à enlever pour faire tourner le jeu
-        jeuTermine = true;
+        if (tour >= 10)
+        {
+            jeuTermine = true;
+        }
     }
 
 
