@@ -14,6 +14,13 @@
 using namespace std;
 
 
+/*Case* Plateau::getCase(int index) const {
+    if (index >= 0 && index < static_cast<int>(cases.size())) {
+        return cases[index].get();
+    }
+    return nullptr;
+}*/
+
 Case* Plateau::getCase(int index) const {
     if (index >= 0 && index < static_cast<int>(cases.size())) {
         return cases[index].get();

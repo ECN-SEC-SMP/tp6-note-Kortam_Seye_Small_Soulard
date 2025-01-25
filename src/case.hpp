@@ -15,7 +15,7 @@ public:
     explicit Case(const string& nom);
     Case();
     virtual ~Case() = default;
-    virtual void action() const;
+    //virtual void action() const;
     string getNom() const;
     //void setNom(string nom);
     void setNom(const string& nom);

@@ -3,6 +3,7 @@
 
 #include "case.hpp"
 #include "Case_Achetable.hpp"
+#include "joueur.hpp"
 
 #include <iostream>
 using namespace std;
@@ -13,7 +14,7 @@ protected:
     int loyer;
 public:
     Gare(int loyer);
-    int calculer_loyer();
+    void actioncase(Joueur& joueur) const;
     
 };
 

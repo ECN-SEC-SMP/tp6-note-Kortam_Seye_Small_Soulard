@@ -3,6 +3,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <windows.h> // Pour Sleep()
+#include "case.hpp"
+#include "CaseTerrain.hpp"
+#include "Case_nonAchetable.hpp"
+#include "Gare.hpp"
+#include "Service_Public.hpp"
 #include "joueur.hpp"
 #include "plateau.hpp"
 
@@ -73,21 +78,27 @@ void Joueur::jouerTour(Plateau& plateau)
         cout << "Nouvelle position: " << position << endl;
 
         Case* caseActuelle = plateau.getCase(position);
-        /*for (int i = 0; i < 40; ++i) {
-            Case* c = plateau.getCase(i);
-            if (c) {
-                cout << "Case " << i << " : " << c->getNom() << endl;
-            } else {
-                cout << "Case " << i << " : Erreur: case non trouvée." << endl;
-            }
-        }*/
 
         if (caseActuelle) {
             cout << "Vous etes sur la case: " << caseActuelle->getNom() << endl;
-            caseActuelle->action();
+            cout << "Type de la case: " << typeid(*caseActuelle).name() << endl;
+            //caseActuelle->actioncase(*this);
+
+            if (typeid(*caseActuelle) == typeid(Case_NonAchetable)) {
+                dynamic_cast<Case_NonAchetable*>(caseActuelle)->actioncase(*this);
+            } else if (typeid(*caseActuelle) == typeid(CaseTerrain)) {
+                dynamic_cast<CaseTerrain*>(caseActuelle)->actioncase(*this);
+            } else if (typeid(*caseActuelle) == typeid(Gare)) {
+                dynamic_cast<Gare*>(caseActuelle)->actioncase(*this);
+            } else if (typeid(*caseActuelle) == typeid(Service_Public)) {
+                dynamic_cast<Service_Public*>(caseActuelle)->actioncase(*this);
+            } else {
+                cout << "Type de case inconnu." << endl;
+            }
         } else {
             cout << "Erreur: case non trouvée." << endl;
         }
+
         // agir En Fonction De La Case
     }
 }

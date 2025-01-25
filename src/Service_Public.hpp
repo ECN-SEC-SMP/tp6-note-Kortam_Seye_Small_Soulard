@@ -4,6 +4,7 @@
 
 #include "case.hpp"
 #include "Case_Achetable.hpp"
+#include "joueur.hpp"
 
 #include <iostream>
 using namespace std;
@@ -11,9 +12,9 @@ using namespace std;
 
 class Service_Public: public Case_Achetable{
 protected: 
-    int loyer ;
+    int loyer;
 public: 
     Service_Public(int loyer);
-    calculer_loyer(); 
+    void actioncase(Joueur& joueur) const;
 };
 #endif  // Service_Public_H
