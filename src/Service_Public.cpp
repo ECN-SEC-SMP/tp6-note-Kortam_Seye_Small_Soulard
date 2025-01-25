@@ -10,7 +10,7 @@ using namespace std;
 Service_Public::Service_Public(int loyer):loyer(loyer){}
 
 void Service_Public::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
-    printf("actionpublic\n");
+    //printf("actionpublic\n");
     if (getProprio() != "") {
         if (getProprio() == joueur.getNom()) {
             cout << "Vous etes chez vous." << endl;
@@ -33,17 +33,24 @@ void Service_Public::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
         } else if (nbServicesProprio == 2) {
             loyer = des * 10;
         }
-        joueur.addSolde(-loyer);
         cout << "Vous payez " << loyer << " monos de loyer a " << getProprio() << "." << endl;
+        cout << "Votre solde etait de " << joueur.getSolde() << " monos." << endl;
+        joueur.addSolde(-loyer);
+        cout << "Votre solde est maintenant de " << joueur.getSolde() << " monos." << endl;
+
+        for (auto& j : joueurs) {
+            if (j.getNom() == getProprio()) {
+                cout << j.getNom() << " a recu " << loyer << " monos." << endl;
+                cout << "Le solde de " << j.getNom() << " etait de " << j.getSolde() << " monos." << endl;
+                j.addSolde(loyer);
+                cout << "Le solde de " << j.getNom() << " est mtn de " << j.getSolde() << " monos." << endl;
+
+            break;
+            }
+        }
         char c;
         cout << "Appuyez sur 'c' pour continuer..." << endl;
         cin >> c;
-        /*for (auto& j : joueur) {
-            if (j.getNom() == getProprio()) {
-            j.addSolde(loyer);
-            break;
-            }
-        }*/
         return;
     }
     char reponse;

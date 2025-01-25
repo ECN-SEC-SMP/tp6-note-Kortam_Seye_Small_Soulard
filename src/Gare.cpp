@@ -10,7 +10,7 @@ using namespace std;
 Gare::Gare(int loyer) : loyer(loyer) {}
 
 void Gare::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
-    printf("actiongare\n");
+    //printf("actiongare\n");
     if (getProprio() != "") {
         if (getProprio() == joueur.getNom()) {
             cout << "Vous etes chez vous." << endl;
@@ -26,8 +26,21 @@ void Gare::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
         } else if (nbGares >= 4) {
             loyer = 200;
         }
-        joueur.addSolde(-loyer);
         cout << "Vous payez " << loyer << " monos de loyer a " << getProprio() << "." << endl;
+        cout << "Votre solde etait de " << joueur.getSolde() << " monos." << endl;
+        joueur.addSolde(-loyer);
+        cout << "Votre solde est maintenant de " << joueur.getSolde() << " monos." << endl;
+
+        for (auto& j : joueurs) {
+            if (j.getNom() == getProprio()) {
+                cout << j.getNom() << " a recu " << loyer << " monos." << endl;
+                cout << "Le solde de " << j.getNom() << " etait de " << j.getSolde() << " monos." << endl;
+                j.addSolde(loyer);
+                cout << "Le solde de " << j.getNom() << " est mtn de " << j.getSolde() << " monos." << endl;
+
+            break;
+            }
+        }
         char c;
         cout << "Appuyez sur 'c' pour continuer..." << endl;
         cin >> c;

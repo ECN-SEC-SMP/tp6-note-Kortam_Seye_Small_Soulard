@@ -73,8 +73,14 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
         {
             tourTermine = true;
         }
-
+        
+        int anciennePosition = position;
         position = (position + somme) % 40;
+        if (position < anciennePosition)
+        {
+            cout << "Vous passez par la case depart et recevez 200 monos." << endl;
+            addSolde(200);
+        }
 
         cout << "Nouvelle position: " << position << endl;
 
