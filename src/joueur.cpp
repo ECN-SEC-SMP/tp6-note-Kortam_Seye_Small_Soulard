@@ -49,61 +49,7 @@ void Joueur::jouerTour(Plateau& plateau) {
     mt19937 gen(rd());                    // Générateur Mersenne Twister
     uniform_int_distribution<> dis(1, 6); // Distribution uniforme pour les dés
 
-<<<<<<< HEAD
     while (!tourTermine) {
-=======
-    /*
-    if (peutConstruireMaisons()) {
-        construireMaisons();
-    }*/
-    if (getEnPrison()==true) {
-        cout << "Vous êtes en prison." << endl;
-        cout << "Vous avez passé " << getToursEnPrison() << " tours en prison." << endl;
-        if (getToursEnPrison() >= 3) {
-            cout << "Vous êtes libéré de prison après 3 tours." << endl;
-            setEnPrison(false);
-            jouerTour(plateau, joueurs); 
-            return;
-        }
-
-        if (getNbCartesLiberte()>0) { // Si le joueur possède une carte de sortie de prison
-            cout << "Vous utilisez votre carte de sortie de prison." << endl;
-            setNbCartesLiberte(getNbCartesLiberte() - 1);
-            setEnPrison(false);
-        }else{
-            cout << "Voulez-vous payer une amende de 50 pour sortir de prison ? (o/n): ";
-            char choix;
-            cin >> choix;
-            if (choix == 'O' || choix == 'o') {
-                if (solde >= 50) {
-                    solde -= 50;
-                    cout << "Vous avez payé l'amende et êtes libéré de prison." << endl;
-                    setEnPrison(false);
-                } else {
-                    cout << "Vous n'avez pas assez d'argent pour payer l'amende." << endl;
-                }
-            } else {
-                cout << "Vous essayez de faire un double pour sortir de prison." << endl;
-                int de1 = dis(gen);
-                int de2 = dis(gen);
-                cout << "Lancer des dés: " << de1 << " et " << de2 << endl;
-                if (de1 == de2) {
-                    cout << "Double ! Vous êtes libéré de prison." << endl;
-                    setEnPrison(false);
-                } else {
-                    cout << "Pas de double. Vous restez en prison." << endl;
-                    incrementerToursEnPrison();
-                    return;
-                }
-            }
-        } 
-    }
-    
-
-    while (!tourTermine)
-    {
-
->>>>>>> 848dcc221152cabe6ba52fc42ef110c6e05c85dc
         int de1 = dis(gen); // Lance le premier dé
         int de2 = dis(gen); // Lance le deuxième dé
 
