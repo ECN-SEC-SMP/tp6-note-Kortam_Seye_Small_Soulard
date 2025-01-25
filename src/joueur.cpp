@@ -40,7 +40,7 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
     }*/
     if (getEnPrison()==true) {
         cout << "Vous êtes en prison." << endl;
-
+        cout << "Vous avez passé " << getToursEnPrison() << " tours en prison." << endl;
         if (getToursEnPrison() >= 3) {
             cout << "Vous êtes libéré de prison après 3 tours." << endl;
             setEnPrison(false);
