@@ -1,12 +1,13 @@
 #include "CaseTerrain.hpp"
+#include <vector>
 
 CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer(loyer), groupe(groupe), construction(construction) {}
 
 
 CaseTerrain::CaseTerrain(): loyer(0) {}
 
-void CaseTerrain::actioncase(Joueur& joueur) const {
-    printf("actionterrain\n");
+void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
+    //printf("actionterrain\n");
 }
 
 

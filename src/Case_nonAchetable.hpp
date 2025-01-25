@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "joueur.hpp" 
+#include <vector>
 
 class Case_NonAchetable: public Case 
 {
@@ -21,7 +22,7 @@ public:
     };
 
     Case_NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case);
-    void actioncase(Joueur& joueur);
+    void actioncase(Joueur& joueur, vector<Joueur>& joueurs);
 
 private:
     TypeCaseNonAchetable type_case;
