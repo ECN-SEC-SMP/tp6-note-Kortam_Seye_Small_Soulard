@@ -98,8 +98,14 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 
         if (de1 == de2)
         {
-            nbdoubles++;
-            cout << "Double ! Nouveau tour" << endl;
+            if(getEnPrison()==false){
+                nbdoubles++;
+                cout << "Double ! Nouveau tour" << endl;               
+            }else {
+                return;
+            }
+            
+
 
             if (nbdoubles == 3)
             {
@@ -134,7 +140,7 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
             if (typeid(*caseActuelle) == typeid(Case_NonAchetable)) {
                 dynamic_cast<Case_NonAchetable*>(caseActuelle)->actioncase(*this, joueurs);
             } else if (typeid(*caseActuelle) == typeid(CaseTerrain)) {
-                dynamic_cast<CaseTerrain*>(caseActuelle)->actioncase(*this, joueurs);
+                dynamic_cast<CaseTerrain*>(caseActuelle)->actioncase(*this, joueurs,plateau);
             } else if (typeid(*caseActuelle) == typeid(Gare)) {
                 dynamic_cast<Gare*>(caseActuelle)->actioncase(*this, joueurs);
             } else if (typeid(*caseActuelle) == typeid(Service_Public)) {
