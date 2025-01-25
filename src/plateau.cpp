@@ -353,10 +353,10 @@ void Plateau::commencerJeu()
         }
         cout << endl;
 
-        if (tour >= 10)
+        /*if (tour >= 10)
         {
             jeuTermine = true;
-        }
+        }*/
     }
 
 

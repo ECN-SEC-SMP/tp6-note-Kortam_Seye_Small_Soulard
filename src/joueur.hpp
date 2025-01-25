@@ -17,12 +17,14 @@ class Joueur{
         int solde;
         int position;
         int nb_cartes_liberte;
+        int nb_gares;
         bool en_prison;
 
     public : 
         Joueur();
         Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
         //getter setter
+
         bool geten_vie() const;
         void seten_vie(bool en_vie);
         string getNom() const;
@@ -39,7 +41,8 @@ class Joueur{
         void jouerTour(Plateau& plateau);
         void construire(Case& Case);
         int* lancer_des(void);
-        
+        int getNbGares() const;
+        void setNbGares(int nb_gares);
         
 
 };

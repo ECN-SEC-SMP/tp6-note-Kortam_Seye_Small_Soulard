@@ -103,6 +103,17 @@ void Joueur::jouerTour(Plateau& plateau)
     }
 }
 
+int Joueur::getNbGares() const
+{
+    return nb_gares;
+}
+
+void Joueur::setNbGares(int nb_gares)
+{
+    this->nb_gares = nb_gares;
+}
+
+
 bool Joueur::geten_vie() const
 {
     return en_vie;

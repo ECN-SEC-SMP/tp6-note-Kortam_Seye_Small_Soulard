@@ -14,7 +14,7 @@ protected:
     int loyer;
 public:
     Gare(int loyer);
-    void actioncase(Joueur& joueur) const;
+    void actioncase(Joueur& joueur);
     
 };
 
