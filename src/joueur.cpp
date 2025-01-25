@@ -13,77 +13,73 @@
 
 using namespace std;
 
-struct ResultatLancer
-{
-    int de1;   // Resultat du premier de
-    int de2;   // Resultat du deuxième de
-    int somme; // Somme des deux des
+/**
+ * @struct ResultatLancer
+ * @brief Structure utilisée pour stocker les résultats d'un lancer de dés.
+ */
+struct ResultatLancer {
+    int de1;   ///< Résultat du premier dé
+    int de2;   ///< Résultat du deuxième dé
+    int somme; ///< Somme des deux dés
 };
 
-Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) : en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0) {}
-Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
+/**
+ * @class Joueur
+ * @brief Classe représentant un joueur dans le jeu.
+ */
+Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) 
+    : en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0) {}
 
-void Joueur::jouerTour(Plateau& plateau)
-{
-    /*
-    if (peutConstruireMaisons()) {
-        construireMaisons();
-    }
-    if (en_prison) {
-        gererPrison();
-        return;
-    }
-    */
-    int nbdoubles = 0;
-    bool tourTermine = false;
-    // srand(static_cast<unsigned int>(time(0)));
+Joueur::Joueur() 
+    : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
+
+/**
+ * @brief Cette méthode gère un tour de jeu pour le joueur.
+ * Le joueur lance deux dés et se déplace sur le plateau. En fonction de la case sur laquelle il tombe,
+ * il devra prendre une action spécifique (acheter, payer des frais, etc.).
+ * Si le joueur fait trois doubles consécutifs, il est envoyé en prison.
+ * 
+ * @param plateau Le plateau de jeu sur lequel le joueur évolue.
+ */
+void Joueur::jouerTour(Plateau& plateau) {
+    int nbdoubles = 0;      ///< Nombre de doubles consécutifs
+    bool tourTermine = false; ///< Booléen pour savoir si le tour est terminé
 
     random_device rd;                     // Entropie (générateur de nombres aléatoires basé sur le matériel)
     mt19937 gen(rd());                    // Générateur Mersenne Twister
     uniform_int_distribution<> dis(1, 6); // Distribution uniforme pour les dés
 
-    while (!tourTermine)
-    {
-
+    while (!tourTermine) {
         int de1 = dis(gen); // Lance le premier dé
         int de2 = dis(gen); // Lance le deuxième dé
 
-        // int de1 = rand() % 6 + 1;
-        // int de2 = rand() % 6 + 1;
-
         int somme = de1 + de2;
+        cout << "\n" << nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
 
-        cout <<"\n"<< nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
-
-        if (de1 == de2)
-        {
+        if (de1 == de2) {
             nbdoubles++;
             cout << "Double ! Nouveau tour" << endl;
 
-            if (nbdoubles == 3)
-            {
+            if (nbdoubles == 3) {
                 cout << "Trois doubles consecutifs! Le joueur va en prison." << endl;
                 setPosition(10);
                 setEnPrison(true);
                 return;
             }
-        }
-        else
-        {
+        } else {
             tourTermine = true;
         }
 
         position = (position + somme) % 40;
-
         cout << "Nouvelle position: " << position << endl;
 
         Case* caseActuelle = plateau.getCase(position);
 
         if (caseActuelle) {
-            cout << "Vous etes sur la case: " << caseActuelle->getNom() << endl;
+            cout << "Vous êtes sur la case: " << caseActuelle->getNom() << endl;
             cout << "Type de la case: " << typeid(*caseActuelle).name() << endl;
-            //caseActuelle->actioncase(*this);
 
+            // Appel de l'action spécifique en fonction du type de case
             if (typeid(*caseActuelle) == typeid(Case_NonAchetable)) {
                 dynamic_cast<Case_NonAchetable*>(caseActuelle)->actioncase(*this);
             } else if (typeid(*caseActuelle) == typeid(CaseTerrain)) {
@@ -98,72 +94,122 @@ void Joueur::jouerTour(Plateau& plateau)
         } else {
             cout << "Erreur: case non trouvée." << endl;
         }
-
-        // agir En Fonction De La Case
     }
 }
 
-bool Joueur::geten_vie() const
-{
+/**
+ * @brief Getter pour savoir si le joueur est en vie.
+ * 
+ * @return true si le joueur est en vie, sinon false.
+ */
+bool Joueur::geten_vie() const {
     return en_vie;
 }
 
-void Joueur::seten_vie(bool en_vie)
-{
+/**
+ * @brief Setter pour changer l'état de vie du joueur.
+ * 
+ * @param en_vie Le nouvel état de vie du joueur.
+ */
+void Joueur::seten_vie(bool en_vie) {
     this->en_vie = en_vie;
 }
 
-string Joueur::getNom() const
-{
+/**
+ * @brief Getter pour obtenir le nom du joueur.
+ * 
+ * @return Le nom du joueur.
+ */
+string Joueur::getNom() const {
     return nom;
 }
 
-void Joueur::setNom(string nom)
-{
+/**
+ * @brief Setter pour changer le nom du joueur.
+ * 
+ * @param nom Le nouveau nom du joueur.
+ */
+void Joueur::setNom(string nom) {
     this->nom = nom;
 }
 
-int Joueur::getSolde() const
-{
+/**
+ * @brief Getter pour obtenir le solde du joueur.
+ * 
+ * @return Le solde actuel du joueur.
+ */
+int Joueur::getSolde() const {
     return solde;
 }
 
-void Joueur::setSolde(int solde)
-{
+/**
+ * @brief Setter pour changer le solde du joueur.
+ * 
+ * @param solde Le nouveau solde du joueur.
+ */
+void Joueur::setSolde(int solde) {
     this->solde = solde;
 }
 
-void Joueur::addSolde(int add)
-{
+/**
+ * @brief Ajoute une certaine somme au solde du joueur.
+ * 
+ * @param add La somme à ajouter.
+ */
+void Joueur::addSolde(int add) {
     this->solde = this->solde + add;
 }
 
-int Joueur::getPosition() const
-{
+/**
+ * @brief Getter pour obtenir la position du joueur sur le plateau.
+ * 
+ * @return La position actuelle du joueur sur le plateau.
+ */
+int Joueur::getPosition() const {
     return position;
 }
 
-void Joueur::setPosition(int position)
-{
+/**
+ * @brief Setter pour changer la position du joueur sur le plateau.
+ * 
+ * @param position La nouvelle position du joueur.
+ */
+void Joueur::setPosition(int position) {
     this->position = position;
 }
 
-int Joueur::getNbCartesLiberte() const
-{
+/**
+ * @brief Getter pour obtenir le nombre de cartes "liberté" du joueur.
+ * 
+ * @return Le nombre de cartes "liberté" du joueur.
+ */
+int Joueur::getNbCartesLiberte() const {
     return nb_cartes_liberte;
 }
 
-void Joueur::setNbCartesLiberte(int nb_cartes_liberte)
-{
+/**
+ * @brief Setter pour changer le nombre de cartes "liberté" du joueur.
+ * 
+ * @param nb_cartes_liberte Le nouveau nombre de cartes.
+ */
+void Joueur::setNbCartesLiberte(int nb_cartes_liberte) {
     this->nb_cartes_liberte = nb_cartes_liberte;
 }
 
-bool Joueur::getEnPrison() const
-{
+/**
+ * @brief Getter pour savoir si le joueur est en prison.
+ * 
+ * @return true si le joueur est en prison, sinon false.
+ */
+bool Joueur::getEnPrison() const {
     return en_prison;
 }
 
-void Joueur::setEnPrison(bool en_prison)
-{
+/**
+ * @brief Setter pour changer l'état de prison du joueur.
+ * 
+ * @param en_prison L'état de prison du joueur.
+ */
+void Joueur::setEnPrison(bool en_prison) {
     this->en_prison = en_prison;
 }
