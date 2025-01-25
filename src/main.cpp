@@ -27,6 +27,9 @@ int main() {
         cout << "Entrez le nom du joueur " << i + 1 << ": ";
         cin >> nom;
         Joueur nouveaujoueur(true,nom, 1500, 0, 0, false);
+        nouveaujoueur.setNbGares(0);
+        nouveaujoueur.setDes(0);
+        nouveaujoueur.setNbServices(0);
         joueurs.push_back(nouveaujoueur);
     }
 
