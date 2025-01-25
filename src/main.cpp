@@ -30,6 +30,7 @@ int main() {
         nouveaujoueur.setNbGares(0);
         nouveaujoueur.setDes(0);
         nouveaujoueur.setNbServices(0);
+        nouveaujoueur.setToursEnPrison(0);
         joueurs.push_back(nouveaujoueur);
     }
 

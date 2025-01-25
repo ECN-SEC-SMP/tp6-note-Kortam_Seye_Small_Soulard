@@ -26,15 +26,6 @@ Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_li
 
 void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 {
-    /*
-    if (peutConstruireMaisons()) {
-        construireMaisons();
-    }
-    if (en_prison) {
-        gererPrison();
-        return;
-    }
-    */
     int nbdoubles = 0;
     bool tourTermine = false;
     // srand(static_cast<unsigned int>(time(0)));
@@ -42,6 +33,54 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
     random_device rd;                     // Entropie (générateur de nombres aléatoires basé sur le matériel)
     mt19937 gen(rd());                    // Générateur Mersenne Twister
     uniform_int_distribution<> dis(1, 6); // Distribution uniforme pour les dés
+
+    /*
+    if (peutConstruireMaisons()) {
+        construireMaisons();
+    }*/
+    if (en_prison) {
+        cout << "Vous êtes en prison." << endl;
+
+        if (getToursEnPrison() >= 3) {
+            cout << "Vous êtes libéré de prison après 3 tours." << endl;
+            setEnPrison(false);
+            jouerTour(plateau, joueurs); 
+            return;
+        }
+
+        if (getNbCartesLiberte()>0) { // Si le joueur possède une carte de sortie de prison
+            cout << "Vous utilisez votre carte de sortie de prison." << endl;
+            setNbCartesLiberte(getNbCartesLiberte() - 1);
+            setEnPrison(false);
+        }else{
+            cout << "Voulez-vous payer une amende de 50 pour sortir de prison ? (o/n): ";
+            char choix;
+            cin >> choix;
+            if (choix == 'O' || choix == 'o') {
+                if (solde >= 50) {
+                    solde -= 50;
+                    cout << "Vous avez payé l'amende et êtes libéré de prison." << endl;
+                    setEnPrison(false);
+                } else {
+                    cout << "Vous n'avez pas assez d'argent pour payer l'amende." << endl;
+                }
+            } else {
+                cout << "Vous essayez de faire un double pour sortir de prison." << endl;
+                int de1 = dis(gen);
+                int de2 = dis(gen);
+                cout << "Lancer des dés: " << de1 << " et " << de2 << endl;
+                if (de1 == de2) {
+                    cout << "Double ! Vous êtes libéré de prison." << endl;
+                    setEnPrison(false);
+                } else {
+                    cout << "Pas de double. Vous restez en prison." << endl;
+                    incrementerToursEnPrison();
+                    return;
+                }
+            }
+        } 
+    }
+    
 
     while (!tourTermine)
     {
@@ -51,7 +90,8 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 
         // int de1 = rand() % 6 + 1;
         // int de2 = rand() % 6 + 1;
-
+        cout << "Appuyez sur entree pour lancer les des" << endl;
+        cin.ignore();
         int somme = de1 + de2;
         setDes(somme);
         cout <<"\n"<< nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
@@ -73,7 +113,7 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
         {
             tourTermine = true;
         }
-        
+
         int anciennePosition = position;
         position = (position + somme) % 40;
         if (position < anciennePosition)
@@ -88,7 +128,7 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 
         if (caseActuelle) {
             cout << "Vous etes sur la case: " << caseActuelle->getNom() << endl;
-            cout << "Type de la case: " << typeid(*caseActuelle).name() << endl;
+            //cout << "Type de la case: " << typeid(*caseActuelle).name() << endl;
             //caseActuelle->actioncase(*this);
 
             if (typeid(*caseActuelle) == typeid(Case_NonAchetable)) {
@@ -209,4 +249,19 @@ bool Joueur::getEnPrison() const
 void Joueur::setEnPrison(bool en_prison)
 {
     this->en_prison = en_prison;
+}
+
+int Joueur::getToursEnPrison() const
+{
+    return tours_en_prison;
+}
+
+void Joueur::setToursEnPrison(int tours)
+{
+    this->tours_en_prison = tours;
+}
+
+void Joueur::incrementerToursEnPrison()
+{
+    this->tours_en_prison++;
 }

@@ -7,7 +7,7 @@ CaseTerrain::CaseTerrain(int loyer, int groupe, int construction) : loyer(loyer)
 CaseTerrain::CaseTerrain(): loyer(0) {}
 
 void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
-    printf("actionterrain\n");
+    //printf("actionterrain\n");
 }
 
 

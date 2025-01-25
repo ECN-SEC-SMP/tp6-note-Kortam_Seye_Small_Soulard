@@ -21,7 +21,7 @@ class Joueur{
         int nb_gares;
         int des;
         int nb_services;
-
+        int tours_en_prison;
         bool en_prison;
 
     public : 
@@ -52,6 +52,9 @@ class Joueur{
         int getNbServices() const;
         void setNbServices(int nb_services);
         void incrementNbServices();
+        int getToursEnPrison() const;
+        void setToursEnPrison(int tours);
+        void incrementerToursEnPrison();
 
 };
 
