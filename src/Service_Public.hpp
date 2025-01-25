@@ -1,7 +1,7 @@
 
 #ifndef Service_Public_H
 #define Service_Public_H
-
+#include <vector>
 #include "case.hpp"
 #include "Case_Achetable.hpp"
 #include "joueur.hpp"
@@ -15,6 +15,7 @@ protected:
     int loyer;
 public: 
     Service_Public(int loyer);
-    void actioncase(Joueur& joueur) const;
+    //void actioncase(Joueur& joueur) const;
+    void actioncase(Joueur &joueur, vector<Joueur>& joueurs);
 };
 #endif  // Service_Public_H

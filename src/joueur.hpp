@@ -4,6 +4,7 @@
 #include <stdexcept>
 #include <string>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -18,6 +19,9 @@ class Joueur{
         int position;
         int nb_cartes_liberte;
         int nb_gares;
+        int des;
+        int nb_services;
+
         bool en_prison;
 
     public : 
@@ -38,12 +42,16 @@ class Joueur{
         void setNbCartesLiberte(int nb_cartes_liberte);
         bool getEnPrison() const;
         void setEnPrison(bool en_prison);
-        void jouerTour(Plateau& plateau);
+        void jouerTour(Plateau& plateau, vector<Joueur>& joueurs);
         void construire(Case& Case);
         int* lancer_des(void);
         int getNbGares() const;
         void setNbGares(int nb_gares);
-        
+        int getDes() const;
+        void setDes(int des);
+        int getNbServices() const;
+        void setNbServices(int nb_services);
+        void incrementNbServices();
 
 };
 

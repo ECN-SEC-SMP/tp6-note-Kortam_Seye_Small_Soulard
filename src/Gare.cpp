@@ -2,13 +2,14 @@
 #include "Case_Achetable.hpp"
 #include "Gare.hpp"
 #include "joueur.hpp"
+#include <vector>
 
 #include <iostream>
 using namespace std;
 
 Gare::Gare(int loyer) : loyer(loyer) {}
 
-void Gare::actioncase(Joueur& joueur) {
+void Gare::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
     printf("actiongare\n");
     if (getProprio() != "") {
         if (getProprio() == joueur.getNom()) {
@@ -27,6 +28,9 @@ void Gare::actioncase(Joueur& joueur) {
         }
         joueur.addSolde(-loyer);
         cout << "Vous payez " << loyer << " monos de loyer a " << getProprio() << "." << endl;
+        char c;
+        cout << "Appuyez sur 'c' pour continuer..." << endl;
+        cin >> c;
         return;
     }
     char reponse;

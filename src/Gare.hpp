@@ -4,6 +4,7 @@
 #include "case.hpp"
 #include "Case_Achetable.hpp"
 #include "joueur.hpp"
+#include <vector>
 
 #include <iostream>
 using namespace std;
@@ -14,7 +15,7 @@ protected:
     int loyer;
 public:
     Gare(int loyer);
-    void actioncase(Joueur& joueur);
+    void actioncase(Joueur& joueur, vector<Joueur>& joueurs);
     
 };
 

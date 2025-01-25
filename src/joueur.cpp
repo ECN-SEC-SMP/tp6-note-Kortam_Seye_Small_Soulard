@@ -10,6 +10,7 @@
 #include "Service_Public.hpp"
 #include "joueur.hpp"
 #include "plateau.hpp"
+#include <vector>
 
 using namespace std;
 
@@ -23,7 +24,7 @@ struct ResultatLancer
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) : en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0) {}
 Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
-void Joueur::jouerTour(Plateau& plateau)
+void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 {
     /*
     if (peutConstruireMaisons()) {
@@ -52,7 +53,7 @@ void Joueur::jouerTour(Plateau& plateau)
         // int de2 = rand() % 6 + 1;
 
         int somme = de1 + de2;
-
+        setDes(somme);
         cout <<"\n"<< nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
 
         if (de1 == de2)
@@ -85,13 +86,13 @@ void Joueur::jouerTour(Plateau& plateau)
             //caseActuelle->actioncase(*this);
 
             if (typeid(*caseActuelle) == typeid(Case_NonAchetable)) {
-                dynamic_cast<Case_NonAchetable*>(caseActuelle)->actioncase(*this);
+                dynamic_cast<Case_NonAchetable*>(caseActuelle)->actioncase(*this, joueurs);
             } else if (typeid(*caseActuelle) == typeid(CaseTerrain)) {
-                dynamic_cast<CaseTerrain*>(caseActuelle)->actioncase(*this);
+                dynamic_cast<CaseTerrain*>(caseActuelle)->actioncase(*this, joueurs);
             } else if (typeid(*caseActuelle) == typeid(Gare)) {
-                dynamic_cast<Gare*>(caseActuelle)->actioncase(*this);
+                dynamic_cast<Gare*>(caseActuelle)->actioncase(*this, joueurs);
             } else if (typeid(*caseActuelle) == typeid(Service_Public)) {
-                dynamic_cast<Service_Public*>(caseActuelle)->actioncase(*this);
+                dynamic_cast<Service_Public*>(caseActuelle)->actioncase(*this, joueurs);
             } else {
                 cout << "Type de case inconnu." << endl;
             }
@@ -101,6 +102,31 @@ void Joueur::jouerTour(Plateau& plateau)
 
         // agir En Fonction De La Case
     }
+}
+
+int Joueur::getDes() const
+{
+    return des;
+}
+
+void Joueur::setDes(int des)
+{
+    this->des = des;
+}
+
+int Joueur::getNbServices() const
+{
+    return nb_services;
+}
+
+void Joueur::setNbServices(int nb_services)
+{
+    this->nb_services = nb_services;
+}
+
+void Joueur::incrementNbServices()
+{
+    nb_services++;
 }
 
 int Joueur::getNbGares() const

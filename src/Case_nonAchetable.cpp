@@ -1,4 +1,5 @@
 #include "Case_NonAchetable.hpp"
+#include <vector>
 
 // Constructeur
 Case_NonAchetable::Case_NonAchetable(const std::string& nom, TypeCaseNonAchetable type_case)
@@ -20,7 +21,7 @@ const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
 }
 
 // Methode action
-void Case_NonAchetable::actioncase(Joueur& joueur) {
+void Case_NonAchetable::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
     switch (type_case) {
         case TypeCaseNonAchetable::DEPART:
             joueur.addSolde(200);

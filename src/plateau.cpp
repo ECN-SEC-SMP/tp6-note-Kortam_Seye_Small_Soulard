@@ -313,7 +313,7 @@ void Plateau::commencerJeu()
                 continue;
             }
             cout <<"\n"<< joueur.getNom() << ", c'est votre tour." << endl;
-            joueur.jouerTour(*this);
+            joueur.jouerTour(*this,joueurs);
 
             if (joueur.getSolde() <= 0)
             {
