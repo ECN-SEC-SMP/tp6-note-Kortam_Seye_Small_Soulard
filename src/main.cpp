@@ -43,8 +43,9 @@ int main() {
     }
 
     Plateau plateau;
-    vector<Case> cases;
-    plateau.initialiser(joueurs,cases);
+    //vector<Case> cases;
+    //plateau.initialiser(joueurs,cases);
+    plateau.initialiser(joueurs);
     plateau.commencerJeu();
 
     return 0;

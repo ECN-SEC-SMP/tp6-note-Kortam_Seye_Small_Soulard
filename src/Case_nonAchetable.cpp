@@ -12,7 +12,7 @@ const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
         case TypeCaseNonAchetable::ALLEZ_EN_PRISON: return "Allez en Prison";
         case TypeCaseNonAchetable::CHANCE: return "Chance";
         case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE: return "Caisse de Communaute";
-        case TypeCaseNonAchetable::IMPOT: return "Impôt";
+        case TypeCaseNonAchetable::IMPOT: return "Impot";
         case TypeCaseNonAchetable::TAXE_DE_LUXE: return "Taxe de Luxe";
         case TypeCaseNonAchetable::PARC_GRATUIT: return "Parc Gratuit";
         default: return "Inconnu";
@@ -37,7 +37,7 @@ void Case_NonAchetable::actioncase(Joueur& joueur) {
             break;
         case TypeCaseNonAchetable::IMPOT:
             joueur.addSolde(-200);
-            std::cout << joueur.getNom() << " paie 200 monos pour l'Impôt." << std::endl;
+            std::cout << joueur.getNom() << " paie 200 monos pour l'Impot." << std::endl;
             break;
         case TypeCaseNonAchetable::TAXE_DE_LUXE:
             joueur.addSolde(-75);

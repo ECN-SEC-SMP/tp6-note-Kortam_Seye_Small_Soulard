@@ -8,251 +8,288 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <memory>
 #include <random>
 #include <chrono>
 using namespace std;
 
-void Plateau::initialiser(const vector<Joueur> &Joueurs,const vector<Case> &Cases)
+
+Case* Plateau::getCase(int index) const {
+    if (index >= 0 && index < static_cast<int>(cases.size())) {
+        return cases[index].get();
+    }
+    return nullptr;
+}
+
+void Plateau::initialiser(const vector<Joueur> &Joueurs)
 {
     joueurs = Joueurs; // initialise le tableau de joueurs
-    
-    
-    cases = Cases;     // initialise le tableau de cases
-    /*
-    // Case 0: Départ
-    cases[0] = Case_NonAchetable("Depart", Case_NonAchetable::TypeCaseNonAchetable::DEPART);
+
+    // Initialise le tableau de cases avec des pointeurs intelligents
+    cases.resize(40);  // Exemple : on prevoit 40 cases, adaptables selon votre jeu.
+
+    // Case 0: Depart
+    cases[0] = make_unique<Case_NonAchetable>("Depart", Case_NonAchetable::TypeCaseNonAchetable::DEPART);
     
     // Case 1: Boulevard de Belleville
-    cases[1] = CaseTerrain(60, 1, 0);
-    cases[1].setNom("Boulevard de Belleville");
-    cases[1].setPrix(60);
-    cases[1].setProprio("");
-    cases[1].setHypo(false);
+    auto case1 = make_unique<CaseTerrain>(60, 1, 0);
+    case1->setNom("Boulevard de Belleville");
+    case1->setPrix(60);
+    case1->setProprio("");
+    case1->setHypo(false);
+    cases[1] = move(case1);
     
-    // Case 2: Caisse de Communauté
-    cases[2] = Case_NonAchetable("Caisse de Communauté", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
+    // Case 2: Caisse de Communaute
+    cases[2] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 3: Rue Lecourbe
-    cases[3] = CaseTerrain(60, 1, 0);
-    cases[3].setNom("Rue Lecourbe");
-    cases[3].setPrix(60);
-    cases[3].setProprio("");
-    cases[3].setHypo(false);
+    auto case3 = make_unique<CaseTerrain>(60, 1, 0);
+    case3->setNom("Rue Lecourbe");
+    case3->setPrix(60);
+    case3->setProprio("");
+    case3->setHypo(false);
+    cases[3] = move(case3);
 
     // Case 4: Impôts
-    cases[4] = Case_NonAchetable("Impôts", Case_NonAchetable::TypeCaseNonAchetable::IMPOT);
+    cases[4] = make_unique<Case_NonAchetable>("Impots", Case_NonAchetable::TypeCaseNonAchetable::IMPOT);
     
     // Case 5: Gare Montparnasse
-    cases[5] = Gare(200);
-    cases[5].setNom("Gare Montparnasse");
-    cases[5].setPrix(200);
-    cases[5].setProprio("");
-    cases[5].setHypo(false);
+    auto case5 = make_unique<Gare>(200);
+    case5->setNom("Gare Montparnasse");
+    case5->setPrix(200);
+    case5->setProprio("");
+    case5->setHypo(false);
+    cases[5] = move(case5);
 
     // Case 6: Rue de Vaugirard
-    cases[6] = CaseTerrain(100, 2, 0);
-    cases[6].setNom("Rue de Vaugirard");
-    cases[6].setPrix(100);
-    cases[6].setProprio("");
-    cases[6].setHypo(false);
+    auto case6 = make_unique<CaseTerrain>(100, 2, 0);
+    case6->setNom("Rue de Vaugirard");
+    case6->setPrix(100);
+    case6->setProprio("");
+    case6->setHypo(false);
+    cases[6] = move(case6);
 
     // Case 7: Carte Chance
-    cases[7] = Case_NonAchetable("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
+    cases[7] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
     // Case 8: Rue de Courcelles
-    cases[8] = CaseTerrain(100, 2, 0);
-    cases[8].setNom("Rue de Courcelles");
-    cases[8].setPrix(100);
-    cases[8].setProprio("");
-    cases[8].setHypo(false);
+    auto case8 = make_unique<CaseTerrain>(100, 2, 0);
+    case8->setNom("Rue de Courcelles");
+    case8->setPrix(100);
+    case8->setProprio("");
+    case8->setHypo(false);
+    cases[8] = move(case8);
 
-    // Case 9: Avenue de la République
-    cases[9] = CaseTerrain(120, 2, 0);
-    cases[9].setNom("Avenue de la République");
-    cases[9].setPrix(120);
-    cases[9].setProprio("");
-    cases[9].setHypo(false);
+    // Case 9: Avenue de la Republique
+    auto case9 = make_unique<CaseTerrain>(120, 2, 0);
+    case9->setNom("Avenue de la Republique");
+    case9->setPrix(120);
+    case9->setProprio("");
+    case9->setHypo(false);
+    cases[9] = move(case9);
 
     // Case 10: Prison
-    cases[10] = Case_NonAchetable("Prison", Case_NonAchetable::TypeCaseNonAchetable::PRISON);
+    cases[10] = make_unique<Case_NonAchetable>("Prison", Case_NonAchetable::TypeCaseNonAchetable::PRISON);
     
     // Case 11: Boulevard de la Villette
-    cases[11] = CaseTerrain(140, 3, 0);
-    cases[11].setNom("Boulevard de la Villette");
-    cases[11].setPrix(140);
-    cases[11].setProprio("");
-    cases[11].setHypo(false);
+    auto case11 = make_unique<CaseTerrain>(140, 3, 0);
+    case11->setNom("Boulevard de la Villette");
+    case11->setPrix(140);
+    case11->setProprio("");
+    case11->setHypo(false);
+    cases[11] = move(case11);
 
-    // Case 12: Compagnie de l'Électricité
-    cases[12] = Service_Public(150);
-    cases[12].setNom("Compagnie de l'Électricité");
-    cases[12].setPrix(150);
-    cases[12].setProprio("");
-    cases[12].setHypo(false);
+    // Case 12: Compagnie de l'electricite
+    auto case12 = make_unique<Service_Public>(150);
+    case12->setNom("Compagnie de l'electricite");
+    case12->setPrix(150);
+    case12->setProprio("");
+    case12->setHypo(false);
+    cases[12] = move(case12);
 
     // Case 13: Avenue de Neuilly
-    cases[13] = CaseTerrain(140, 3, 0);
-    cases[13].setNom("Avenue de Neuilly");
-    cases[13].setPrix(140);
-    cases[13].setProprio("");
-    cases[13].setHypo(false);
+    auto case13 = make_unique<CaseTerrain>(140, 3, 0);
+    case13->setNom("Avenue de Neuilly");
+    case13->setPrix(140);
+    case13->setProprio("");
+    case13->setHypo(false);
+    cases[13] = move(case13);
 
     // Case 14: Rue du Paradis
-    cases[14] = CaseTerrain(160, 3, 0);
-    cases[14].setNom("Rue du Paradis");
-    cases[14].setPrix(160);
-    cases[14].setProprio("");
-    cases[14].setHypo(false);
+    auto case14 = make_unique<CaseTerrain>(160, 3, 0);
+    case14->setNom("Rue du Paradis");
+    case14->setPrix(160);
+    case14->setProprio("");
+    case14->setHypo(false);
+    cases[14] = move(case14);
 
     // Case 15: Gare de Lyon
-    cases[15] = Gare(200);
-    cases[15].setNom("Gare de Lyon");
-    cases[15].setPrix(200);
-    cases[15].setProprio("");
-    cases[15].setHypo(false);
+    auto case15 = make_unique<Gare>(200);
+    case15->setNom("Gare de Lyon");
+    case15->setPrix(200);
+    case15->setProprio("");
+    case15->setHypo(false);
+    cases[15] = move(case15);
 
     // Case 16: Avenue Mozart
-    cases[16] = CaseTerrain(180, 4, 0);
-    cases[16].setNom("Avenue Mozart");
-    cases[16].setPrix(180);
-    cases[16].setProprio("");
-    cases[16].setHypo(false);
+    auto case16 = make_unique<CaseTerrain>(180, 4, 0);
+    case16->setNom("Avenue Mozart");
+    case16->setPrix(180);
+    case16->setProprio("");
+    case16->setHypo(false);
+    cases[16] = move(case16);
 
-    // Case 17: Caisse de Communauté
-    cases[17] = Case_NonAchetable("Caisse de Communauté", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
+    // Case 17: Caisse de Communaute
+    cases[17] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 18: Boulevard Saint-Michel
-    cases[18] = CaseTerrain(180, 4, 0);
-    cases[18].setNom("Boulevard Saint-Michel");
-    cases[18].setPrix(180);
-    cases[18].setProprio("");
-    cases[18].setHypo(false);
+    auto case18 = make_unique<CaseTerrain>(180, 4, 0);
+    case18->setNom("Boulevard Saint-Michel");
+    case18->setPrix(180);
+    case18->setProprio("");
+    case18->setHypo(false);
+    cases[18] = move(case18);
 
     // Case 19: Place Pigalle
-    cases[19] = CaseTerrain(200, 4, 0);
-    cases[19].setNom("Place Pigalle");
-    cases[19].setPrix(200);
-    cases[19].setProprio("");
-    cases[19].setHypo(false);
+    auto case19 = make_unique<CaseTerrain>(200, 4, 0);
+    case19->setNom("Place Pigalle");
+    case19->setPrix(200);
+    case19->setProprio("");
+    case19->setHypo(false);
+    cases[19] = move(case19);
 
     // Case 20: Parc Gratuit
-    cases[20] = Case_NonAchetable("Parc Gratuit", Case_NonAchetable::TypeCaseNonAchetable::PARC_GRATUIT);
+    cases[20] = make_unique<Case_NonAchetable>("Parc Gratuit", Case_NonAchetable::TypeCaseNonAchetable::PARC_GRATUIT);
     
     // Case 21: Avenue Matignon
-    cases[21] = CaseTerrain(220, 5, 0);
-    cases[21].setNom("Avenue Matignon");
-    cases[21].setPrix(220);
-    cases[21].setProprio("");
-    cases[21].setHypo(false);
+    auto case21 = make_unique<CaseTerrain>(220, 5, 0);
+    case21->setNom("Avenue Matignon");
+    case21->setPrix(220);
+    case21->setProprio("");
+    case21->setHypo(false);
+    cases[21] = move(case21);
 
     // Case 22: Carte Chance
-    cases[22] = Case_NonAchetable("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
+    cases[22] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
     // Case 23: Boulevard Malesherbes
-    cases[23] = CaseTerrain(220, 5, 0);
-    cases[23].setNom("Boulevard Malesherbes");
-    cases[23].setPrix(220);
-    cases[23].setProprio("");
-    cases[23].setHypo(false);
+    auto case23 = make_unique<CaseTerrain>(220, 5, 0);
+    case23->setNom("Boulevard Malesherbes");
+    case23->setPrix(220);
+    case23->setProprio("");
+    case23->setHypo(false);
+    cases[23] = move(case23);
 
     // Case 24: Avenue Henri-Martin
-    cases[24] = CaseTerrain(240, 5, 0);
-    cases[24].setNom("Avenue Henri-Martin");
-    cases[24].setPrix(240);
-    cases[24].setProprio("");
-    cases[24].setHypo(false);
+    auto case24 = make_unique<CaseTerrain>(240, 5, 0);
+    case24->setNom("Avenue Henri-Martin");
+    case24->setPrix(240);
+    case24->setProprio("");
+    case24->setHypo(false);
+    cases[24] = move(case24);
 
     // Case 25: Gare du Nord
-    cases[25] = Gare(200);
-    cases[25].setNom("Gare du Nord");
-    cases[25].setPrix(200);
-    cases[25].setProprio("");
-    cases[25].setHypo(false);
+    auto case25 = make_unique<Gare>(200);
+    case25->setNom("Gare du Nord");
+    case25->setPrix(200);
+    case25->setProprio("");
+    case25->setHypo(false);
+    cases[25] = move(case25);
 
-    // Case 26: Faubourg Saint-Honoré
-    cases[26] = CaseTerrain(260, 6, 0);
-    cases[26].setNom("Faubourg Saint-Honoré");
-    cases[26].setPrix(260);
-    cases[26].setProprio("");
-    cases[26].setHypo(false);
+    // Case 26: Faubourg Saint-Honore
+    auto case26 = make_unique<CaseTerrain>(260, 6, 0);
+    case26->setNom("Faubourg Saint-Honore");
+    case26->setPrix(260);
+    case26->setProprio("");
+    case26->setHypo(false);
+    cases[26] = move(case26);
 
     // Case 27: Place de la Bourse
-    cases[27] = CaseTerrain(260, 6, 0);
-    cases[27].setNom("Place de la Bourse");
-    cases[27].setPrix(260);
-    cases[27].setProprio("");
-    cases[27].setHypo(false);
+    auto case27 = make_unique<CaseTerrain>(260, 6, 0);
+    case27->setNom("Place de la Bourse");
+    case27->setPrix(260);
+    case27->setProprio("");
+    case27->setHypo(false);
+    cases[27] = move(case27);
 
     // Case 28: Compagnie des Eaux
-    cases[28] = Service_Public(150);
-    cases[28].setNom("Compagnie des Eaux");
-    cases[28].setPrix(150);
-    cases[28].setProprio("");
-    cases[28].setHypo(false);
+    auto case28 = make_unique<Service_Public>(150);
+    case28->setNom("Compagnie des Eaux");
+    case28->setPrix(150);
+    case28->setProprio("");
+    case28->setHypo(false);
+    cases[28] = move(case28);
 
     // Case 29: Rue La Fayette
-    cases[29] = CaseTerrain(280, 6, 0);
-    cases[29].setNom("Rue La Fayette");
-    cases[29].setPrix(280);
-    cases[29].setProprio("");
-    cases[29].setHypo(false);
+    auto case29 = make_unique<CaseTerrain>(280, 6, 0);
+    case29->setNom("Rue La Fayette");
+    case29->setPrix(280);
+    case29->setProprio("");
+    case29->setHypo(false);
+    cases[29] = move(case29);
 
     // Case 30: Allez en Prison
-    cases[30] = Case_NonAchetable("Allez en Prison", Case_NonAchetable::TypeCaseNonAchetable::ALLEZ_EN_PRISON);
+    cases[30] = make_unique<Case_NonAchetable>("Allez en Prison", Case_NonAchetable::TypeCaseNonAchetable::ALLEZ_EN_PRISON);
     
     // Case 31: Avenue de Breteuil
-    cases[31] = CaseTerrain(300, 7, 0);
-    cases[31].setNom("Avenue de Breteuil");
-    cases[31].setPrix(300);
-    cases[31].setProprio("");
-    cases[31].setHypo(false);
+    auto case31 = make_unique<CaseTerrain>(300, 7, 0);
+    case31->setNom("Avenue de Breteuil");
+    case31->setPrix(300);
+    case31->setProprio("");
+    case31->setHypo(false);
+    cases[31] = move(case31);
 
     // Case 32: Avenue Foch
-    cases[32] = CaseTerrain(300, 7, 0);
-    cases[32].setNom("Avenue Foch");
-    cases[32].setPrix(300);
-    cases[32].setProprio("");
-    cases[32].setHypo(false);
+    auto case32 = make_unique<CaseTerrain>(300, 7, 0);
+    case32->setNom("Avenue Foch");
+    case32->setPrix(300);
+    case32->setProprio("");
+    case32->setHypo(false);
+    cases[32] = move(case32);
 
-    // Case 33: Caisse de Communauté
-    cases[33] = Case_NonAchetable("Caisse de Communauté", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
+    // Case 33: Caisse de Communaute
+    cases[33] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 34: Boulevard des Capucines
-    cases[34] = CaseTerrain(320, 7, 0);
-    cases[34].setNom("Boulevard des Capucines");
-    cases[34].setPrix(320);
-    cases[34].setProprio("");
-    cases[34].setHypo(false);
+    auto case34 = make_unique<CaseTerrain>(320, 7, 0);
+    case34->setNom("Boulevard des Capucines");
+    case34->setPrix(320);
+    case34->setProprio("");
+    case34->setHypo(false);
+    cases[34] = move(case34);
 
     // Case 35: Gare Saint-Lazare
-    cases[35] = Gare(200);
-    cases[35].setNom("Gare Saint-Lazare");
-    cases[35].setPrix(200);
-    cases[35].setProprio("");
-    cases[35].setHypo(false);
+    auto case35 = make_unique<Gare>(200);
+    case35->setNom("Gare Saint-Lazare");
+    case35->setPrix(200);
+    case35->setProprio("");
+    case35->setHypo(false);
+    cases[35] = move(case35);
 
     // Case 36: Carte Chance
-    cases[36] = Case_NonAchetable("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
+    cases[36] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
-    // Case 37: Avenue des Champs-Élysées
-    cases[37] = CaseTerrain(350, 8, 0);
-    cases[37].setNom("Avenue des Champs-Élysées");
-    cases[37].setPrix(350);
-    cases[37].setProprio("");
-    cases[37].setHypo(false);
+    // Case 37: Avenue des Champs-elysees
+    auto case37 = make_unique<CaseTerrain>(350, 8, 0);
+    case37->setNom("Avenue des Champs-elysees");
+    case37->setPrix(350);
+    case37->setProprio("");
+    case37->setHypo(false);
+    cases[37] = move(case37);
 
     // Case 38: Taxe de Luxe
-    cases[38] = Case_NonAchetable("Taxe de Luxe", Case_NonAchetable::TypeCaseNonAchetable::TAXE_DE_LUXE);
+    cases[38] = make_unique<Case_NonAchetable>("Taxe de Luxe", Case_NonAchetable::TypeCaseNonAchetable::TAXE_DE_LUXE);
     
     // Case 39: Rue de la Paix
-    cases[39] = CaseTerrain(400, 8, 0);
-    cases[39].setNom("Rue de la Paix");
-    cases[39].setPrix(400);
-    cases[39].setProprio("");
-    cases[39].setHypo(false);
-    
-    */
-}
+    auto case39 = make_unique<CaseTerrain>(400, 8, 0);
+    case39->setNom("Rue de la Paix");
+    case39->setPrix(400);
+    case39->setProprio("");
+    case39->setHypo(false);
+    cases[39] = move(case39);
+
+
+  }
 
 void Plateau::commencerJeu()
 {
@@ -269,7 +306,7 @@ void Plateau::commencerJeu()
                 continue;
             }
             cout <<"\n"<< joueur.getNom() << ", c'est votre tour." << endl;
-            joueur.jouerTour();
+            joueur.jouerTour(*this);
 
             if (joueur.getSolde() <= 0)
             {
@@ -308,6 +345,8 @@ void Plateau::commencerJeu()
             cout <<"\n"<< joueur.getNom() << " a " << joueur.getSolde() << "monos ";
         }
         cout << endl;
+
+        // à enlever pour faire tourner le jeu
         jeuTermine = true;
     }
 

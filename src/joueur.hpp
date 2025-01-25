@@ -7,6 +7,9 @@
 
 using namespace std;
 
+// Déclaration anticipée de la classe Plateau
+class Plateau;
+
 class Joueur{
     private :
         bool en_vie;
@@ -33,7 +36,7 @@ class Joueur{
         void setNbCartesLiberte(int nb_cartes_liberte);
         bool getEnPrison() const;
         void setEnPrison(bool en_prison);
-        void jouerTour();
+        void jouerTour(Plateau& plateau);
         void construire(Case& Case);
         int* lancer_des(void);
         

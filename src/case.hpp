@@ -2,6 +2,7 @@
 #define Case_hpp
 
 #include <iostream>
+#include <string>
 
 using namespace std; 
 
@@ -16,7 +17,8 @@ public:
     virtual ~Case() = default;
     virtual void action() const;
     string getNom() const;
-    void setNom(string nom);
+    //void setNom(string nom);
+    void setNom(const string& nom);
     int getNumero() const;
     void setNumero(int numero);
 };

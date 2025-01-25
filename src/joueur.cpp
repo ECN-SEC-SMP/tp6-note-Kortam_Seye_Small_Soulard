@@ -4,6 +4,7 @@
 #include <ctime>
 #include <windows.h> // Pour Sleep()
 #include "joueur.hpp"
+#include "plateau.hpp"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ struct ResultatLancer
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) : en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0) {}
 Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
-void Joueur::jouerTour()
+void Joueur::jouerTour(Plateau& plateau)
 {
     /*
     if (peutConstruireMaisons()) {
@@ -47,7 +48,7 @@ void Joueur::jouerTour()
 
         int somme = de1 + de2;
 
-        cout << nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
+        cout <<"\n"<< nom << ": lancer des des: " << de1 << " et " << de2 << " - Somme: " << somme << endl;
 
         if (de1 == de2)
         {
@@ -70,6 +71,23 @@ void Joueur::jouerTour()
         position = (position + somme) % 40;
 
         cout << "Nouvelle position: " << position << endl;
+
+        Case* caseActuelle = plateau.getCase(position);
+        /*for (int i = 0; i < 40; ++i) {
+            Case* c = plateau.getCase(i);
+            if (c) {
+                cout << "Case " << i << " : " << c->getNom() << endl;
+            } else {
+                cout << "Case " << i << " : Erreur: case non trouvée." << endl;
+            }
+        }*/
+
+        if (caseActuelle) {
+            cout << "Vous etes sur la case: " << caseActuelle->getNom() << endl;
+            caseActuelle->action();
+        } else {
+            cout << "Erreur: case non trouvée." << endl;
+        }
         // agir En Fonction De La Case
     }
 }
