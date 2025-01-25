@@ -38,7 +38,7 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
     if (peutConstruireMaisons()) {
         construireMaisons();
     }*/
-    if (en_prison) {
+    if (getEnPrison()==true) {
         cout << "Vous êtes en prison." << endl;
 
         if (getToursEnPrison() >= 3) {
