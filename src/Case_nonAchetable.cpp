@@ -10,7 +10,7 @@ using namespace std;
 /**
  * @brief Constructeur de la classe Case_NonAchetable.
  *
- * Initialise une case non achetable avec un nom et un type spécifique.
+ * Initialise une case non achetable avec un nom et un type specifique.
  *
  * @param nom Le nom de la case.
  * @param type_case Le type de la case.
@@ -19,10 +19,10 @@ Case_NonAchetable::Case_NonAchetable(const string &nom, TypeCaseNonAchetable typ
     : Case(nom), type_case(type_case) {}
 
 /**
- * @brief Convertit un type de case en une chaîne de caractères lisible.
+ * @brief Convertit un type de case en une chaîne de caracteres lisible.
  *
  * @param type Le type de la case.
- * @return Une chaîne de caractères représentant le type de la case.
+ * @return Une chaîne de caracteres representant le type de la case.
  */
 const char *Case_NonAchetable::typeToString(TypeCaseNonAchetable type)
 {
@@ -50,10 +50,10 @@ const char *Case_NonAchetable::typeToString(TypeCaseNonAchetable type)
 }
 
 /**
- * @brief Effectue l'action associée à la case.
+ * @brief Effectue l'action associee a la case.
  *
- * En fonction du type de la case, cette méthode applique un effet
- * spécifique au joueur actif ou, dans certains cas, à l'ensemble des joueurs.
+ * En fonction du type de la case, cette methode applique un effet
+ * specifique au joueur actif ou, dans certains cas, a l'ensemble des joueurs.
  *
  * @param joueur Le joueur actif.
  * @param joueurs La liste de tous les joueurs.
@@ -72,22 +72,22 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         cout << joueur.getNom() << " pioche une carte Chance." << endl;
 
         vector<string> cartes_chance = {
-            "Rendez-vous à la Rue de la Paix",
-            "Avancer jusqu'à la case départ",
-            "Rendez-vous à l'Avenue Henri-Martin. Si vous passez par la case départ, recevez 200 monos",
-            "Avancez au Boulevard de La Villette. Si vous passez par la case départ, recevez 200 monos",
-            "Vous êtes imposé pour les réparations de voirie à raison de 40 monos par maison et 115 monos par hôtel",
-            "Avancez jusqu'à la Gare de Lyon. Si vous passez par la case départ, recevez 200 monos",
-            "Vous avez gagné le prix de mots croisés. Recevez 100 monos",
+            "Rendez-vous a la Rue de la Paix",
+            "Avancer jusqu'a la case depart",
+            "Rendez-vous a l'Avenue Henri-Martin. Si vous passez par la case depart, recevez 200 monos",
+            "Avancez au Boulevard de La Villette. Si vous passez par la case depart, recevez 200 monos",
+            "Vous etes impose pour les reparations de voirie a raison de 40 monos par maison et 115 monos par hôtel",
+            "Avancez jusqu'a la Gare de Lyon. Si vous passez par la case depart, recevez 200 monos",
+            "Vous avez gagne le prix de mots croises. Recevez 100 monos",
             "La banque vous verse un dividende de 50 monos",
-            "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.",
+            "Vous etes libere de prison. Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue.",
             "Reculez de trois cases",
-            "Allez en prison. Rendez-vous directement en prison. Ne franchissez pas la case départ, ne touchez pas 200 monos",
-            "Faites des réparations dans toutes vos maisons. Versez pour chaque maison 40 monos. Versez pour chaque hôtel 115 monos",
-            "Amende pour excès de vitesse 15 monos",
-            "Payez pour frais de scolarité 150 monos",
+            "Allez en prison. Rendez-vous directement en prison. Ne franchissez pas la case depart, ne touchez pas 200 monos",
+            "Faites des reparations dans toutes vos maisons. Versez pour chaque maison 40 monos. Versez pour chaque hôtel 115 monos",
+            "Amende pour exces de vitesse 15 monos",
+            "Payez pour frais de scolarite 150 monos",
             "Amende pour ivresse 20 monos",
-            "Votre immeuble et votre prêt rapportent. Vous devez toucher 150 monos"};
+            "Votre immeuble et votre pret rapportent. Vous devez toucher 150 monos"};
 
         srand(time(0));
         int index = rand() % cartes_chance.size();
@@ -95,34 +95,34 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         cout << "Carte Chance: " << cartes_chance[index] << endl;
 
         string carte = cartes_chance[index];
-        if (carte == "Rendez-vous à la Rue de la Paix")
+        if (carte == "Rendez-vous a la Rue de la Paix")
         {
             joueur.setPosition(39);
         }
-        else if (carte == "Avancer jusqu'à la case départ")
+        else if (carte == "Avancer jusqu'a la case depart")
         {
             joueur.setPosition(0);
             joueur.addSolde(200);
         }
-        else if (carte == "Rendez-vous à l'Avenue Henri-Martin. Si vous passez par la case départ, recevez 200 monos")
+        else if (carte == "Rendez-vous a l'Avenue Henri-Martin. Si vous passez par la case depart, recevez 200 monos")
         {
             if (joueur.getPosition() > 24)
                 joueur.addSolde(200);
             joueur.setPosition(24);
         }
-        else if (carte == "Avancez au Boulevard de La Villette. Si vous passez par la case départ, recevez 200 monos")
+        else if (carte == "Avancez au Boulevard de La Villette. Si vous passez par la case depart, recevez 200 monos")
         {
             if (joueur.getPosition() > 11)
                 joueur.addSolde(200);
             joueur.setPosition(11);
         }
-        else if (carte == "Avancez jusqu'à la Gare de Lyon. Si vous passez par la case départ, recevez 200 monos")
+        else if (carte == "Avancez jusqu'a la Gare de Lyon. Si vous passez par la case depart, recevez 200 monos")
         {
             if (joueur.getPosition() > 15)
                 joueur.addSolde(200);
             joueur.setPosition(15);
         }
-        else if (carte == "Vous avez gagné le prix de mots croisés. Recevez 100 monos")
+        else if (carte == "Vous avez gagne le prix de mots croises. Recevez 100 monos")
         {
             joueur.addSolde(100);
         }
@@ -130,7 +130,7 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(50);
         }
-        else if (carte == "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.")
+        else if (carte == "Vous etes libere de prison. Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue.")
         {
             joueur.setNbCartesLiberte(joueur.getNbCartesLiberte() + 1);
         }
@@ -138,16 +138,16 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.setPosition(joueur.getPosition() - 3);
         }
-        else if (carte == "Allez en prison. Rendez-vous directement en prison. Ne franchissez pas la case départ, ne touchez pas 200 monos")
+        else if (carte == "Allez en prison. Rendez-vous directement en prison. Ne franchissez pas la case depart, ne touchez pas 200 monos")
         {
             joueur.setPosition(10);
             joueur.setEnPrison(true);
         }
-        else if (carte == "Amende pour excès de vitesse 15 monos")
+        else if (carte == "Amende pour exces de vitesse 15 monos")
         {
             joueur.addSolde(-15);
         }
-        else if (carte == "Payez pour frais de scolarité 150 monos")
+        else if (carte == "Payez pour frais de scolarite 150 monos")
         {
             joueur.addSolde(-150);
         }
@@ -155,39 +155,39 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(-20);
         }
-        else if (carte == "Votre immeuble et votre prêt rapportent. Vous devez toucher 150 monos")
+        else if (carte == "Votre immeuble et votre pret rapportent. Vous devez toucher 150 monos")
         {
             joueur.addSolde(150);
         }
         break;
     }
     case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE : {
-        cout << joueur.getNom() << " pioche une carte Caisse de Communauté." << endl;
+        cout << joueur.getNom() << " pioche une carte Caisse de Communaute." << endl;
         vector<string> cartes_communaute = {
-            "Placez-vous sur la case départ",
+            "Placez-vous sur la case depart",
             "Erreur de la banque en votre faveur. Recevez 200 monos",
-            "Payez la note du médecin 50 monos",
+            "Payez la note du medecin 50 monos",
             "La vente de votre stock vous rapporte 50 monos",
-            "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.",
-            "Aller en prison. Rendez-vous directement à la prison. Ne franchissez pas par la case départ, ne touchez pas 200 monos",
-            "Retournez à Belleville",
+            "Vous etes libere de prison. Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue.",
+            "Aller en prison. Rendez-vous directement a la prison. Ne franchissez pas par la case depart, ne touchez pas 200 monos",
+            "Retournez a Belleville",
             "Recevez votre revenu annuel 100 monos",
             "C'est votre anniversaire. Chaque joueur doit vous donner 10 monos",
             "Les contributions vous remboursent la somme de 200 monos",
-            "Recevez votre intérêt sur l'emprunt à 7% 250 monos",
+            "Recevez votre interet sur l'emprunt a 7% 250 monos",
             "Payez votre Police d'Assurance 50 monos",
             "Payez une amende de 10 monos ou bien tirez une carte « CHANCE »",
-            "Rendez-vous à la gare la plus proche. Si vous passez par la case départ, recevez 200 monos",
-            "Vous avez gagné le deuxième Prix de Beauté. Recevez 10 monos",
-            "Vous héritez 100 monos"};
+            "Rendez-vous a la gare la plus proche. Si vous passez par la case depart, recevez 200 monos",
+            "Vous avez gagne le deuxieme Prix de Beaute. Recevez 10 monos",
+            "Vous heritez 100 monos"};
 
         srand(time(0));
         int index2 = rand() % cartes_communaute.size();
 
-        cout << "Carte Caisse de Communauté: " << cartes_communaute[index2] << endl;
+        cout << "Carte Caisse de Communaute: " << cartes_communaute[index2] << endl;
 
         string cartecdc = cartes_communaute[index2];
-        if (cartecdc == "Placez-vous sur la case départ")
+        if (cartecdc == "Placez-vous sur la case depart")
         {
             joueur.setPosition(0);
             joueur.addSolde(200);
@@ -196,7 +196,7 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(200);
         }
-        else if (cartecdc == "Payez la note du médecin 50 monos")
+        else if (cartecdc == "Payez la note du medecin 50 monos")
         {
             joueur.addSolde(-50);
         }
@@ -204,16 +204,16 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(50);
         }
-        else if (cartecdc == "Vous êtes libéré de prison. Cette carte peut être conservée jusqu'à ce qu'elle soit utilisée ou vendue.")
+        else if (cartecdc == "Vous etes libere de prison. Cette carte peut etre conservee jusqu'a ce qu'elle soit utilisee ou vendue.")
         {
             joueur.setNbCartesLiberte(joueur.getNbCartesLiberte() + 1);
         }
-        else if (cartecdc == "Aller en prison. Rendez-vous directement à la prison. Ne franchissez pas par la case départ, ne touchez pas 200 monos")
+        else if (cartecdc == "Aller en prison. Rendez-vous directement a la prison. Ne franchissez pas par la case depart, ne touchez pas 200 monos")
         {
             joueur.setPosition(10);
             joueur.setEnPrison(true);
         }
-        else if (cartecdc == "Retournez à Belleville")
+        else if (cartecdc == "Retournez a Belleville")
         {
             joueur.setPosition(1);
         }
@@ -236,7 +236,7 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(200);
         }
-        else if (cartecdc == "Recevez votre intérêt sur l'emprunt à 7% 250 monos")
+        else if (cartecdc == "Recevez votre interet sur l'emprunt a 7% 250 monos")
         {
             joueur.addSolde(250);
         }
@@ -248,7 +248,7 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
         {
             joueur.addSolde(-10);
         }
-        else if (cartecdc == "Rendez-vous à la gare la plus proche. Si vous passez par la case départ, recevez 200 monos")
+        else if (cartecdc == "Rendez-vous a la gare la plus proche. Si vous passez par la case depart, recevez 200 monos")
         {
             if (joueur.getPosition() > 35 || joueur.getPosition() <= 5)
             {
@@ -269,11 +269,11 @@ void Case_NonAchetable::actioncase(Joueur &joueur, vector<Joueur> &joueurs)
                 joueur.setPosition(35);
             }
         }
-        else if (cartecdc == "Vous avez gagné le deuxième Prix de Beauté (derrière Tommy). Recevez 10 monos")
+        else if (cartecdc == "Vous avez gagne le deuxieme Prix de Beaute (derriere Tommy). Recevez 10 monos")
         {
             joueur.addSolde(10);
         }
-        else if (cartecdc == "Vous héritez 100 monos")
+        else if (cartecdc == "Vous heritez 100 monos")
         {
             joueur.addSolde(100);
         }

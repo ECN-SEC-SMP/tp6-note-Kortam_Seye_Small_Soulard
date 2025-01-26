@@ -176,8 +176,6 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
         } else {
             cout << "Erreur: case non trouvée." << endl;
         }
-
-        // agir En Fonction De La Case
     }
 }
 

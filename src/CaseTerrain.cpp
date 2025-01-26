@@ -6,7 +6,7 @@
 using namespace std;
 
 /**
- * @brief Constructeur paramétré de la classe CaseTerrain.
+ * @brief Constructeur parametre de la classe CaseTerrain.
  * 
  * @param loyer Le loyer de la case.
  * @param groupe Le groupe auquel appartient le terrain.
@@ -16,35 +16,35 @@ CaseTerrain::CaseTerrain(int loyer, int groupe, int construction)
     : loyer(loyer), groupe(groupe), construction(construction) {}
 
 /**
- * @brief Constructeur par défaut.
+ * @brief Constructeur par defaut.
  */
 CaseTerrain::CaseTerrain() : loyer(0), groupe(0), construction(0) {}
 
 /**
- * @brief Déclenche l'action liée à la case terrain.
+ * @brief Declenche l'action liee a la case terrain.
  * 
- * Cette méthode détermine si le joueur doit payer un loyer, peut acheter le terrain,
- * ou si d'autres effets doivent être appliqués selon les règles.
+ * Cette methode determine si le joueur doit payer un loyer, peut acheter le terrain,
+ * ou si d'autres effets doivent etre appliques selon les regles.
  * 
  * @param joueur Le joueur actif.
- * @param joueurs Liste des joueurs présents sur le plateau.
- * @param plateau Référence au plateau de jeu.
+ * @param joueurs Liste des joueurs presents sur le plateau.
+ * @param plateau Reference au plateau de jeu.
  */
 void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs, Plateau& plateau) {
     if (getProprio() != "") {
-        // La case est déjà possédée
+        // La case est deja possedee
         if (getProprio() == joueur.getNom()) {
-            cout << "Vous êtes sur votre propre terrain." << endl;
+            cout << "Vous etes sur votre propre terrain." << endl;
             return;
         }
 
-        cout << "Ce terrain appartient à " << getProprio() << "." << endl;
+        cout << "Ce terrain appartient a " << getProprio() << "." << endl;
         int loyer = getLoyer();
 
         if (getConstruction() > 0) {
             loyer *= (1 + getConstruction()); // Augmente le loyer en fonction des constructions
         } else {
-            // Vérifie si tous les terrains du groupe appartiennent au même propriétaire
+            // Verifie si tous les terrains du groupe appartiennent au meme proprietaire
             int tabTerrains[] = {1, 3, 5, 6, 8, 9, 11, 13, 14, 15, 16, 18, 19, 21, 23, 24, 25, 26, 27, 29, 31, 32, 34, 35, 37, 39};
             bool memeProprietaire = true;
             int groupe = getGroupe();
@@ -66,7 +66,7 @@ void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs, Plateau& p
         }
 
         // Paiement du loyer
-        cout << "Vous payez " << loyer << " monos à " << getProprio() << "." << endl;
+        cout << "Vous payez " << loyer << " monos a " << getProprio() << "." << endl;
         joueur.addSolde(-loyer);
 
         for (auto& j : joueurs) {
@@ -77,7 +77,7 @@ void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs, Plateau& p
         }
 
     } else {
-        // La case n'est pas encore possédée
+        // La case n'est pas encore possedee
         char reponse;
         cout << "Voulez-vous acheter ce terrain pour " << getPrix() << " monos ? (o/n) : ";
         cin >> reponse;
@@ -86,7 +86,7 @@ void CaseTerrain::actioncase(Joueur& joueur, vector<Joueur>& joueurs, Plateau& p
             if (joueur.getSolde() >= getPrix()) {
                 joueur.addSolde(-getPrix());
                 setProprio(joueur.getNom());
-                cout << "Vous avez acheté le terrain." << endl;
+                cout << "Vous avez achete le terrain." << endl;
             } else {
                 cout << "Vous n'avez pas assez de monos pour acheter ce terrain." << endl;
             }

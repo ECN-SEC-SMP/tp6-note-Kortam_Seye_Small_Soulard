@@ -52,7 +52,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[0] = make_unique<Case_NonAchetable>("Depart", Case_NonAchetable::TypeCaseNonAchetable::DEPART);
     
     // Case 1: Boulevard de Belleville
-    auto case1 = make_unique<CaseTerrain>(60, 1, 0);
+    auto case1 = make_unique<CaseTerrain>(2, 1, 0);
     case1->setNom("Boulevard de Belleville");
     case1->setPrix(60);
     case1->setProprio("");
@@ -63,7 +63,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[2] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 3: Rue Lecourbe
-    auto case3 = make_unique<CaseTerrain>(60, 1, 0);
+    auto case3 = make_unique<CaseTerrain>(4, 1, 0);
     case3->setNom("Rue Lecourbe");
     case3->setPrix(60);
     case3->setProprio("");
@@ -82,7 +82,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[5] = move(case5);
 
     // Case 6: Rue de Vaugirard
-    auto case6 = make_unique<CaseTerrain>(100, 2, 0);
+    auto case6 = make_unique<CaseTerrain>(6, 2, 0);
     case6->setNom("Rue de Vaugirard");
     case6->setPrix(100);
     case6->setProprio("");
@@ -93,7 +93,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[7] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
     // Case 8: Rue de Courcelles
-    auto case8 = make_unique<CaseTerrain>(100, 2, 0);
+    auto case8 = make_unique<CaseTerrain>(6, 2, 0);
     case8->setNom("Rue de Courcelles");
     case8->setPrix(100);
     case8->setProprio("");
@@ -101,7 +101,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[8] = move(case8);
 
     // Case 9: Avenue de la Republique
-    auto case9 = make_unique<CaseTerrain>(120, 2, 0);
+    auto case9 = make_unique<CaseTerrain>(8, 2, 0);
     case9->setNom("Avenue de la Republique");
     case9->setPrix(120);
     case9->setProprio("");
@@ -112,7 +112,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[10] = make_unique<Case_NonAchetable>("Prison", Case_NonAchetable::TypeCaseNonAchetable::PRISON);
     
     // Case 11: Boulevard de la Villette
-    auto case11 = make_unique<CaseTerrain>(140, 3, 0);
+    auto case11 = make_unique<CaseTerrain>(10, 3, 0);
     case11->setNom("Boulevard de la Villette");
     case11->setPrix(140);
     case11->setProprio("");
@@ -128,7 +128,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[12] = move(case12);
 
     // Case 13: Avenue de Neuilly
-    auto case13 = make_unique<CaseTerrain>(140, 3, 0);
+    auto case13 = make_unique<CaseTerrain>(10, 3, 0);
     case13->setNom("Avenue de Neuilly");
     case13->setPrix(140);
     case13->setProprio("");
@@ -136,7 +136,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[13] = move(case13);
 
     // Case 14: Rue du Paradis
-    auto case14 = make_unique<CaseTerrain>(160, 3, 0);
+    auto case14 = make_unique<CaseTerrain>(12, 3, 0);
     case14->setNom("Rue du Paradis");
     case14->setPrix(160);
     case14->setProprio("");
@@ -152,7 +152,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[15] = move(case15);
 
     // Case 16: Avenue Mozart
-    auto case16 = make_unique<CaseTerrain>(180, 4, 0);
+    auto case16 = make_unique<CaseTerrain>(14, 4, 0);
     case16->setNom("Avenue Mozart");
     case16->setPrix(180);
     case16->setProprio("");
@@ -163,7 +163,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[17] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 18: Boulevard Saint-Michel
-    auto case18 = make_unique<CaseTerrain>(180, 4, 0);
+    auto case18 = make_unique<CaseTerrain>(14, 4, 0);
     case18->setNom("Boulevard Saint-Michel");
     case18->setPrix(180);
     case18->setProprio("");
@@ -171,7 +171,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[18] = move(case18);
 
     // Case 19: Place Pigalle
-    auto case19 = make_unique<CaseTerrain>(200, 4, 0);
+    auto case19 = make_unique<CaseTerrain>(16, 4, 0);
     case19->setNom("Place Pigalle");
     case19->setPrix(200);
     case19->setProprio("");
@@ -182,7 +182,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[20] = make_unique<Case_NonAchetable>("Parc Gratuit", Case_NonAchetable::TypeCaseNonAchetable::PARC_GRATUIT);
     
     // Case 21: Avenue Matignon
-    auto case21 = make_unique<CaseTerrain>(220, 5, 0);
+    auto case21 = make_unique<CaseTerrain>(18, 5, 0);
     case21->setNom("Avenue Matignon");
     case21->setPrix(220);
     case21->setProprio("");
@@ -193,7 +193,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[22] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
     // Case 23: Boulevard Malesherbes
-    auto case23 = make_unique<CaseTerrain>(220, 5, 0);
+    auto case23 = make_unique<CaseTerrain>(18, 5, 0);
     case23->setNom("Boulevard Malesherbes");
     case23->setPrix(220);
     case23->setProprio("");
@@ -201,7 +201,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[23] = move(case23);
 
     // Case 24: Avenue Henri-Martin
-    auto case24 = make_unique<CaseTerrain>(240, 5, 0);
+    auto case24 = make_unique<CaseTerrain>(20, 5, 0);
     case24->setNom("Avenue Henri-Martin");
     case24->setPrix(240);
     case24->setProprio("");
@@ -217,7 +217,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[25] = move(case25);
 
     // Case 26: Faubourg Saint-Honore
-    auto case26 = make_unique<CaseTerrain>(260, 6, 0);
+    auto case26 = make_unique<CaseTerrain>(22, 6, 0);
     case26->setNom("Faubourg Saint-Honore");
     case26->setPrix(260);
     case26->setProprio("");
@@ -225,7 +225,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[26] = move(case26);
 
     // Case 27: Place de la Bourse
-    auto case27 = make_unique<CaseTerrain>(260, 6, 0);
+    auto case27 = make_unique<CaseTerrain>(22, 6, 0);
     case27->setNom("Place de la Bourse");
     case27->setPrix(260);
     case27->setProprio("");
@@ -241,7 +241,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[28] = move(case28);
 
     // Case 29: Rue La Fayette
-    auto case29 = make_unique<CaseTerrain>(280, 6, 0);
+    auto case29 = make_unique<CaseTerrain>(24, 6, 0);
     case29->setNom("Rue La Fayette");
     case29->setPrix(280);
     case29->setProprio("");
@@ -252,7 +252,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[30] = make_unique<Case_NonAchetable>("Allez en Prison", Case_NonAchetable::TypeCaseNonAchetable::ALLEZ_EN_PRISON);
     
     // Case 31: Avenue de Breteuil
-    auto case31 = make_unique<CaseTerrain>(300, 7, 0);
+    auto case31 = make_unique<CaseTerrain>(26, 7, 0);
     case31->setNom("Avenue de Breteuil");
     case31->setPrix(300);
     case31->setProprio("");
@@ -260,7 +260,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[31] = move(case31);
 
     // Case 32: Avenue Foch
-    auto case32 = make_unique<CaseTerrain>(300, 7, 0);
+    auto case32 = make_unique<CaseTerrain>(26, 7, 0);
     case32->setNom("Avenue Foch");
     case32->setPrix(300);
     case32->setProprio("");
@@ -271,7 +271,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[33] = make_unique<Case_NonAchetable>("Caisse de Communaute", Case_NonAchetable::TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE);
     
     // Case 34: Boulevard des Capucines
-    auto case34 = make_unique<CaseTerrain>(320, 7, 0);
+    auto case34 = make_unique<CaseTerrain>(28, 7, 0);
     case34->setNom("Boulevard des Capucines");
     case34->setPrix(320);
     case34->setProprio("");
@@ -290,7 +290,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[36] = make_unique<Case_NonAchetable>("Carte Chance", Case_NonAchetable::TypeCaseNonAchetable::CHANCE);
     
     // Case 37: Avenue des Champs-elysees
-    auto case37 = make_unique<CaseTerrain>(350, 8, 0);
+    auto case37 = make_unique<CaseTerrain>(35, 8, 0);
     case37->setNom("Avenue des Champs-elysees");
     case37->setPrix(350);
     case37->setProprio("");
@@ -301,7 +301,7 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
     cases[38] = make_unique<Case_NonAchetable>("Taxe de Luxe", Case_NonAchetable::TypeCaseNonAchetable::TAXE_DE_LUXE);
     
     // Case 39: Rue de la Paix
-    auto case39 = make_unique<CaseTerrain>(400, 8, 0);
+    auto case39 = make_unique<CaseTerrain>(50, 8, 0);
     case39->setNom("Rue de la Paix");
     case39->setPrix(400);
     case39->setProprio("");
@@ -366,8 +366,10 @@ void Plateau::commencerJeu()
         for (const auto &joueur : joueurs)
         {
             cout <<"\n"<< joueur.getNom() << " a " << joueur.getSolde() << "monos ";
+        cout << " et est sur la case " << joueur.getPosition() << "; ";
         }
         cout << endl;
+
 
 
         cout << "\nEtat des proprietes : " << endl;

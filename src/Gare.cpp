@@ -16,10 +16,10 @@ Gare::Gare(int loyer) : loyer(loyer) {}
 
 
 /**
- * @brief Gère l'action associée à la gare.
+ * @brief Gere l'action associee a la gare.
  * 
- * Si la gare appartient déjà à un joueur, celui-ci doit payer un loyer. 
- * Si la gare n'est pas possédée, le joueur peut l'acheter en payant le prix spécifié.
+ * Si la gare appartient deja a un joueur, celui-ci doit payer un loyer. 
+ * Si la gare n'est pas possedee, le joueur peut l'acheter en payant le prix specifie.
  * 
  * @param joueur Le joueur qui atterrit sur la gare.
  * @param joueurs La liste des joueurs.

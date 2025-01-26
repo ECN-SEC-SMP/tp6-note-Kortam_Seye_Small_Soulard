@@ -16,12 +16,12 @@ Service_Public::Service_Public(int loyer):loyer(loyer){}
 
 
 /**
- * @brief Réalise l'action à effectuer lorsqu'un joueur arrive sur cette case.
+ * @brief Realise l'action a effectuer lorsqu'un joueur arrive sur cette case.
  * 
- * Si le service public appartient déjà à un joueur, calcule et applique le loyer 
- * dû en fonction des règles spécifiques. Sinon, propose au joueur d'acheter cette propriété.
+ * Si le service public appartient deja a un joueur, calcule et applique le loyer 
+ * dû en fonction des ragles specifiques. Sinon, propose au joueur d'acheter cette propriete.
  * 
- * @param joueur Référence au joueur actif.
+ * @param joueur Reference au joueur actif.
  * @param joueurs Liste des joueurs du jeu.
  */
 void Service_Public::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
@@ -79,7 +79,7 @@ void Service_Public::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
             cout << "Vous avez achete le service public." << endl;
             //joueur.setNbServices(joueur.getNbServices() + 1);
             joueur.incrementNbServices();
-            cout << "Vous possédez maintenant " << joueur.getNbServices() << " services." << endl;
+            cout << "Vous possedez maintenant " << joueur.getNbServices() << " services." << endl;
         } else {
             cout << "Vous n'avez pas assez de monos pour acheter ce service public." << endl;
         }
