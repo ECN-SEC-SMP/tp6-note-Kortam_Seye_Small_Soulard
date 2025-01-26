@@ -359,10 +359,7 @@ void Plateau::commencerJeu()
                         }
                     }
                 }
-
             }
-
-
         }
         ++tour;
         cout << "\n"<< "Fin du tour " << tour << ". ";
@@ -371,6 +368,37 @@ void Plateau::commencerJeu()
             cout <<"\n"<< joueur.getNom() << " a " << joueur.getSolde() << "monos ";
         }
         cout << endl;
+
+
+        cout << "\nEtat des proprietes : " << endl;
+        for (const auto &c : cases)
+        {
+            if (auto terrain = dynamic_cast<CaseTerrain*>(c.get()))
+            {
+            if (!terrain->getProprio().empty())
+            {
+                cout << terrain->getNom() << " - Proprietaire: " << terrain->getProprio() << " - Groupe: " << terrain->getGroupe() << endl;
+            }
+            }
+            else if (auto gare = dynamic_cast<Gare*>(c.get()))
+            {
+            if (!gare->getProprio().empty())
+            {
+                cout << gare->getNom() << " - Proprietaire: " << gare->getProprio() << endl;
+            }
+            }
+            else if (auto service = dynamic_cast<Service_Public*>(c.get()))
+            {
+            if (!service->getProprio().empty())
+            {
+                cout << service->getNom() << " - Proprietaire: " << service->getProprio() << endl;
+            }
+            }
+        }
+
+
+
+
 
         /*if (tour >= 10)
         {
