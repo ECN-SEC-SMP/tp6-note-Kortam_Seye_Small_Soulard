@@ -21,6 +21,12 @@ using namespace std;
     return nullptr;
 }*/
 
+/**
+ * @brief Récupère une case par son index.
+ * 
+ * @param index Index de la case à récupérer.
+ * @return Pointeur vers la case si l'index est valide, sinon nullptr.
+ */
 Case* Plateau::getCase(int index) const {
     if (index >= 0 && index < static_cast<int>(cases.size())) {
         return cases[index].get();
@@ -28,6 +34,13 @@ Case* Plateau::getCase(int index) const {
     return nullptr;
 }
 
+/**
+ * @brief Initialise le plateau avec des joueurs et les différentes cases.
+ * 
+ * Crée toutes les cases et assigne la liste des joueurs.
+ * 
+ * @param Joueurs Liste des joueurs participant au jeu.
+ */
 void Plateau::initialiser(const vector<Joueur> &Joueurs)
 {
     joueurs = Joueurs; // initialise le tableau de joueurs
@@ -298,6 +311,12 @@ void Plateau::initialiser(const vector<Joueur> &Joueurs)
 
   }
 
+/**
+ * @brief Gère le déroulement du jeu jusqu'à ce qu'un joueur gagne.
+ * 
+ * Les joueurs jouent chacun leur tour, et le jeu se termine lorsqu'il ne reste
+ * qu'un seul joueur en vie.
+ */
 void Plateau::commencerJeu()
 {
     bool jeuTermine = false;

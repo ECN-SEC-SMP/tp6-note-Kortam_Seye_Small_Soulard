@@ -7,8 +7,23 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Constructeur de la classe Gare.
+ * 
+ * @param loyer Le montant du loyer pour cette gare.
+ */
 Gare::Gare(int loyer) : loyer(loyer) {}
 
+
+/**
+ * @brief Gère l'action associée à la gare.
+ * 
+ * Si la gare appartient déjà à un joueur, celui-ci doit payer un loyer. 
+ * Si la gare n'est pas possédée, le joueur peut l'acheter en payant le prix spécifié.
+ * 
+ * @param joueur Le joueur qui atterrit sur la gare.
+ * @param joueurs La liste des joueurs.
+ */
 void Gare::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
     //printf("actiongare\n");
     if (getProprio() != "") {

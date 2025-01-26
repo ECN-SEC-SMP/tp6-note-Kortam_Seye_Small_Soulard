@@ -7,8 +7,23 @@
 using namespace std;
 
 
+/**
+ * @brief Constructeur de la classe Service_Public.
+ * 
+ * @param loyer Loyer initial du service public.
+ */
 Service_Public::Service_Public(int loyer):loyer(loyer){}
 
+
+/**
+ * @brief Réalise l'action à effectuer lorsqu'un joueur arrive sur cette case.
+ * 
+ * Si le service public appartient déjà à un joueur, calcule et applique le loyer 
+ * dû en fonction des règles spécifiques. Sinon, propose au joueur d'acheter cette propriété.
+ * 
+ * @param joueur Référence au joueur actif.
+ * @param joueurs Liste des joueurs du jeu.
+ */
 void Service_Public::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
     //printf("actionpublic\n");
     if (getProprio() != "") {

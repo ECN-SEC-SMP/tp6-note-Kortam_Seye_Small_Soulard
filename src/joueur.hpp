@@ -11,24 +11,48 @@ using namespace std;
 // Déclaration anticipée de la classe Plateau
 class Plateau;
 
+
+/**
+ * @class Joueur
+ * @brief Représente un joueur dans le jeu Monopoly.
+ *
+ * Chaque joueur possède des attributs tels que le nom, le solde, la position sur le plateau,
+ * les cartes de liberté, et la capacité à acheter des propriétés comme les terrains, les gares, etc.
+ */
 class Joueur{
     private :
-        bool en_vie;
-        string nom;
-        int solde;
-        int position;
-        int nb_cartes_liberte;
-        int nb_gares;
-        int des;
-        int nb_services;
-        int tours_en_prison;
-        bool en_prison;
+        bool en_vie;           ///< Statut de vie du joueur.
+        string nom;            ///< Nom du joueur.
+        int solde;             ///< Solde actuel du joueur.
+        int position;          ///< Position actuelle du joueur sur le plateau.
+        int nb_cartes_liberte; ///< Nombre de cartes de liberté.
+        int nb_gares;          ///< Nombre de gares possédées par le joueur.
+        int des;               ///< Dernier résultat du lancement de dés.
+        int nb_services;       ///< Nombre de services publics possédés par le joueur.
+        int tours_en_prison;   ///< Nombre de tours que le joueur a passé en prison.
+        bool en_prison;        ///< Si le joueur est en prison ou non.
 
     public : 
+        /**
+         * @brief Constructeur par défaut.
+         * 
+         * Initialise un joueur avec un solde de 1500 monos, la position 0, et aucune carte de liberté, gare ou service.
+         */
         Joueur();
-        Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
-        //getter setter
 
+        /**
+         * @brief Constructeur personnalisé pour créer un joueur avec des informations spécifiques.
+         * 
+         * @param en_vie Statut de vie du joueur.
+         * @param nom Nom du joueur.
+         * @param solde Solde initial du joueur.
+         * @param position Position initiale du joueur.
+         * @param nb_cartes_liberte Nombre de cartes de liberté du joueur.
+         * @param en_prison Si le joueur est en prison.
+         */
+        Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison);
+
+        // Getters et setters pour les attributs
         bool geten_vie() const;
         void seten_vie(bool en_vie);
         string getNom() const;

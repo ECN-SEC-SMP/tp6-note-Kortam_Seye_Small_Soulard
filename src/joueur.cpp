@@ -14,6 +14,10 @@
 
 using namespace std;
 
+/**
+ * @struct ResultatLancer
+ * @brief Structure pour stocker le résultat d'un lancer de dés.
+ */
 struct ResultatLancer
 {
     int de1;   // Resultat du premier de
@@ -21,9 +25,30 @@ struct ResultatLancer
     int somme; // Somme des deux des
 };
 
+/**
+ * @brief Constructeur avec paramètres de la classe Joueur.
+ * @param en_vie Statut actif ou non du joueur.
+ * @param nom Nom du joueur.
+ * @param solde Montant initial d'argent.
+ * @param position Position de départ sur le plateau.
+ * @param nb_cartes_liberte Nombre de cartes "Libéré de prison".
+ * @param en_prison Statut de prison initial.
+ */
 Joueur::Joueur(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison) : en_vie(0), nom(nom), solde(solde), position(position), nb_cartes_liberte(nb_cartes_liberte), en_prison(0) {}
+
+/**
+ * @brief Constructeur par défaut de la classe Joueur.
+ */
 Joueur::Joueur() : en_vie(true), nom(""), solde(1500), position(0), nb_cartes_liberte(0), en_prison(false) {}
 
+
+/**
+ * @brief Gère le tour de jeu du joueur.
+ * @details Inclut le lancer de dés, la gestion des doubles, le traitement des cases, 
+ * et les mécanismes de prison.
+ * @param plateau Référence au plateau de jeu.
+ * @param joueurs Liste des joueurs dans la partie.
+ */
 void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
 {
     int nbdoubles = 0;
@@ -156,117 +181,206 @@ void Joueur::jouerTour(Plateau& plateau, vector<Joueur>& joueurs)
     }
 }
 
+/**
+ * @brief Accède au dernier résultat des dés.
+ * @return Résultat du lancer de dés.
+ */
 int Joueur::getDes() const
 {
     return des;
 }
 
+/**
+ * @brief Définit le dernier résultat des dés.
+ * @param des Résultat à enregistrer.
+ */
 void Joueur::setDes(int des)
 {
     this->des = des;
 }
 
+/**
+ * @brief Récupère le nombre de services publics possédés.
+ * @return Nombre de services publics.
+ */
 int Joueur::getNbServices() const
 {
     return nb_services;
 }
 
+/**
+ * @brief Définit le nombre de services publics possédés.
+ * @param nb_services Nombre de services publics.
+ */
 void Joueur::setNbServices(int nb_services)
 {
     this->nb_services = nb_services;
 }
 
+/**
+ * @brief Incrémente le compteur des services publics possédés.
+ */
 void Joueur::incrementNbServices()
 {
     nb_services++;
 }
 
+/**
+ * @brief Récupère le nombre de gares possédées par le joueur.
+ * @return Nombre de gares possédées.
+ */
 int Joueur::getNbGares() const
 {
     return nb_gares;
 }
 
+/**
+ * @brief Définit le nombre de gares possédées par le joueur.
+ * @param nb_gares Nombre de gares.
+ */
 void Joueur::setNbGares(int nb_gares)
 {
     this->nb_gares = nb_gares;
 }
 
-
+/**
+ * @brief Vérifie si le joueur est encore en vie.
+ * @return `true` si le joueur est actif, sinon `false`.
+ */
 bool Joueur::geten_vie() const
 {
     return en_vie;
 }
 
+/**
+ * @brief Définit le statut de vie du joueur.
+ * @param en_vie `true` si le joueur est actif, sinon `false`.
+ */
 void Joueur::seten_vie(bool en_vie)
 {
     this->en_vie = en_vie;
 }
 
+/**
+ * @brief Récupère le nom du joueur.
+ * @return Nom du joueur.
+ */
 string Joueur::getNom() const
 {
     return nom;
 }
 
+/**
+ * @brief Modifie le nom du joueur.
+ * @param nom Nouveau nom du joueur.
+ */
 void Joueur::setNom(string nom)
 {
     this->nom = nom;
 }
 
+/**
+ * @brief Récupère le solde d'argent du joueur.
+ * @return Solde actuel.
+ */
 int Joueur::getSolde() const
 {
     return solde;
 }
 
+/**
+ * @brief Définit le solde d'argent du joueur.
+ * @param solde Nouveau montant.
+ */
 void Joueur::setSolde(int solde)
 {
     this->solde = solde;
 }
 
+/**
+ * @brief Ajoute un montant au solde du joueur.
+ * @param add Montant à ajouter (peut être négatif).
+ */
 void Joueur::addSolde(int add)
 {
     this->solde = this->solde + add;
 }
 
+/**
+ * @brief Récupère la position actuelle du joueur.
+ * @return Position sur le plateau.
+ */
 int Joueur::getPosition() const
 {
     return position;
 }
 
+/**
+ * @brief Modifie la position actuelle du joueur.
+ * @param position Nouvelle position.
+ */
 void Joueur::setPosition(int position)
 {
     this->position = position;
 }
 
+/**
+ * @brief Récupère le nombre de cartes "Libéré de prison" du joueur.
+ * @return Nombre de cartes en possession.
+ */
 int Joueur::getNbCartesLiberte() const
 {
     return nb_cartes_liberte;
 }
 
+/**
+ * @brief Modifie le nombre de cartes "Libéré de prison" du joueur.
+ * @param nb_cartes_liberte Nouveau nombre de cartes.
+ */
 void Joueur::setNbCartesLiberte(int nb_cartes_liberte)
 {
     this->nb_cartes_liberte = nb_cartes_liberte;
 }
 
+/**
+ * @brief Vérifie si le joueur est en prison.
+ * @return `true` si le joueur est en prison, sinon `false`.
+ */
 bool Joueur::getEnPrison() const
 {
     return en_prison;
 }
 
+/**
+ * @brief Modifie le statut de prison du joueur.
+ * @param en_prison `true` pour mettre en prison, sinon `false`.
+ */
 void Joueur::setEnPrison(bool en_prison)
 {
     this->en_prison = en_prison;
 }
 
+/**
+ * @brief Récupère le nombre de tours passés en prison par le joueur.
+ * @return Nombre de tours en prison.
+ */
 int Joueur::getToursEnPrison() const
 {
     return tours_en_prison;
 }
 
+/**
+ * @brief Définit le nombre de tours passés en prison par le joueur.
+ * @param tours Nouveau nombre de tours.
+ */
 void Joueur::setToursEnPrison(int tours)
 {
     this->tours_en_prison = tours;
 }
 
+/**
+ * @brief Incrémente le compteur de tours en prison.
+ */
 void Joueur::incrementerToursEnPrison()
 {
     this->tours_en_prison++;

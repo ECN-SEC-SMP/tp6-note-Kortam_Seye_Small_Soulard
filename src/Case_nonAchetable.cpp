@@ -2,11 +2,24 @@
 #include <vector>
 
 using namespace std;
-// Constructeur
+
+/**
+ * @brief Constructeur de la classe Case_NonAchetable.
+ * 
+ * Initialise une case non achetable avec un nom et un type spécifique.
+ * 
+ * @param nom Le nom de la case.
+ * @param type_case Le type de la case.
+ */
 Case_NonAchetable::Case_NonAchetable(const string& nom, TypeCaseNonAchetable type_case)
     : Case(nom), type_case(type_case) {}
 
-// Methode pour convertir l'enumeration en chaîne de caractères
+/**
+ * @brief Convertit un type de case en une chaîne de caractères lisible.
+ * 
+ * @param type Le type de la case.
+ * @return Une chaîne de caractères représentant le type de la case.
+ */
 const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
     switch (type) {
         case TypeCaseNonAchetable::DEPART: return "Depart";
@@ -21,11 +34,18 @@ const char* Case_NonAchetable::typeToString(TypeCaseNonAchetable type) {
     }
 }
 
-// Methode action
+/**
+ * @brief Effectue l'action associée à la case.
+ * 
+ * En fonction du type de la case, cette méthode applique un effet
+ * spécifique au joueur actif ou, dans certains cas, à l'ensemble des joueurs.
+ * 
+ * @param joueur Le joueur actif.
+ * @param joueurs La liste de tous les joueurs.
+ */
 void Case_NonAchetable::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
     switch (type_case) {
         case TypeCaseNonAchetable::DEPART:
-            //joueur.addSolde(200);
             cout << joueur.getNom() << " passe par la case Depart et gagne 200 monos." << endl;
             break;
         case TypeCaseNonAchetable::PRISON:
@@ -35,11 +55,11 @@ void Case_NonAchetable::actioncase(Joueur& joueur, vector<Joueur>& joueurs) {
             cout << joueur.getNom() << " pioche une carte Chance." << endl;
             break;
         case TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE:
-            cout << joueur.getNom() << " pioche une carte Caisse de Communaute." << endl;
+            cout << joueur.getNom() << " pioche une carte Caisse de Communauté." << endl;
             break;
         case TypeCaseNonAchetable::IMPOT:
             joueur.addSolde(-200);
-            cout << joueur.getNom() << " paie 200 monos pour l'Impot." << endl;
+            cout << joueur.getNom() << " paie 200 monos pour l'Impôt." << endl;
             break;
         case TypeCaseNonAchetable::TAXE_DE_LUXE:
             joueur.addSolde(-75);
