@@ -1,0 +1,88 @@
+\doxysection{Plateau Class Reference}
+\hypertarget{class_plateau}{}\label{class_plateau}\index{Plateau@{Plateau}}
+
+
+Classe représentant le plateau de jeu Monopoly.  
+
+
+
+
+{\ttfamily \#include $<$plateau.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_plateau_ab93fca97a3f61a3eec2ba0ce8a4081f3}{initialiser}} (const vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&joueurs)
+\begin{DoxyCompactList}\small\item\em Initialise le plateau de jeu avec les joueurs donnés. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_plateau_abc9de7ff5a1211e5e806d69938c36566}{commencer\+Jeu}} ()
+\begin{DoxyCompactList}\small\item\em Commence la boucle principale du jeu, permettant aux joueurs de jouer leurs tours. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case}{Case}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_plateau_a4b3bc13270213c58443f003c2663a181}{get\+Case}} (int index) const
+\begin{DoxyCompactList}\small\item\em Récupère une case par son index. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant le plateau de jeu Monopoly. 
+
+Gère les cases du plateau ainsi que les joueurs, et contrôle le déroulement du jeu. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_plateau_abc9de7ff5a1211e5e806d69938c36566}\index{Plateau@{Plateau}!commencerJeu@{commencerJeu}}
+\index{commencerJeu@{commencerJeu}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{commencerJeu()}{commencerJeu()}}
+{\footnotesize\ttfamily \label{class_plateau_abc9de7ff5a1211e5e806d69938c36566} 
+void Plateau\+::commencer\+Jeu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Commence la boucle principale du jeu, permettant aux joueurs de jouer leurs tours. 
+
+Gère le déroulement du jeu jusqu\textquotesingle{}à ce qu\textquotesingle{}un joueur gagne.
+
+Les joueurs jouent chacun leur tour, et le jeu se termine lorsqu\textquotesingle{}il ne reste qu\textquotesingle{}un seul joueur en vie. \Hypertarget{class_plateau_a4b3bc13270213c58443f003c2663a181}\index{Plateau@{Plateau}!getCase@{getCase}}
+\index{getCase@{getCase}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{getCase()}{getCase()}}
+{\footnotesize\ttfamily \label{class_plateau_a4b3bc13270213c58443f003c2663a181} 
+\mbox{\hyperlink{class_case}{Case}} \texorpdfstring{$\ast$}{*} Plateau\+::get\+Case (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère une case par son index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index de la case à récupérer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointeur vers la case si l\textquotesingle{}index est valide, sinon nullptr. 
+\end{DoxyReturn}
+\Hypertarget{class_plateau_ab93fca97a3f61a3eec2ba0ce8a4081f3}\index{Plateau@{Plateau}!initialiser@{initialiser}}
+\index{initialiser@{initialiser}!Plateau@{Plateau}}
+\doxysubsubsection{\texorpdfstring{initialiser()}{initialiser()}}
+{\footnotesize\ttfamily \label{class_plateau_ab93fca97a3f61a3eec2ba0ce8a4081f3} 
+void Plateau\+::initialiser (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&}]{Joueurs}{}\end{DoxyParamCaption})}
+
+
+
+Initialise le plateau de jeu avec les joueurs donnés. 
+
+Initialise le plateau avec des joueurs et les différentes cases.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueurs} & Vecteur des joueurs participants.\\
+\hline
+\end{DoxyParams}
+Crée toutes les cases et assigne la liste des joueurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Joueurs} & Liste des joueurs participant au jeu. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/plateau.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/plateau.\+cpp\end{DoxyCompactItemize}

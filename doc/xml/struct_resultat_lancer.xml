@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="struct_resultat_lancer" kind="struct" language="C++" prot="public">
+    <compoundname>ResultatLancer</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_resultat_lancer_1a0f1d907d74d1ee9da7dbf82d95efb93a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResultatLancer::de1</definition>
+        <argsstring></argsstring>
+        <name>de1</name>
+        <qualifiedname>ResultatLancer::de1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" line="23" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_resultat_lancer_1a1035f578c3d108ea1876997cc116d6ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResultatLancer::de2</definition>
+        <argsstring></argsstring>
+        <name>de2</name>
+        <qualifiedname>ResultatLancer::de2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" line="24" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_resultat_lancer_1ae8cd559974308b6de189d189d1119092" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ResultatLancer::somme</definition>
+        <argsstring></argsstring>
+        <name>somme</name>
+        <qualifiedname>ResultatLancer::somme</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" line="25" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Structure pour stocker le résultat d&apos;un lancer de dés. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" line="21" column="1" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_resultat_lancer_1a0f1d907d74d1ee9da7dbf82d95efb93a" prot="public" virt="non-virtual"><scope>ResultatLancer</scope><name>de1</name></member>
+      <member refid="struct_resultat_lancer_1a1035f578c3d108ea1876997cc116d6ba" prot="public" virt="non-virtual"><scope>ResultatLancer</scope><name>de2</name></member>
+      <member refid="struct_resultat_lancer_1ae8cd559974308b6de189d189d1119092" prot="public" virt="non-virtual"><scope>ResultatLancer</scope><name>somme</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

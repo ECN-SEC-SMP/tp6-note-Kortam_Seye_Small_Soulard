@@ -1,0 +1,968 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_joueur" kind="class" language="C++" prot="public">
+    <compoundname>Joueur</compoundname>
+    <includes refid="joueur_8hpp" local="no">joueur.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_joueur_1a1f84d76b36659524549ac7d237503141" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Joueur::en_vie</definition>
+        <argsstring></argsstring>
+        <name>en_vie</name>
+        <qualifiedname>Joueur::en_vie</qualifiedname>
+        <briefdescription>
+<para>Statut de vie du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="24" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a251a7192f61dae541f80cbff3914f208" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Joueur::nom</definition>
+        <argsstring></argsstring>
+        <name>nom</name>
+        <qualifiedname>Joueur::nom</qualifiedname>
+        <briefdescription>
+<para>Nom du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="25" column="16" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a8c2a335a4551dc3a094898b13fdac013" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::solde</definition>
+        <argsstring></argsstring>
+        <name>solde</name>
+        <qualifiedname>Joueur::solde</qualifiedname>
+        <briefdescription>
+<para>Solde actuel du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="26" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1aebf49af3ea0798da922cb3f81ddcd21c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Joueur::position</qualifiedname>
+        <briefdescription>
+<para>Position actuelle du joueur sur le plateau. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="27" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a081acd511877594cd9f3479f9d4098cb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::nb_cartes_liberte</definition>
+        <argsstring></argsstring>
+        <name>nb_cartes_liberte</name>
+        <qualifiedname>Joueur::nb_cartes_liberte</qualifiedname>
+        <briefdescription>
+<para>Nombre de cartes de liberté. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="28" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a77a2db2074d53ab42bba1012f1dfb30e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::nb_gares</definition>
+        <argsstring></argsstring>
+        <name>nb_gares</name>
+        <qualifiedname>Joueur::nb_gares</qualifiedname>
+        <briefdescription>
+<para>Nombre de gares possédées par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="29" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a6c23eb1be1a4773225a8c915eb77890d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::des</definition>
+        <argsstring></argsstring>
+        <name>des</name>
+        <qualifiedname>Joueur::des</qualifiedname>
+        <briefdescription>
+<para>Dernier résultat du lancement de dés. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="30" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a8cb35c69e426ed46740f916dffa9e1f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::nb_services</definition>
+        <argsstring></argsstring>
+        <name>nb_services</name>
+        <qualifiedname>Joueur::nb_services</qualifiedname>
+        <briefdescription>
+<para>Nombre de services publics possédés par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="31" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1a4139cbb9e2da2f0ac4938d0476ee7295" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Joueur::tours_en_prison</definition>
+        <argsstring></argsstring>
+        <name>tours_en_prison</name>
+        <qualifiedname>Joueur::tours_en_prison</qualifiedname>
+        <briefdescription>
+<para>Nombre de tours que le joueur a passé en prison. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="32" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_joueur_1ab1d26c780f7e53404da2f970664b8962" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Joueur::en_prison</definition>
+        <argsstring></argsstring>
+        <name>en_prison</name>
+        <qualifiedname>Joueur::en_prison</qualifiedname>
+        <briefdescription>
+<para>Si le joueur est en prison ou non. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="33" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_joueur_1add6c98be3020651d84f6d75ccc1d867e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Joueur::Joueur</definition>
+        <argsstring>()</argsstring>
+        <name>Joueur</name>
+        <qualifiedname>Joueur::Joueur</qualifiedname>
+        <briefdescription>
+<para>Constructeur par défaut. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur par défaut de la classe <ref refid="class_joueur" kindref="compound">Joueur</ref>.</para>
+<para>Initialise un joueur avec un solde de 1500 monos, la position 0, et aucune carte de liberté, gare ou service. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="41" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1aaec72189eb1ebee15310fde12fdd92bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Joueur::Joueur</definition>
+        <argsstring>(bool en_vie, string nom, int solde, int position, int nb_cartes_liberte, bool en_prison)</argsstring>
+        <name>Joueur</name>
+        <qualifiedname>Joueur::Joueur</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>en_vie</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>nom</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>solde</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb_cartes_liberte</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>en_prison</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur personnalisé pour créer un joueur avec des informations spécifiques. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructeur avec paramètres de la classe <ref refid="class_joueur" kindref="compound">Joueur</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>en_vie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statut de vie du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solde</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Solde initial du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position initiale du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_cartes_liberte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de cartes de liberté du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en_prison</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Si le joueur est en prison.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en_vie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statut actif ou non du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom du joueur. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>solde</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Montant initial d&apos;argent. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Position de départ sur le plateau. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nb_cartes_liberte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de cartes &quot;Libéré de prison&quot;. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>en_prison</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statut de prison initial. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="53" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a75a29f1394b56ddeaf46314c202d5526" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Joueur::geten_vie</definition>
+        <argsstring>() const</argsstring>
+        <name>geten_vie</name>
+        <qualifiedname>Joueur::geten_vie</qualifiedname>
+        <briefdescription>
+<para>Vérifie si le joueur est encore en vie. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> si le joueur est actif, sinon <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="56" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1acc4e54ce6b2c6fccb77cf2925c45ccd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::seten_vie</definition>
+        <argsstring>(bool en_vie)</argsstring>
+        <name>seten_vie</name>
+        <qualifiedname>Joueur::seten_vie</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>en_vie</declname>
+        </param>
+        <briefdescription>
+<para>Définit le statut de vie du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>en_vie</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>true</computeroutput> si le joueur est actif, sinon <computeroutput>false</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="57" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Joueur::getNom</definition>
+        <argsstring>() const</argsstring>
+        <name>getNom</name>
+        <qualifiedname>Joueur::getNom</qualifiedname>
+        <briefdescription>
+<para>Récupère le nom du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nom du joueur. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="58" column="16" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a1acb893d7ebb7fff056ce551beb6bbdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setNom</definition>
+        <argsstring>(string nom)</argsstring>
+        <name>setNom</name>
+        <qualifiedname>Joueur::setNom</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>nom</declname>
+        </param>
+        <briefdescription>
+<para>Modifie le nom du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouveau nom du joueur. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="59" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="277" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getSolde</definition>
+        <argsstring>() const</argsstring>
+        <name>getSolde</name>
+        <qualifiedname>Joueur::getSolde</qualifiedname>
+        <briefdescription>
+<para>Récupère le solde d&apos;argent du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Solde actuel. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="60" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="286" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1ad445de3638ad860f6adfe32dad6cc5d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setSolde</definition>
+        <argsstring>(int solde)</argsstring>
+        <name>setSolde</name>
+        <qualifiedname>Joueur::setSolde</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>solde</declname>
+        </param>
+        <briefdescription>
+<para>Définit le solde d&apos;argent du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>solde</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouveau montant. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="61" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="295" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1aade0a43d680d95069f964fba1962f880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::addSolde</definition>
+        <argsstring>(int add)</argsstring>
+        <name>addSolde</name>
+        <qualifiedname>Joueur::addSolde</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>add</declname>
+        </param>
+        <briefdescription>
+<para>Ajoute un montant au solde du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>add</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Montant à ajouter (peut être négatif). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="62" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a5a632164364e824b8a9f5733442716da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <qualifiedname>Joueur::getPosition</qualifiedname>
+        <briefdescription>
+<para>Récupère la position actuelle du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Position sur le plateau. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="63" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="313" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a54ae10845d9e54d5a89a12a9c743e29c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setPosition</definition>
+        <argsstring>(int position)</argsstring>
+        <name>setPosition</name>
+        <qualifiedname>Joueur::setPosition</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+<para>Modifie la position actuelle du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouvelle position. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="64" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="322" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getNbCartesLiberte</definition>
+        <argsstring>() const</argsstring>
+        <name>getNbCartesLiberte</name>
+        <qualifiedname>Joueur::getNbCartesLiberte</qualifiedname>
+        <briefdescription>
+<para>Récupère le nombre de cartes &quot;Libéré de prison&quot; du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nombre de cartes en possession. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="65" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="331" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a73d6debf2a2fc7824875513abeb94107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setNbCartesLiberte</definition>
+        <argsstring>(int nb_cartes_liberte)</argsstring>
+        <name>setNbCartesLiberte</name>
+        <qualifiedname>Joueur::setNbCartesLiberte</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nb_cartes_liberte</declname>
+        </param>
+        <briefdescription>
+<para>Modifie le nombre de cartes &quot;Libéré de prison&quot; du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb_cartes_liberte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouveau nombre de cartes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="66" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="340" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Joueur::getEnPrison</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnPrison</name>
+        <qualifiedname>Joueur::getEnPrison</qualifiedname>
+        <briefdescription>
+<para>Vérifie si le joueur est en prison. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><computeroutput>true</computeroutput> si le joueur est en prison, sinon <computeroutput>false</computeroutput>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="67" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="349" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setEnPrison</definition>
+        <argsstring>(bool en_prison)</argsstring>
+        <name>setEnPrison</name>
+        <qualifiedname>Joueur::setEnPrison</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>en_prison</declname>
+        </param>
+        <briefdescription>
+<para>Modifie le statut de prison du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>en_prison</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>true</computeroutput> pour mettre en prison, sinon <computeroutput>false</computeroutput>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="68" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1adbac1a5f3f4616918f7e672f3a4498ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::jouerTour</definition>
+        <argsstring>(Plateau &amp;plateau, vector&lt; Joueur &gt; &amp;joueurs)</argsstring>
+        <name>jouerTour</name>
+        <qualifiedname>Joueur::jouerTour</qualifiedname>
+        <param>
+          <type><ref refid="class_plateau" kindref="compound">Plateau</ref> &amp;</type>
+          <declname>plateau</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_joueur" kindref="compound">Joueur</ref> &gt; &amp;</type>
+          <declname>joueurs</declname>
+        </param>
+        <briefdescription>
+<para>Gère le tour de jeu du joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Inclut le lancer de dés, la gestion des doubles, le traitement des cases, et les mécanismes de prison. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>plateau</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Référence au plateau de jeu. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>joueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Liste des joueurs dans la partie. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="69" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="52" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a2ff8afb7e5335aa7d0a537b961125d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::construire</definition>
+        <argsstring>(Case &amp;Case)</argsstring>
+        <name>construire</name>
+        <qualifiedname>Joueur::construire</qualifiedname>
+        <param>
+          <type><ref refid="class_case" kindref="compound">Case</ref> &amp;</type>
+          <declname>Case</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="70" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a280d72447f08cb64941b9035f9a5bc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int * Joueur::lancer_des</definition>
+        <argsstring>(void)</argsstring>
+        <name>lancer_des</name>
+        <qualifiedname>Joueur::lancer_des</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="71" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a749d15543f359ee238fe0813a8c6722f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getNbGares</definition>
+        <argsstring>() const</argsstring>
+        <name>getNbGares</name>
+        <qualifiedname>Joueur::getNbGares</qualifiedname>
+        <briefdescription>
+<para>Récupère le nombre de gares possédées par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nombre de gares possédées. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="72" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a34d162886e24dbd0b5614ec10d0dde47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setNbGares</definition>
+        <argsstring>(int nb_gares)</argsstring>
+        <name>setNbGares</name>
+        <qualifiedname>Joueur::setNbGares</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nb_gares</declname>
+        </param>
+        <briefdescription>
+<para>Définit le nombre de gares possédées par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb_gares</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de gares. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="73" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="241" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a380d5a67a06d9d8ce826b461654b5143" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getDes</definition>
+        <argsstring>() const</argsstring>
+        <name>getDes</name>
+        <qualifiedname>Joueur::getDes</qualifiedname>
+        <briefdescription>
+<para>Accède au dernier résultat des dés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Résultat du lancer de dés. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="74" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a2f6a10a2f3c9d8dbdb9fd5dab89c3e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setDes</definition>
+        <argsstring>(int des)</argsstring>
+        <name>setDes</name>
+        <qualifiedname>Joueur::setDes</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>des</declname>
+        </param>
+        <briefdescription>
+<para>Définit le dernier résultat des dés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>des</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Résultat à enregistrer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="75" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1aa588c5de9f5041a9deb5bdfa96a66b2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getNbServices</definition>
+        <argsstring>() const</argsstring>
+        <name>getNbServices</name>
+        <qualifiedname>Joueur::getNbServices</qualifiedname>
+        <briefdescription>
+<para>Récupère le nombre de services publics possédés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nombre de services publics. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="76" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a9fb5dec287d41c6b611e147d0c8f2401" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setNbServices</definition>
+        <argsstring>(int nb_services)</argsstring>
+        <name>setNbServices</name>
+        <qualifiedname>Joueur::setNbServices</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nb_services</declname>
+        </param>
+        <briefdescription>
+<para>Définit le nombre de services publics possédés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nb_services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de services publics. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="77" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a065af39bd02030ffb1836900110c08bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::incrementNbServices</definition>
+        <argsstring>()</argsstring>
+        <name>incrementNbServices</name>
+        <qualifiedname>Joueur::incrementNbServices</qualifiedname>
+        <briefdescription>
+<para>Incrémente le compteur des services publics possédés. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="78" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="223" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Joueur::getToursEnPrison</definition>
+        <argsstring>() const</argsstring>
+        <name>getToursEnPrison</name>
+        <qualifiedname>Joueur::getToursEnPrison</qualifiedname>
+        <briefdescription>
+<para>Récupère le nombre de tours passés en prison par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nombre de tours en prison. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="79" column="13" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="367" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1a9c46e4b685e6075419b37f1da025bbf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::setToursEnPrison</definition>
+        <argsstring>(int tours)</argsstring>
+        <name>setToursEnPrison</name>
+        <qualifiedname>Joueur::setToursEnPrison</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tours</declname>
+        </param>
+        <briefdescription>
+<para>Définit le nombre de tours passés en prison par le joueur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tours</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nouveau nombre de tours. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="80" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="376" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="class_joueur_1aa68fb11bd7d26dc3ca518c0b4aca7e96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Joueur::incrementerToursEnPrison</definition>
+        <argsstring>()</argsstring>
+        <name>incrementerToursEnPrison</name>
+        <qualifiedname>Joueur::incrementerToursEnPrison</qualifiedname>
+        <briefdescription>
+<para>Incrémente le compteur de tours en prison. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="81" column="14" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp" bodystart="384" bodyend="387"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Représente un joueur dans le jeu Monopoly. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Chaque joueur possède des attributs tels que le nom, le solde, la position sur le plateau, les cartes de liberté, et la capacité à acheter des propriétés comme les terrains, les gares, etc. </para>
+    </detaileddescription>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" line="22" column="1" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.hpp" bodystart="22" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_joueur_1aade0a43d680d95069f964fba1962f880" prot="public" virt="non-virtual"><scope>Joueur</scope><name>addSolde</name></member>
+      <member refid="class_joueur_1a2ff8afb7e5335aa7d0a537b961125d23" prot="public" virt="non-virtual"><scope>Joueur</scope><name>construire</name></member>
+      <member refid="class_joueur_1a6c23eb1be1a4773225a8c915eb77890d" prot="private" virt="non-virtual"><scope>Joueur</scope><name>des</name></member>
+      <member refid="class_joueur_1ab1d26c780f7e53404da2f970664b8962" prot="private" virt="non-virtual"><scope>Joueur</scope><name>en_prison</name></member>
+      <member refid="class_joueur_1a1f84d76b36659524549ac7d237503141" prot="private" virt="non-virtual"><scope>Joueur</scope><name>en_vie</name></member>
+      <member refid="class_joueur_1a380d5a67a06d9d8ce826b461654b5143" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getDes</name></member>
+      <member refid="class_joueur_1a75a29f1394b56ddeaf46314c202d5526" prot="public" virt="non-virtual"><scope>Joueur</scope><name>geten_vie</name></member>
+      <member refid="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getEnPrison</name></member>
+      <member refid="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getNbCartesLiberte</name></member>
+      <member refid="class_joueur_1a749d15543f359ee238fe0813a8c6722f" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getNbGares</name></member>
+      <member refid="class_joueur_1aa588c5de9f5041a9deb5bdfa96a66b2b" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getNbServices</name></member>
+      <member refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getNom</name></member>
+      <member refid="class_joueur_1a5a632164364e824b8a9f5733442716da" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getPosition</name></member>
+      <member refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getSolde</name></member>
+      <member refid="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" prot="public" virt="non-virtual"><scope>Joueur</scope><name>getToursEnPrison</name></member>
+      <member refid="class_joueur_1aa68fb11bd7d26dc3ca518c0b4aca7e96" prot="public" virt="non-virtual"><scope>Joueur</scope><name>incrementerToursEnPrison</name></member>
+      <member refid="class_joueur_1a065af39bd02030ffb1836900110c08bb" prot="public" virt="non-virtual"><scope>Joueur</scope><name>incrementNbServices</name></member>
+      <member refid="class_joueur_1adbac1a5f3f4616918f7e672f3a4498ae" prot="public" virt="non-virtual"><scope>Joueur</scope><name>jouerTour</name></member>
+      <member refid="class_joueur_1add6c98be3020651d84f6d75ccc1d867e" prot="public" virt="non-virtual"><scope>Joueur</scope><name>Joueur</name></member>
+      <member refid="class_joueur_1aaec72189eb1ebee15310fde12fdd92bb" prot="public" virt="non-virtual"><scope>Joueur</scope><name>Joueur</name></member>
+      <member refid="class_joueur_1a280d72447f08cb64941b9035f9a5bc67" prot="public" virt="non-virtual"><scope>Joueur</scope><name>lancer_des</name></member>
+      <member refid="class_joueur_1a081acd511877594cd9f3479f9d4098cb" prot="private" virt="non-virtual"><scope>Joueur</scope><name>nb_cartes_liberte</name></member>
+      <member refid="class_joueur_1a77a2db2074d53ab42bba1012f1dfb30e" prot="private" virt="non-virtual"><scope>Joueur</scope><name>nb_gares</name></member>
+      <member refid="class_joueur_1a8cb35c69e426ed46740f916dffa9e1f9" prot="private" virt="non-virtual"><scope>Joueur</scope><name>nb_services</name></member>
+      <member refid="class_joueur_1a251a7192f61dae541f80cbff3914f208" prot="private" virt="non-virtual"><scope>Joueur</scope><name>nom</name></member>
+      <member refid="class_joueur_1aebf49af3ea0798da922cb3f81ddcd21c" prot="private" virt="non-virtual"><scope>Joueur</scope><name>position</name></member>
+      <member refid="class_joueur_1a2f6a10a2f3c9d8dbdb9fd5dab89c3e31" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setDes</name></member>
+      <member refid="class_joueur_1acc4e54ce6b2c6fccb77cf2925c45ccd4" prot="public" virt="non-virtual"><scope>Joueur</scope><name>seten_vie</name></member>
+      <member refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setEnPrison</name></member>
+      <member refid="class_joueur_1a73d6debf2a2fc7824875513abeb94107" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setNbCartesLiberte</name></member>
+      <member refid="class_joueur_1a34d162886e24dbd0b5614ec10d0dde47" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setNbGares</name></member>
+      <member refid="class_joueur_1a9fb5dec287d41c6b611e147d0c8f2401" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setNbServices</name></member>
+      <member refid="class_joueur_1a1acb893d7ebb7fff056ce551beb6bbdb" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setNom</name></member>
+      <member refid="class_joueur_1a54ae10845d9e54d5a89a12a9c743e29c" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setPosition</name></member>
+      <member refid="class_joueur_1ad445de3638ad860f6adfe32dad6cc5d2" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setSolde</name></member>
+      <member refid="class_joueur_1a9c46e4b685e6075419b37f1da025bbf1" prot="public" virt="non-virtual"><scope>Joueur</scope><name>setToursEnPrison</name></member>
+      <member refid="class_joueur_1a8c2a335a4551dc3a094898b13fdac013" prot="private" virt="non-virtual"><scope>Joueur</scope><name>solde</name></member>
+      <member refid="class_joueur_1a4139cbb9e2da2f0ac4938d0476ee7295" prot="private" virt="non-virtual"><scope>Joueur</scope><name>tours_en_prison</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

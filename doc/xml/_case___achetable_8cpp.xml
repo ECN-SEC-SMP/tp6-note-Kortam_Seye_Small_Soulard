@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="_case___achetable_8cpp" kind="file" language="C++">
+    <compoundname>Case_Achetable.cpp</compoundname>
+    <includes refid="case_8hpp" local="yes">Case.hpp</includes>
+    <includes refid="_case___achetable_8hpp" local="yes">Case_Achetable.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp</label>
+        <link refid="_case___achetable_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Case_Achetable.hpp</label>
+        <link refid="_case___achetable_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_case___achetable_8cpp_1a51abf6fba33aab30ca748867b1794c14" prot="public" static="no">
+        <name>Case_Achetable_hpp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" line="2" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>Case_Achetable_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Case_Achetable_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Case.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Case_Achetable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" kindref="member">Case_Achetable::Case_Achetable</ref>()<sp/>:<sp/>proprio(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/>prix(0),<sp/>hypo(false)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" kindref="member">Case_Achetable::Case_Achetable</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>proprio,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prix,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hypo)<sp/>:<sp/>proprio(proprio),<sp/>prix(prix),<sp/>hypo(hypo)<sp/>{}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="class_case___achetable_1a88c5e8eb8a59ff2d14418ffe7490d38a" kindref="member">Case_Achetable::~Case_Achetable</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" kindref="member">Case_Achetable::setProprio</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>_proprio)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>proprio<sp/>=<sp/>_proprio;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">Case_Achetable::getProprio</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>proprio;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1a2598cf4698152794e06e0d210a19f238" kindref="member">Case_Achetable::setPrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_prix)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>prix<sp/>=<sp/>_prix;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">Case_Achetable::getPrix</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>prix;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1ac7b3dce6f4b7772a0a05a8172badaa01" kindref="member">Case_Achetable::setHypo</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_hypo)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>hypo<sp/>=<sp/>_hypo;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_case___achetable_1ab6bbb46ccdd358129cd87652e8551f82" kindref="member">Case_Achetable::getHypo</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hypo;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp"/>
+  </compounddef>
+</doxygen>

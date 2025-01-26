@@ -1,0 +1,454 @@
+\doxysection{Joueur Class Reference}
+\hypertarget{class_joueur}{}\label{class_joueur}\index{Joueur@{Joueur}}
+
+
+Représente un joueur dans le jeu Monopoly.  
+
+
+
+
+{\ttfamily \#include $<$joueur.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_joueur_add6c98be3020651d84f6d75ccc1d867e}{Joueur}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_joueur_aaec72189eb1ebee15310fde12fdd92bb}{Joueur}} (bool en\+\_\+vie, string nom, int solde, int position, int nb\+\_\+cartes\+\_\+liberte, bool en\+\_\+prison)
+\begin{DoxyCompactList}\small\item\em Constructeur personnalisé pour créer un joueur avec des informations spécifiques. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_joueur_a75a29f1394b56ddeaf46314c202d5526}{geten\+\_\+vie}} () const
+\begin{DoxyCompactList}\small\item\em Vérifie si le joueur est encore en vie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_acc4e54ce6b2c6fccb77cf2925c45ccd4}{seten\+\_\+vie}} (bool en\+\_\+vie)
+\begin{DoxyCompactList}\small\item\em Définit le statut de vie du joueur. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_joueur_aa2ff1bfeeb5e1f631750d70c06b8c6d0}{get\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le nom du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a1acb893d7ebb7fff056ce551beb6bbdb}{set\+Nom}} (string nom)
+\begin{DoxyCompactList}\small\item\em Modifie le nom du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_a690a8037f06c6ed9982a945c65ab00aa}{get\+Solde}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le solde d\textquotesingle{}argent du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_ad445de3638ad860f6adfe32dad6cc5d2}{set\+Solde}} (int solde)
+\begin{DoxyCompactList}\small\item\em Définit le solde d\textquotesingle{}argent du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_aade0a43d680d95069f964fba1962f880}{add\+Solde}} (int add)
+\begin{DoxyCompactList}\small\item\em Ajoute un montant au solde du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_a5a632164364e824b8a9f5733442716da}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Récupère la position actuelle du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a54ae10845d9e54d5a89a12a9c743e29c}{set\+Position}} (int position)
+\begin{DoxyCompactList}\small\item\em Modifie la position actuelle du joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_a7631e7fc9f02a8b36e86c049ff0f7e43}{get\+Nb\+Cartes\+Liberte}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de cartes "{}\+Libéré de prison"{} du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a73d6debf2a2fc7824875513abeb94107}{set\+Nb\+Cartes\+Liberte}} (int nb\+\_\+cartes\+\_\+liberte)
+\begin{DoxyCompactList}\small\item\em Modifie le nombre de cartes "{}\+Libéré de prison"{} du joueur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_joueur_a6b643b3a2a2cec0b4949188cd09865eb}{get\+En\+Prison}} () const
+\begin{DoxyCompactList}\small\item\em Vérifie si le joueur est en prison. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a9b8c907f0b458e4de47e650f2ae5a48d}{set\+En\+Prison}} (bool en\+\_\+prison)
+\begin{DoxyCompactList}\small\item\em Modifie le statut de prison du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_adbac1a5f3f4616918f7e672f3a4498ae}{jouer\+Tour}} (\mbox{\hyperlink{class_plateau}{Plateau}} \&plateau, vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&joueurs)
+\begin{DoxyCompactList}\small\item\em Gère le tour de jeu du joueur. \end{DoxyCompactList}\item 
+\Hypertarget{class_joueur_a2ff8afb7e5335aa7d0a537b961125d23}\label{class_joueur_a2ff8afb7e5335aa7d0a537b961125d23} 
+void {\bfseries construire} (\mbox{\hyperlink{class_case}{Case}} \&\mbox{\hyperlink{class_case}{Case}})
+\item 
+\Hypertarget{class_joueur_a280d72447f08cb64941b9035f9a5bc67}\label{class_joueur_a280d72447f08cb64941b9035f9a5bc67} 
+int \texorpdfstring{$\ast$}{*} {\bfseries lancer\+\_\+des} (void)
+\item 
+int \mbox{\hyperlink{class_joueur_a749d15543f359ee238fe0813a8c6722f}{get\+Nb\+Gares}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de gares possédées par le joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a34d162886e24dbd0b5614ec10d0dde47}{set\+Nb\+Gares}} (int nb\+\_\+gares)
+\begin{DoxyCompactList}\small\item\em Définit le nombre de gares possédées par le joueur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_a380d5a67a06d9d8ce826b461654b5143}{get\+Des}} () const
+\begin{DoxyCompactList}\small\item\em Accède au dernier résultat des dés. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a2f6a10a2f3c9d8dbdb9fd5dab89c3e31}{set\+Des}} (int des)
+\begin{DoxyCompactList}\small\item\em Définit le dernier résultat des dés. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_aa588c5de9f5041a9deb5bdfa96a66b2b}{get\+Nb\+Services}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de services publics possédés. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a9fb5dec287d41c6b611e147d0c8f2401}{set\+Nb\+Services}} (int nb\+\_\+services)
+\begin{DoxyCompactList}\small\item\em Définit le nombre de services publics possédés. \end{DoxyCompactList}\item 
+\Hypertarget{class_joueur_a065af39bd02030ffb1836900110c08bb}\label{class_joueur_a065af39bd02030ffb1836900110c08bb} 
+void {\bfseries increment\+Nb\+Services} ()
+\begin{DoxyCompactList}\small\item\em Incrémente le compteur des services publics possédés. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_joueur_a84fe9350b77f9fef62f8d7eb23212a10}{get\+Tours\+En\+Prison}} () const
+\begin{DoxyCompactList}\small\item\em Récupère le nombre de tours passés en prison par le joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_joueur_a9c46e4b685e6075419b37f1da025bbf1}{set\+Tours\+En\+Prison}} (int tours)
+\begin{DoxyCompactList}\small\item\em Définit le nombre de tours passés en prison par le joueur. \end{DoxyCompactList}\item 
+\Hypertarget{class_joueur_aa68fb11bd7d26dc3ca518c0b4aca7e96}\label{class_joueur_aa68fb11bd7d26dc3ca518c0b4aca7e96} 
+void {\bfseries incrementer\+Tours\+En\+Prison} ()
+\begin{DoxyCompactList}\small\item\em Incrémente le compteur de tours en prison. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente un joueur dans le jeu Monopoly. 
+
+Chaque joueur possède des attributs tels que le nom, le solde, la position sur le plateau, les cartes de liberté, et la capacité à acheter des propriétés comme les terrains, les gares, etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_joueur_add6c98be3020651d84f6d75ccc1d867e}\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{Joueur()}{Joueur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_joueur_add6c98be3020651d84f6d75ccc1d867e} 
+Joueur\+::\+Joueur (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut. 
+
+Constructeur par défaut de la classe \doxylink{class_joueur}{Joueur}.
+
+Initialise un joueur avec un solde de 1500 monos, la position 0, et aucune carte de liberté, gare ou service. \Hypertarget{class_joueur_aaec72189eb1ebee15310fde12fdd92bb}\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{Joueur()}{Joueur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_joueur_aaec72189eb1ebee15310fde12fdd92bb} 
+Joueur\+::\+Joueur (\begin{DoxyParamCaption}\item[{bool}]{en\+\_\+vie}{, }\item[{string}]{nom}{, }\item[{int}]{solde}{, }\item[{int}]{position}{, }\item[{int}]{nb\+\_\+cartes\+\_\+liberte}{, }\item[{bool}]{en\+\_\+prison}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur personnalisé pour créer un joueur avec des informations spécifiques. 
+
+Constructeur avec paramètres de la classe \doxylink{class_joueur}{Joueur}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em en\+\_\+vie} & Statut de vie du joueur. \\
+\hline
+{\em nom} & Nom du joueur. \\
+\hline
+{\em solde} & Solde initial du joueur. \\
+\hline
+{\em position} & Position initiale du joueur. \\
+\hline
+{\em nb\+\_\+cartes\+\_\+liberte} & Nombre de cartes de liberté du joueur. \\
+\hline
+{\em en\+\_\+prison} & Si le joueur est en prison.\\
+\hline
+{\em en\+\_\+vie} & Statut actif ou non du joueur. \\
+\hline
+{\em nom} & Nom du joueur. \\
+\hline
+{\em solde} & Montant initial d\textquotesingle{}argent. \\
+\hline
+{\em position} & Position de départ sur le plateau. \\
+\hline
+{\em nb\+\_\+cartes\+\_\+liberte} & Nombre de cartes "{}\+Libéré de prison"{}. \\
+\hline
+{\em en\+\_\+prison} & Statut de prison initial. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_joueur_aade0a43d680d95069f964fba1962f880}\index{Joueur@{Joueur}!addSolde@{addSolde}}
+\index{addSolde@{addSolde}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{addSolde()}{addSolde()}}
+{\footnotesize\ttfamily \label{class_joueur_aade0a43d680d95069f964fba1962f880} 
+void Joueur\+::add\+Solde (\begin{DoxyParamCaption}\item[{int}]{add}{}\end{DoxyParamCaption})}
+
+
+
+Ajoute un montant au solde du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em add} & Montant à ajouter (peut être négatif). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a380d5a67a06d9d8ce826b461654b5143}\index{Joueur@{Joueur}!getDes@{getDes}}
+\index{getDes@{getDes}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getDes()}{getDes()}}
+{\footnotesize\ttfamily \label{class_joueur_a380d5a67a06d9d8ce826b461654b5143} 
+int Joueur\+::get\+Des (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accède au dernier résultat des dés. 
+
+\begin{DoxyReturn}{Returns}
+Résultat du lancer de dés. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a75a29f1394b56ddeaf46314c202d5526}\index{Joueur@{Joueur}!geten\_vie@{geten\_vie}}
+\index{geten\_vie@{geten\_vie}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{geten\_vie()}{geten\_vie()}}
+{\footnotesize\ttfamily \label{class_joueur_a75a29f1394b56ddeaf46314c202d5526} 
+bool Joueur\+::geten\+\_\+vie (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Vérifie si le joueur est encore en vie. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si le joueur est actif, sinon {\ttfamily false}. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a6b643b3a2a2cec0b4949188cd09865eb}\index{Joueur@{Joueur}!getEnPrison@{getEnPrison}}
+\index{getEnPrison@{getEnPrison}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getEnPrison()}{getEnPrison()}}
+{\footnotesize\ttfamily \label{class_joueur_a6b643b3a2a2cec0b4949188cd09865eb} 
+bool Joueur\+::get\+En\+Prison (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Vérifie si le joueur est en prison. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si le joueur est en prison, sinon {\ttfamily false}. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a7631e7fc9f02a8b36e86c049ff0f7e43}\index{Joueur@{Joueur}!getNbCartesLiberte@{getNbCartesLiberte}}
+\index{getNbCartesLiberte@{getNbCartesLiberte}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getNbCartesLiberte()}{getNbCartesLiberte()}}
+{\footnotesize\ttfamily \label{class_joueur_a7631e7fc9f02a8b36e86c049ff0f7e43} 
+int Joueur\+::get\+Nb\+Cartes\+Liberte (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le nombre de cartes "{}\+Libéré de prison"{} du joueur. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de cartes en possession. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a749d15543f359ee238fe0813a8c6722f}\index{Joueur@{Joueur}!getNbGares@{getNbGares}}
+\index{getNbGares@{getNbGares}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getNbGares()}{getNbGares()}}
+{\footnotesize\ttfamily \label{class_joueur_a749d15543f359ee238fe0813a8c6722f} 
+int Joueur\+::get\+Nb\+Gares (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le nombre de gares possédées par le joueur. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de gares possédées. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_aa588c5de9f5041a9deb5bdfa96a66b2b}\index{Joueur@{Joueur}!getNbServices@{getNbServices}}
+\index{getNbServices@{getNbServices}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getNbServices()}{getNbServices()}}
+{\footnotesize\ttfamily \label{class_joueur_aa588c5de9f5041a9deb5bdfa96a66b2b} 
+int Joueur\+::get\+Nb\+Services (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le nombre de services publics possédés. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de services publics. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_aa2ff1bfeeb5e1f631750d70c06b8c6d0}\index{Joueur@{Joueur}!getNom@{getNom}}
+\index{getNom@{getNom}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getNom()}{getNom()}}
+{\footnotesize\ttfamily \label{class_joueur_aa2ff1bfeeb5e1f631750d70c06b8c6d0} 
+string Joueur\+::get\+Nom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le nom du joueur. 
+
+\begin{DoxyReturn}{Returns}
+Nom du joueur. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a5a632164364e824b8a9f5733442716da}\index{Joueur@{Joueur}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily \label{class_joueur_a5a632164364e824b8a9f5733442716da} 
+int Joueur\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère la position actuelle du joueur. 
+
+\begin{DoxyReturn}{Returns}
+Position sur le plateau. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a690a8037f06c6ed9982a945c65ab00aa}\index{Joueur@{Joueur}!getSolde@{getSolde}}
+\index{getSolde@{getSolde}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getSolde()}{getSolde()}}
+{\footnotesize\ttfamily \label{class_joueur_a690a8037f06c6ed9982a945c65ab00aa} 
+int Joueur\+::get\+Solde (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le solde d\textquotesingle{}argent du joueur. 
+
+\begin{DoxyReturn}{Returns}
+Solde actuel. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_a84fe9350b77f9fef62f8d7eb23212a10}\index{Joueur@{Joueur}!getToursEnPrison@{getToursEnPrison}}
+\index{getToursEnPrison@{getToursEnPrison}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getToursEnPrison()}{getToursEnPrison()}}
+{\footnotesize\ttfamily \label{class_joueur_a84fe9350b77f9fef62f8d7eb23212a10} 
+int Joueur\+::get\+Tours\+En\+Prison (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Récupère le nombre de tours passés en prison par le joueur. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de tours en prison. 
+\end{DoxyReturn}
+\Hypertarget{class_joueur_adbac1a5f3f4616918f7e672f3a4498ae}\index{Joueur@{Joueur}!jouerTour@{jouerTour}}
+\index{jouerTour@{jouerTour}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{jouerTour()}{jouerTour()}}
+{\footnotesize\ttfamily \label{class_joueur_adbac1a5f3f4616918f7e672f3a4498ae} 
+void Joueur\+::jouer\+Tour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_plateau}{Plateau}} \&}]{plateau}{, }\item[{vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&}]{joueurs}{}\end{DoxyParamCaption})}
+
+
+
+Gère le tour de jeu du joueur. 
+
+Inclut le lancer de dés, la gestion des doubles, le traitement des cases, et les mécanismes de prison. 
+\begin{DoxyParams}{Parameters}
+{\em plateau} & Référence au plateau de jeu. \\
+\hline
+{\em joueurs} & Liste des joueurs dans la partie. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a2f6a10a2f3c9d8dbdb9fd5dab89c3e31}\index{Joueur@{Joueur}!setDes@{setDes}}
+\index{setDes@{setDes}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setDes()}{setDes()}}
+{\footnotesize\ttfamily \label{class_joueur_a2f6a10a2f3c9d8dbdb9fd5dab89c3e31} 
+void Joueur\+::set\+Des (\begin{DoxyParamCaption}\item[{int}]{des}{}\end{DoxyParamCaption})}
+
+
+
+Définit le dernier résultat des dés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em des} & Résultat à enregistrer. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_acc4e54ce6b2c6fccb77cf2925c45ccd4}\index{Joueur@{Joueur}!seten\_vie@{seten\_vie}}
+\index{seten\_vie@{seten\_vie}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{seten\_vie()}{seten\_vie()}}
+{\footnotesize\ttfamily \label{class_joueur_acc4e54ce6b2c6fccb77cf2925c45ccd4} 
+void Joueur\+::seten\+\_\+vie (\begin{DoxyParamCaption}\item[{bool}]{en\+\_\+vie}{}\end{DoxyParamCaption})}
+
+
+
+Définit le statut de vie du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en\+\_\+vie} & {\ttfamily true} si le joueur est actif, sinon {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a9b8c907f0b458e4de47e650f2ae5a48d}\index{Joueur@{Joueur}!setEnPrison@{setEnPrison}}
+\index{setEnPrison@{setEnPrison}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setEnPrison()}{setEnPrison()}}
+{\footnotesize\ttfamily \label{class_joueur_a9b8c907f0b458e4de47e650f2ae5a48d} 
+void Joueur\+::set\+En\+Prison (\begin{DoxyParamCaption}\item[{bool}]{en\+\_\+prison}{}\end{DoxyParamCaption})}
+
+
+
+Modifie le statut de prison du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en\+\_\+prison} & {\ttfamily true} pour mettre en prison, sinon {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a73d6debf2a2fc7824875513abeb94107}\index{Joueur@{Joueur}!setNbCartesLiberte@{setNbCartesLiberte}}
+\index{setNbCartesLiberte@{setNbCartesLiberte}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setNbCartesLiberte()}{setNbCartesLiberte()}}
+{\footnotesize\ttfamily \label{class_joueur_a73d6debf2a2fc7824875513abeb94107} 
+void Joueur\+::set\+Nb\+Cartes\+Liberte (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+cartes\+\_\+liberte}{}\end{DoxyParamCaption})}
+
+
+
+Modifie le nombre de cartes "{}\+Libéré de prison"{} du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+cartes\+\_\+liberte} & Nouveau nombre de cartes. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a34d162886e24dbd0b5614ec10d0dde47}\index{Joueur@{Joueur}!setNbGares@{setNbGares}}
+\index{setNbGares@{setNbGares}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setNbGares()}{setNbGares()}}
+{\footnotesize\ttfamily \label{class_joueur_a34d162886e24dbd0b5614ec10d0dde47} 
+void Joueur\+::set\+Nb\+Gares (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+gares}{}\end{DoxyParamCaption})}
+
+
+
+Définit le nombre de gares possédées par le joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+gares} & Nombre de gares. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a9fb5dec287d41c6b611e147d0c8f2401}\index{Joueur@{Joueur}!setNbServices@{setNbServices}}
+\index{setNbServices@{setNbServices}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setNbServices()}{setNbServices()}}
+{\footnotesize\ttfamily \label{class_joueur_a9fb5dec287d41c6b611e147d0c8f2401} 
+void Joueur\+::set\+Nb\+Services (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+services}{}\end{DoxyParamCaption})}
+
+
+
+Définit le nombre de services publics possédés. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+services} & Nombre de services publics. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a1acb893d7ebb7fff056ce551beb6bbdb}\index{Joueur@{Joueur}!setNom@{setNom}}
+\index{setNom@{setNom}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setNom()}{setNom()}}
+{\footnotesize\ttfamily \label{class_joueur_a1acb893d7ebb7fff056ce551beb6bbdb} 
+void Joueur\+::set\+Nom (\begin{DoxyParamCaption}\item[{string}]{nom}{}\end{DoxyParamCaption})}
+
+
+
+Modifie le nom du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nouveau nom du joueur. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a54ae10845d9e54d5a89a12a9c743e29c}\index{Joueur@{Joueur}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily \label{class_joueur_a54ae10845d9e54d5a89a12a9c743e29c} 
+void Joueur\+::set\+Position (\begin{DoxyParamCaption}\item[{int}]{position}{}\end{DoxyParamCaption})}
+
+
+
+Modifie la position actuelle du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Nouvelle position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_ad445de3638ad860f6adfe32dad6cc5d2}\index{Joueur@{Joueur}!setSolde@{setSolde}}
+\index{setSolde@{setSolde}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setSolde()}{setSolde()}}
+{\footnotesize\ttfamily \label{class_joueur_ad445de3638ad860f6adfe32dad6cc5d2} 
+void Joueur\+::set\+Solde (\begin{DoxyParamCaption}\item[{int}]{solde}{}\end{DoxyParamCaption})}
+
+
+
+Définit le solde d\textquotesingle{}argent du joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solde} & Nouveau montant. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_joueur_a9c46e4b685e6075419b37f1da025bbf1}\index{Joueur@{Joueur}!setToursEnPrison@{setToursEnPrison}}
+\index{setToursEnPrison@{setToursEnPrison}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setToursEnPrison()}{setToursEnPrison()}}
+{\footnotesize\ttfamily \label{class_joueur_a9c46e4b685e6075419b37f1da025bbf1} 
+void Joueur\+::set\+Tours\+En\+Prison (\begin{DoxyParamCaption}\item[{int}]{tours}{}\end{DoxyParamCaption})}
+
+
+
+Définit le nombre de tours passés en prison par le joueur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tours} & Nouveau nombre de tours. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/joueur.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/joueur.\+cpp\end{DoxyCompactItemize}

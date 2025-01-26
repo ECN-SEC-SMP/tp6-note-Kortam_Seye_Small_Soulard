@@ -1,0 +1,31 @@
+\doxysection{plateau.\+hpp}
+\hypertarget{plateau_8hpp_source}{}\label{plateau_8hpp_source}\index{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/plateau.hpp@{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/plateau.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLATEAU\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLATEAU\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}case.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}joueur.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_plateau}{Plateau}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_plateau_ab93fca97a3f61a3eec2ba0ce8a4081f3}{initialiser}}(\textcolor{keyword}{const}\ vector<Joueur>\&\ joueurs);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_plateau_abc9de7ff5a1211e5e806d69938c36566}{commencerJeu}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_case}{Case}}*\ \mbox{\hyperlink{class_plateau_a4b3bc13270213c58443f003c2663a181}{getCase}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00041\ \ \ \ \ vector<Joueur>\ joueurs;\ }
+\DoxyCodeLine{00042\ \ \ \ \ vector<unique\_ptr<Case>>\ cases;\ }
+\DoxyCodeLine{00043\ \};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLATEAU\_H}}
+
+\end{DoxyCode}

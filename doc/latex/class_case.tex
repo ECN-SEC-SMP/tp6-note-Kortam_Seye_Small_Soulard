@@ -1,0 +1,149 @@
+\doxysection{Case Class Reference}
+\hypertarget{class_case}{}\label{class_case}\index{Case@{Case}}
+
+
+Classe de base représentant une case du plateau de jeu.  
+
+
+
+
+{\ttfamily \#include $<$case.\+hpp$>$}
+
+Inheritance diagram for Case\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_case}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_aa491174fccfdd928ed30260fe6f2ac87}{Case}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+\Hypertarget{class_case_ae9e95cbd69104353bd46fe5c2207e1b6}\label{class_case_ae9e95cbd69104353bd46fe5c2207e1b6} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Case} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel par défaut. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case_a27b787303f627e1b117c9343adc34ae9}{get\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nom de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a023dc5283201bf21a2fcbccd29879382}{set\+Nom}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le nom de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_a84969aa8e4c972d4603e643590a9ca71}{get\+Numero}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a1249be4efee83cf0fb38f78a541926a8}{set\+Numero}} (int \mbox{\hyperlink{class_case_a8718a616ffd1eaaee3853457509e251c}{numero}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_case_a89f24d04d3337ac40211b6b015b25fdf}\label{class_case_a89f24d04d3337ac40211b6b015b25fdf} 
+string {\bfseries nom}
+\begin{DoxyCompactList}\small\item\em Nom de la case. \end{DoxyCompactList}\item 
+\Hypertarget{class_case_a8718a616ffd1eaaee3853457509e251c}\label{class_case_a8718a616ffd1eaaee3853457509e251c} 
+int {\bfseries numero}
+\begin{DoxyCompactList}\small\item\em Numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de base représentant une case du plateau de jeu. 
+
+Cette classe est la classe mère pour toutes les cases (achetables ou non) du plateau. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_case_aa491174fccfdd928ed30260fe6f2ac87}\index{Case@{Case}!Case@{Case}}
+\index{Case@{Case}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_case_aa491174fccfdd928ed30260fe6f2ac87} 
+Case\+::\+Case (\begin{DoxyParamCaption}\item[{const string \&}]{nom}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructeur paramétré. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom de la case.\\
+\hline
+\end{DoxyParams}
+Initialise une case avec un nom spécifique.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Nom de la case. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_a14237e17aab1829965adab76b747db6c}\index{Case@{Case}!Case@{Case}}
+\index{Case@{Case}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{Case()}{Case()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_case_a14237e17aab1829965adab76b747db6c} 
+Case\+::\+Case (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut. 
+
+Initialise une case avec un nom vide. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_case_a27b787303f627e1b117c9343adc34ae9}\index{Case@{Case}!getNom@{getNom}}
+\index{getNom@{getNom}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getNom()}{getNom()}}
+{\footnotesize\ttfamily \label{class_case_a27b787303f627e1b117c9343adc34ae9} 
+string Case\+::get\+Nom (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le nom de la case. 
+
+\begin{DoxyReturn}{Returns}
+Le nom de la case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_a84969aa8e4c972d4603e643590a9ca71}\index{Case@{Case}!getNumero@{getNumero}}
+\index{getNumero@{getNumero}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{getNumero()}{getNumero()}}
+{\footnotesize\ttfamily \label{class_case_a84969aa8e4c972d4603e643590a9ca71} 
+int Case\+::get\+Numero (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le numéro de la case. 
+
+\begin{DoxyReturn}{Returns}
+Le numéro de la case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_a023dc5283201bf21a2fcbccd29879382}\index{Case@{Case}!setNom@{setNom}}
+\index{setNom@{setNom}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setNom()}{setNom()}}
+{\footnotesize\ttfamily \label{class_case_a023dc5283201bf21a2fcbccd29879382} 
+void Case\+::set\+Nom (\begin{DoxyParamCaption}\item[{const string \&}]{nom}{}\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le nom de la case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Le nouveau nom de la case. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_a1249be4efee83cf0fb38f78a541926a8}\index{Case@{Case}!setNumero@{setNumero}}
+\index{setNumero@{setNumero}!Case@{Case}}
+\doxysubsubsection{\texorpdfstring{setNumero()}{setNumero()}}
+{\footnotesize\ttfamily \label{class_case_a1249be4efee83cf0fb38f78a541926a8} 
+void Case\+::set\+Numero (\begin{DoxyParamCaption}\item[{int}]{numero}{}\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le numéro de la case. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero} & Le nouveau numéro de la case. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/case.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/case.\+cpp\end{DoxyCompactItemize}

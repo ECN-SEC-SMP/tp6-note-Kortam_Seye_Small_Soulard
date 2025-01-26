@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_gare" kind="class" language="C++" prot="public">
+    <compoundname>Gare</compoundname>
+    <basecompoundref refid="class_case___achetable" prot="public" virt="non-virtual">Case_Achetable</basecompoundref>
+    <includes refid="_gare_8hpp" local="no">Gare.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_gare_1afb82a86208b30164e98a7db34d85d77f" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gare::loyer</definition>
+        <argsstring></argsstring>
+        <name>loyer</name>
+        <qualifiedname>Gare::loyer</qualifiedname>
+        <briefdescription>
+<para>Le montant du loyer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" line="20" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gare_1a748cfb1ecb5db2cf2a9f660b7765d17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gare::Gare</definition>
+        <argsstring>(int loyer)</argsstring>
+        <name>Gare</name>
+        <qualifiedname>Gare::Gare</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>loyer</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur de la classe <ref refid="class_gare" kindref="compound">Gare</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>loyer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le montant du loyer associé à la gare.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>loyer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le montant du loyer pour cette gare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" line="28" column="5" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.cpp" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gare_1a8ea4d34434b57a1289b909bdf97f5085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gare::actioncase</definition>
+        <argsstring>(Joueur &amp;joueur, vector&lt; Joueur &gt; &amp;joueurs)</argsstring>
+        <name>actioncase</name>
+        <qualifiedname>Gare::actioncase</qualifiedname>
+        <param>
+          <type><ref refid="class_joueur" kindref="compound">Joueur</ref> &amp;</type>
+          <declname>joueur</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="class_joueur" kindref="compound">Joueur</ref> &gt; &amp;</type>
+          <declname>joueurs</declname>
+        </param>
+        <briefdescription>
+<para>Gère l&apos;action d&apos;un joueur lorsqu&apos;il atterrit sur la gare. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gère l&apos;action associée à la gare.</para>
+<para>Si le joueur atterrit sur une gare déjà possédée, il doit payer un loyer au propriétaire. Si la gare n&apos;est pas encore achetée, le joueur peut choisir de l&apos;acheter.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le joueur qui atterrit sur la gare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>joueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Liste des joueurs du jeu.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Si la gare appartient déjà à un joueur, celui-ci doit payer un loyer. Si la gare n&apos;est pas possédée, le joueur peut l&apos;acheter en payant le prix spécifié.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le joueur qui atterrit sur la gare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>joueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>La liste des joueurs. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" line="39" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.cpp" bodystart="27" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Classe représentant une gare, une case achetable dans le jeu. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Les gaires ont un loyer qui dépend du nombre de gares possédées par un joueur. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Case</label>
+        <link refid="class_case"/>
+      </node>
+      <node id="2">
+        <label>Case_Achetable</label>
+        <link refid="class_case___achetable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gare</label>
+        <link refid="class_gare"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Case</label>
+        <link refid="class_case"/>
+      </node>
+      <node id="2">
+        <label>Case_Achetable</label>
+        <link refid="class_case___achetable"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gare</label>
+        <link refid="class_gare"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" line="18" column="1" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Gare.hpp" bodystart="18" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_gare_1a8ea4d34434b57a1289b909bdf97f5085" prot="public" virt="non-virtual"><scope>Gare</scope><name>actioncase</name></member>
+      <member refid="class_case_1aa491174fccfdd928ed30260fe6f2ac87" prot="public" virt="non-virtual"><scope>Gare</scope><name>Case</name></member>
+      <member refid="class_case_1a14237e17aab1829965adab76b747db6c" prot="public" virt="non-virtual"><scope>Gare</scope><name>Case</name></member>
+      <member refid="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" prot="public" virt="non-virtual"><scope>Gare</scope><name>Case_Achetable</name></member>
+      <member refid="class_case___achetable_1a1ad93618122732a4b1d0a495d9401611" prot="public" virt="non-virtual"><scope>Gare</scope><name>Case_Achetable</name></member>
+      <member refid="class_gare_1a748cfb1ecb5db2cf2a9f660b7765d17c" prot="public" virt="non-virtual"><scope>Gare</scope><name>Gare</name></member>
+      <member refid="class_case___achetable_1ab6bbb46ccdd358129cd87652e8551f82" prot="public" virt="non-virtual"><scope>Gare</scope><name>getHypo</name></member>
+      <member refid="class_case_1a27b787303f627e1b117c9343adc34ae9" prot="public" virt="non-virtual"><scope>Gare</scope><name>getNom</name></member>
+      <member refid="class_case_1a84969aa8e4c972d4603e643590a9ca71" prot="public" virt="non-virtual"><scope>Gare</scope><name>getNumero</name></member>
+      <member refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" prot="public" virt="non-virtual"><scope>Gare</scope><name>getPrix</name></member>
+      <member refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" prot="public" virt="non-virtual"><scope>Gare</scope><name>getProprio</name></member>
+      <member refid="class_gare_1afb82a86208b30164e98a7db34d85d77f" prot="protected" virt="non-virtual"><scope>Gare</scope><name>loyer</name></member>
+      <member refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" prot="protected" virt="non-virtual"><scope>Gare</scope><name>nom</name></member>
+      <member refid="class_case_1a8718a616ffd1eaaee3853457509e251c" prot="protected" virt="non-virtual"><scope>Gare</scope><name>numero</name></member>
+      <member refid="class_case___achetable_1ac7b3dce6f4b7772a0a05a8172badaa01" prot="public" virt="non-virtual"><scope>Gare</scope><name>setHypo</name></member>
+      <member refid="class_case_1a023dc5283201bf21a2fcbccd29879382" prot="public" virt="non-virtual"><scope>Gare</scope><name>setNom</name></member>
+      <member refid="class_case_1a1249be4efee83cf0fb38f78a541926a8" prot="public" virt="non-virtual"><scope>Gare</scope><name>setNumero</name></member>
+      <member refid="class_case___achetable_1a2598cf4698152794e06e0d210a19f238" prot="public" virt="non-virtual"><scope>Gare</scope><name>setPrix</name></member>
+      <member refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" prot="public" virt="non-virtual"><scope>Gare</scope><name>setProprio</name></member>
+      <member refid="class_case_1ae9e95cbd69104353bd46fe5c2207e1b6" prot="public" virt="virtual"><scope>Gare</scope><name>~Case</name></member>
+      <member refid="class_case___achetable_1a88c5e8eb8a59ff2d14418ffe7490d38a" prot="public" virt="non-virtual"><scope>Gare</scope><name>~Case_Achetable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

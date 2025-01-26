@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.13.2" xml:lang="en-US">
+  <compound refid="class_case" kind="class"><name>Case</name>
+    <member refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" kind="variable"><name>nom</name></member>
+    <member refid="class_case_1a8718a616ffd1eaaee3853457509e251c" kind="variable"><name>numero</name></member>
+    <member refid="class_case_1aa491174fccfdd928ed30260fe6f2ac87" kind="function"><name>Case</name></member>
+    <member refid="class_case_1a14237e17aab1829965adab76b747db6c" kind="function"><name>Case</name></member>
+    <member refid="class_case_1ae9e95cbd69104353bd46fe5c2207e1b6" kind="function"><name>~Case</name></member>
+    <member refid="class_case_1a27b787303f627e1b117c9343adc34ae9" kind="function"><name>getNom</name></member>
+    <member refid="class_case_1a023dc5283201bf21a2fcbccd29879382" kind="function"><name>setNom</name></member>
+    <member refid="class_case_1a84969aa8e4c972d4603e643590a9ca71" kind="function"><name>getNumero</name></member>
+    <member refid="class_case_1a1249be4efee83cf0fb38f78a541926a8" kind="function"><name>setNumero</name></member>
+  </compound>
+  <compound refid="class_case___achetable" kind="class"><name>Case_Achetable</name>
+    <member refid="class_case___achetable_1acf3970e5fb23f42d9fabed9397b41a4c" kind="variable"><name>proprio</name></member>
+    <member refid="class_case___achetable_1a21757a21d6abd451085f96ee2610e488" kind="variable"><name>prix</name></member>
+    <member refid="class_case___achetable_1a60cf22a600a287dab159b6b7fa1285b0" kind="variable"><name>hypo</name></member>
+    <member refid="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" kind="function"><name>Case_Achetable</name></member>
+    <member refid="class_case___achetable_1a1ad93618122732a4b1d0a495d9401611" kind="function"><name>Case_Achetable</name></member>
+    <member refid="class_case___achetable_1a88c5e8eb8a59ff2d14418ffe7490d38a" kind="function"><name>~Case_Achetable</name></member>
+    <member refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" kind="function"><name>setProprio</name></member>
+    <member refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kind="function"><name>getProprio</name></member>
+    <member refid="class_case___achetable_1a2598cf4698152794e06e0d210a19f238" kind="function"><name>setPrix</name></member>
+    <member refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kind="function"><name>getPrix</name></member>
+    <member refid="class_case___achetable_1ac7b3dce6f4b7772a0a05a8172badaa01" kind="function"><name>setHypo</name></member>
+    <member refid="class_case___achetable_1ab6bbb46ccdd358129cd87652e8551f82" kind="function"><name>getHypo</name></member>
+  </compound>
+  <compound refid="class_case___non_achetable" kind="class"><name>Case_NonAchetable</name>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33" kind="enum"><name>TypeCaseNonAchetable</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813" kind="enumvalue"><name>DEPART</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0" kind="enumvalue"><name>PRISON</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d" kind="enumvalue"><name>ALLEZ_EN_PRISON</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af" kind="enumvalue"><name>CHANCE</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740" kind="enumvalue"><name>CAISSE_DE_COMMUNAUTE</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309" kind="enumvalue"><name>IMPOT</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a" kind="enumvalue"><name>TAXE_DE_LUXE</name></member>
+    <member refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212" kind="enumvalue"><name>PARC_GRATUIT</name></member>
+    <member refid="class_case___non_achetable_1a5d9be91c510998fba5755611208c2733" kind="variable"><name>type_case</name></member>
+    <member refid="class_case___non_achetable_1ada7ac5824c652e9cc32a628bf2769b0a" kind="function"><name>Case_NonAchetable</name></member>
+    <member refid="class_case___non_achetable_1a03a9d785e4cbc9ad9dffa158d0ccb31a" kind="function"><name>actioncase</name></member>
+    <member refid="class_case___non_achetable_1afa5b3fbb4accf4840b2a68a8bbd1f812" kind="function"><name>typeToString</name></member>
+  </compound>
+  <compound refid="class_case_terrain" kind="class"><name>CaseTerrain</name>
+    <member refid="class_case_terrain_1aa56b905519f4e5dac0a7ea4cd48f49bc" kind="variable"><name>loyer</name></member>
+    <member refid="class_case_terrain_1a7a55d0d69472e8dc585b1925e3465ed0" kind="variable"><name>groupe</name></member>
+    <member refid="class_case_terrain_1a9914af5d5196dfa2e182cc452330326c" kind="variable"><name>construction</name></member>
+    <member refid="class_case_terrain_1aa022241fb3d4b79fb6ff086cbfb4ae4c" kind="function"><name>CaseTerrain</name></member>
+    <member refid="class_case_terrain_1a15afb589d0b2c83ebce6c53dd6f935e4" kind="function"><name>CaseTerrain</name></member>
+    <member refid="class_case_terrain_1a25a1a963726f8d46567e86729cf11888" kind="function"><name>actioncase</name></member>
+    <member refid="class_case_terrain_1ab910a5845f81cb028d02b2a65dca6f4e" kind="function"><name>getLoyer</name></member>
+    <member refid="class_case_terrain_1a5b22a73d4775cab0ddafd126faf149f8" kind="function"><name>setLoyer</name></member>
+    <member refid="class_case_terrain_1a0118d2d83e5e928b8815c1024cd2d903" kind="function"><name>getGroupe</name></member>
+    <member refid="class_case_terrain_1a8116b477df9a895995050e27d3144c29" kind="function"><name>setGroupe</name></member>
+    <member refid="class_case_terrain_1ad8d5c1df8a81064a514484779c50d82d" kind="function"><name>getConstruction</name></member>
+    <member refid="class_case_terrain_1a12da96eef35bca3e55feba6c5380e69d" kind="function"><name>setConstruction</name></member>
+  </compound>
+  <compound refid="class_gare" kind="class"><name>Gare</name>
+    <member refid="class_gare_1afb82a86208b30164e98a7db34d85d77f" kind="variable"><name>loyer</name></member>
+    <member refid="class_gare_1a748cfb1ecb5db2cf2a9f660b7765d17c" kind="function"><name>Gare</name></member>
+    <member refid="class_gare_1a8ea4d34434b57a1289b909bdf97f5085" kind="function"><name>actioncase</name></member>
+  </compound>
+  <compound refid="class_joueur" kind="class"><name>Joueur</name>
+    <member refid="class_joueur_1a1f84d76b36659524549ac7d237503141" kind="variable"><name>en_vie</name></member>
+    <member refid="class_joueur_1a251a7192f61dae541f80cbff3914f208" kind="variable"><name>nom</name></member>
+    <member refid="class_joueur_1a8c2a335a4551dc3a094898b13fdac013" kind="variable"><name>solde</name></member>
+    <member refid="class_joueur_1aebf49af3ea0798da922cb3f81ddcd21c" kind="variable"><name>position</name></member>
+    <member refid="class_joueur_1a081acd511877594cd9f3479f9d4098cb" kind="variable"><name>nb_cartes_liberte</name></member>
+    <member refid="class_joueur_1a77a2db2074d53ab42bba1012f1dfb30e" kind="variable"><name>nb_gares</name></member>
+    <member refid="class_joueur_1a6c23eb1be1a4773225a8c915eb77890d" kind="variable"><name>des</name></member>
+    <member refid="class_joueur_1a8cb35c69e426ed46740f916dffa9e1f9" kind="variable"><name>nb_services</name></member>
+    <member refid="class_joueur_1a4139cbb9e2da2f0ac4938d0476ee7295" kind="variable"><name>tours_en_prison</name></member>
+    <member refid="class_joueur_1ab1d26c780f7e53404da2f970664b8962" kind="variable"><name>en_prison</name></member>
+    <member refid="class_joueur_1add6c98be3020651d84f6d75ccc1d867e" kind="function"><name>Joueur</name></member>
+    <member refid="class_joueur_1aaec72189eb1ebee15310fde12fdd92bb" kind="function"><name>Joueur</name></member>
+    <member refid="class_joueur_1a75a29f1394b56ddeaf46314c202d5526" kind="function"><name>geten_vie</name></member>
+    <member refid="class_joueur_1acc4e54ce6b2c6fccb77cf2925c45ccd4" kind="function"><name>seten_vie</name></member>
+    <member refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kind="function"><name>getNom</name></member>
+    <member refid="class_joueur_1a1acb893d7ebb7fff056ce551beb6bbdb" kind="function"><name>setNom</name></member>
+    <member refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kind="function"><name>getSolde</name></member>
+    <member refid="class_joueur_1ad445de3638ad860f6adfe32dad6cc5d2" kind="function"><name>setSolde</name></member>
+    <member refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kind="function"><name>addSolde</name></member>
+    <member refid="class_joueur_1a5a632164364e824b8a9f5733442716da" kind="function"><name>getPosition</name></member>
+    <member refid="class_joueur_1a54ae10845d9e54d5a89a12a9c743e29c" kind="function"><name>setPosition</name></member>
+    <member refid="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" kind="function"><name>getNbCartesLiberte</name></member>
+    <member refid="class_joueur_1a73d6debf2a2fc7824875513abeb94107" kind="function"><name>setNbCartesLiberte</name></member>
+    <member refid="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" kind="function"><name>getEnPrison</name></member>
+    <member refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kind="function"><name>setEnPrison</name></member>
+    <member refid="class_joueur_1adbac1a5f3f4616918f7e672f3a4498ae" kind="function"><name>jouerTour</name></member>
+    <member refid="class_joueur_1a2ff8afb7e5335aa7d0a537b961125d23" kind="function"><name>construire</name></member>
+    <member refid="class_joueur_1a280d72447f08cb64941b9035f9a5bc67" kind="function"><name>lancer_des</name></member>
+    <member refid="class_joueur_1a749d15543f359ee238fe0813a8c6722f" kind="function"><name>getNbGares</name></member>
+    <member refid="class_joueur_1a34d162886e24dbd0b5614ec10d0dde47" kind="function"><name>setNbGares</name></member>
+    <member refid="class_joueur_1a380d5a67a06d9d8ce826b461654b5143" kind="function"><name>getDes</name></member>
+    <member refid="class_joueur_1a2f6a10a2f3c9d8dbdb9fd5dab89c3e31" kind="function"><name>setDes</name></member>
+    <member refid="class_joueur_1aa588c5de9f5041a9deb5bdfa96a66b2b" kind="function"><name>getNbServices</name></member>
+    <member refid="class_joueur_1a9fb5dec287d41c6b611e147d0c8f2401" kind="function"><name>setNbServices</name></member>
+    <member refid="class_joueur_1a065af39bd02030ffb1836900110c08bb" kind="function"><name>incrementNbServices</name></member>
+    <member refid="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" kind="function"><name>getToursEnPrison</name></member>
+    <member refid="class_joueur_1a9c46e4b685e6075419b37f1da025bbf1" kind="function"><name>setToursEnPrison</name></member>
+    <member refid="class_joueur_1aa68fb11bd7d26dc3ca518c0b4aca7e96" kind="function"><name>incrementerToursEnPrison</name></member>
+  </compound>
+  <compound refid="class_plateau" kind="class"><name>Plateau</name>
+    <member refid="class_plateau_1ad952d2abb96959363559b1bbd1726da1" kind="variable"><name>joueurs</name></member>
+    <member refid="class_plateau_1a69659473fa3383197b9492eefeb30f9d" kind="variable"><name>cases</name></member>
+    <member refid="class_plateau_1ab93fca97a3f61a3eec2ba0ce8a4081f3" kind="function"><name>initialiser</name></member>
+    <member refid="class_plateau_1abc9de7ff5a1211e5e806d69938c36566" kind="function"><name>commencerJeu</name></member>
+    <member refid="class_plateau_1a4b3bc13270213c58443f003c2663a181" kind="function"><name>getCase</name></member>
+  </compound>
+  <compound refid="struct_resultat_lancer" kind="struct"><name>ResultatLancer</name>
+    <member refid="struct_resultat_lancer_1a0f1d907d74d1ee9da7dbf82d95efb93a" kind="variable"><name>de1</name></member>
+    <member refid="struct_resultat_lancer_1a1035f578c3d108ea1876997cc116d6ba" kind="variable"><name>de2</name></member>
+    <member refid="struct_resultat_lancer_1ae8cd559974308b6de189d189d1119092" kind="variable"><name>somme</name></member>
+  </compound>
+  <compound refid="class_service___public" kind="class"><name>Service_Public</name>
+    <member refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kind="variable"><name>loyer</name></member>
+    <member refid="class_service___public_1a4ea33e84d60de31971c4edf007fff800" kind="function"><name>Service_Public</name></member>
+    <member refid="class_service___public_1a0aed366e2d23d7f019ba708ee93b3aca" kind="function"><name>actioncase</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="case_8cpp" kind="file"><name>case.cpp</name>
+  </compound>
+  <compound refid="case_8hpp" kind="file"><name>case.hpp</name>
+  </compound>
+  <compound refid="_case___achetable_8cpp" kind="file"><name>Case_Achetable.cpp</name>
+    <member refid="_case___achetable_8cpp_1a51abf6fba33aab30ca748867b1794c14" kind="define"><name>Case_Achetable_hpp</name></member>
+  </compound>
+  <compound refid="_case___achetable_8hpp" kind="file"><name>Case_Achetable.hpp</name>
+  </compound>
+  <compound refid="_case__non_achetable_8cpp" kind="file"><name>Case_nonAchetable.cpp</name>
+  </compound>
+  <compound refid="_case__non_achetable_8hpp" kind="file"><name>Case_nonAchetable.hpp</name>
+  </compound>
+  <compound refid="_case_terrain_8cpp" kind="file"><name>CaseTerrain.cpp</name>
+  </compound>
+  <compound refid="_case_terrain_8hpp" kind="file"><name>CaseTerrain.hpp</name>
+  </compound>
+  <compound refid="_gare_8cpp" kind="file"><name>Gare.cpp</name>
+  </compound>
+  <compound refid="_gare_8hpp" kind="file"><name>Gare.hpp</name>
+  </compound>
+  <compound refid="joueur_8cpp" kind="file"><name>joueur.cpp</name>
+  </compound>
+  <compound refid="joueur_8hpp" kind="file"><name>joueur.hpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="plateau_8cpp" kind="file"><name>plateau.cpp</name>
+  </compound>
+  <compound refid="plateau_8hpp" kind="file"><name>plateau.hpp</name>
+  </compound>
+  <compound refid="_service___public_8cpp" kind="file"><name>Service_Public.cpp</name>
+  </compound>
+  <compound refid="_service___public_8hpp" kind="file"><name>Service_Public.hpp</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src</name>
+  </compound>
+</doxygenindex>

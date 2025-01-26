@@ -1,0 +1,184 @@
+\doxysection{Case\+\_\+\+Non\+Achetable Class Reference}
+\hypertarget{class_case___non_achetable}{}\label{class_case___non_achetable}\index{Case\_NonAchetable@{Case\_NonAchetable}}
+
+
+Une classe représentant une case non achetable dans le jeu.  
+
+
+
+
+{\ttfamily \#include $<$Case\+\_\+non\+Achetable.\+hpp$>$}
+
+Inheritance diagram for Case\+\_\+\+Non\+Achetable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_case___non_achetable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{Type\+Case\+Non\+Achetable}} \{ \newline
+\mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813}{DEPART}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0}{PRISON}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d}{ALLEZ\+\_\+\+EN\+\_\+\+PRISON}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af}{CHANCE}}
+, \newline
+\mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740}{CAISSE\+\_\+\+DE\+\_\+\+COMMUNAUTE}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309}{IMPOT}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a}{TAXE\+\_\+\+DE\+\_\+\+LUXE}}
+, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212}{PARC\+\_\+\+GRATUIT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Énumération représentant les types de cases non achetables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case___non_achetable_ada7ac5824c652e9cc32a628bf2769b0a}{Case\+\_\+\+Non\+Achetable}} (const std\+::string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}}, \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{Type\+Case\+Non\+Achetable}} type\+\_\+case)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_case___non_achetable}{Case\+\_\+\+Non\+Achetable}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___non_achetable_a03a9d785e4cbc9ad9dffa158d0ccb31a}{actioncase}} (\mbox{\hyperlink{class_joueur}{Joueur}} \&joueur, std\+::vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&joueurs)
+\begin{DoxyCompactList}\small\item\em Déclenche l\textquotesingle{}action associée à la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_aa491174fccfdd928ed30260fe6f2ac87}{Case}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Case} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel par défaut. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case_a27b787303f627e1b117c9343adc34ae9}{get\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nom de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a023dc5283201bf21a2fcbccd29879382}{set\+Nom}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le nom de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_a84969aa8e4c972d4603e643590a9ca71}{get\+Numero}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a1249be4efee83cf0fb38f78a541926a8}{set\+Numero}} (int \mbox{\hyperlink{class_case_a8718a616ffd1eaaee3853457509e251c}{numero}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries nom}
+\begin{DoxyCompactList}\small\item\em Nom de la case. \end{DoxyCompactList}\item 
+int {\bfseries numero}
+\begin{DoxyCompactList}\small\item\em Numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Une classe représentant une case non achetable dans le jeu. 
+
+Les cases non achetables ont un type spécifique (par exemple, Départ, Prison, etc.) et déclenchent des actions spécifiques lorsqu\textquotesingle{}un joueur atterrit dessus. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}\index{Case\_NonAchetable@{Case\_NonAchetable}!TypeCaseNonAchetable@{TypeCaseNonAchetable}}
+\index{TypeCaseNonAchetable@{TypeCaseNonAchetable}!Case\_NonAchetable@{Case\_NonAchetable}}
+\doxysubsubsection{\texorpdfstring{TypeCaseNonAchetable}{TypeCaseNonAchetable}}
+{\footnotesize\ttfamily \label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33} 
+enum class \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{Case\+\_\+\+Non\+Achetable\+::\+Type\+Case\+Non\+Achetable}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Énumération représentant les types de cases non achetables. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEPART@{DEPART}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!DEPART@{DEPART}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813} 
+DEPART&\doxylink{class_case}{Case} Départ. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PRISON@{PRISON}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!PRISON@{PRISON}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0} 
+PRISON&\doxylink{class_case}{Case} Prison. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALLEZ\_EN\_PRISON@{ALLEZ\_EN\_PRISON}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!ALLEZ\_EN\_PRISON@{ALLEZ\_EN\_PRISON}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d} 
+ALLEZ\+\_\+\+EN\+\_\+\+PRISON&\doxylink{class_case}{Case} Allez en Prison. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CHANCE@{CHANCE}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!CHANCE@{CHANCE}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af} 
+CHANCE&\doxylink{class_case}{Case} Chance. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAISSE\_DE\_COMMUNAUTE@{CAISSE\_DE\_COMMUNAUTE}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!CAISSE\_DE\_COMMUNAUTE@{CAISSE\_DE\_COMMUNAUTE}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740} 
+CAISSE\+\_\+\+DE\+\_\+\+COMMUNAUTE&\doxylink{class_case}{Case} Caisse de Communauté. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IMPOT@{IMPOT}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!IMPOT@{IMPOT}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309} 
+IMPOT&\doxylink{class_case}{Case} Impôt. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TAXE\_DE\_LUXE@{TAXE\_DE\_LUXE}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!TAXE\_DE\_LUXE@{TAXE\_DE\_LUXE}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a} 
+TAXE\+\_\+\+DE\+\_\+\+LUXE&\doxylink{class_case}{Case} Taxe de Luxe. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PARC\_GRATUIT@{PARC\_GRATUIT}!Case\_NonAchetable@{Case\_NonAchetable}}\index{Case\_NonAchetable@{Case\_NonAchetable}!PARC\_GRATUIT@{PARC\_GRATUIT}}}\Hypertarget{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212}\label{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212} 
+PARC\+\_\+\+GRATUIT&\doxylink{class_case}{Case} Parc Gratuit. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_case___non_achetable_ada7ac5824c652e9cc32a628bf2769b0a}\index{Case\_NonAchetable@{Case\_NonAchetable}!Case\_NonAchetable@{Case\_NonAchetable}}
+\index{Case\_NonAchetable@{Case\_NonAchetable}!Case\_NonAchetable@{Case\_NonAchetable}}
+\doxysubsubsection{\texorpdfstring{Case\_NonAchetable()}{Case\_NonAchetable()}}
+{\footnotesize\ttfamily \label{class_case___non_achetable_ada7ac5824c652e9cc32a628bf2769b0a} 
+Case\+\_\+\+Non\+Achetable\+::\+Case\+\_\+\+Non\+Achetable (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nom}{, }\item[{\mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{Type\+Case\+Non\+Achetable}}}]{type\+\_\+case}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_case___non_achetable}{Case\+\_\+\+Non\+Achetable}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Le nom de la case. \\
+\hline
+{\em type\+\_\+case} & Le type de la case (parmi les types définis dans l\textquotesingle{}énumération \doxylink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{Type\+Case\+Non\+Achetable}).\\
+\hline
+\end{DoxyParams}
+Initialise une case non achetable avec un nom et un type spécifique.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & Le nom de la case. \\
+\hline
+{\em type\+\_\+case} & Le type de la case. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_case___non_achetable_a03a9d785e4cbc9ad9dffa158d0ccb31a}\index{Case\_NonAchetable@{Case\_NonAchetable}!actioncase@{actioncase}}
+\index{actioncase@{actioncase}!Case\_NonAchetable@{Case\_NonAchetable}}
+\doxysubsubsection{\texorpdfstring{actioncase()}{actioncase()}}
+{\footnotesize\ttfamily \label{class_case___non_achetable_a03a9d785e4cbc9ad9dffa158d0ccb31a} 
+void Case\+\_\+\+Non\+Achetable\+::actioncase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_joueur}{Joueur}} \&}]{joueur}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&}]{joueurs}{}\end{DoxyParamCaption})}
+
+
+
+Déclenche l\textquotesingle{}action associée à la case. 
+
+Effectue l\textquotesingle{}action associée à la case.
+
+Cette méthode définit les effets spécifiques de la case sur le joueur actif et, dans certains cas, sur les autres joueurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Le joueur actif. \\
+\hline
+{\em joueurs} & La liste des joueurs dans le jeu.\\
+\hline
+\end{DoxyParams}
+En fonction du type de la case, cette méthode applique un effet spécifique au joueur actif ou, dans certains cas, à l\textquotesingle{}ensemble des joueurs.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Le joueur actif. \\
+\hline
+{\em joueurs} & La liste de tous les joueurs. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Case\+\_\+non\+Achetable.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Case\+\_\+non\+Achetable.\+cpp\end{DoxyCompactItemize}

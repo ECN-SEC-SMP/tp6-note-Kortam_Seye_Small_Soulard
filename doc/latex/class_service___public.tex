@@ -1,0 +1,135 @@
+\doxysection{Service\+\_\+\+Public Class Reference}
+\hypertarget{class_service___public}{}\label{class_service___public}\index{Service\_Public@{Service\_Public}}
+
+
+Représente une case de service public dans le jeu de Monopoly.  
+
+
+
+
+{\ttfamily \#include $<$Service\+\_\+\+Public.\+hpp$>$}
+
+Inheritance diagram for Service\+\_\+\+Public\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_service___public}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_service___public_a4ea33e84d60de31971c4edf007fff800}{Service\+\_\+\+Public}} (int \mbox{\hyperlink{class_service___public_acc80e668db7090f5b49de389b166eea1}{loyer}})
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_service___public}{Service\+\_\+\+Public}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_service___public_a0aed366e2d23d7f019ba708ee93b3aca}{actioncase}} (\mbox{\hyperlink{class_joueur}{Joueur}} \&joueur, vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&joueurs)
+\begin{DoxyCompactList}\small\item\em Réalise l\textquotesingle{}action à effectuer lorsqu\textquotesingle{}un joueur arrive sur cette case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_case___achetable}{Case\+\_\+\+Achetable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case___achetable_a085bacb52916f85751cbfc30026abc2e}{Case\+\_\+\+Achetable}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case___achetable_a1ad93618122732a4b1d0a495d9401611}{Case\+\_\+\+Achetable}} (string proprio, int prix, bool hypo)
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case___achetable_a88c5e8eb8a59ff2d14418ffe7490d38a}{\texorpdfstring{$\sim$}{\string~}\+Case\+\_\+\+Achetable}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_a33ccd1e385ca04375cc2ff8de2ae5ddd}{set\+Proprio}} (string proprio)
+\begin{DoxyCompactList}\small\item\em Définit le propriétaire de la case. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case___achetable_a090a99459ef0d577a4f374071dc54e48}{get\+Proprio}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le propriétaire de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_a2598cf4698152794e06e0d210a19f238}{set\+Prix}} (int prix)
+\begin{DoxyCompactList}\small\item\em Définit le prix de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case___achetable_a79d728d8706fcce07d9ddcdf555cc7a2}{get\+Prix}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le prix de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_ac7b3dce6f4b7772a0a05a8172badaa01}{set\+Hypo}} (bool hypo)
+\begin{DoxyCompactList}\small\item\em Définit le statut hypothécaire de la case. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_case___achetable_ab6bbb46ccdd358129cd87652e8551f82}{get\+Hypo}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le statut hypothécaire de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_aa491174fccfdd928ed30260fe6f2ac87}{Case}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Case} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel par défaut. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case_a27b787303f627e1b117c9343adc34ae9}{get\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nom de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a023dc5283201bf21a2fcbccd29879382}{set\+Nom}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le nom de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_a84969aa8e4c972d4603e643590a9ca71}{get\+Numero}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a1249be4efee83cf0fb38f78a541926a8}{set\+Numero}} (int \mbox{\hyperlink{class_case_a8718a616ffd1eaaee3853457509e251c}{numero}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_service___public_acc80e668db7090f5b49de389b166eea1}\label{class_service___public_acc80e668db7090f5b49de389b166eea1} 
+int {\bfseries loyer}
+\begin{DoxyCompactList}\small\item\em Loyer de la case, déterminé par des règles dynamiques. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries nom}
+\begin{DoxyCompactList}\small\item\em Nom de la case. \end{DoxyCompactList}\item 
+int {\bfseries numero}
+\begin{DoxyCompactList}\small\item\em Numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représente une case de service public dans le jeu de Monopoly. 
+
+Cette classe hérite de {\ttfamily \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}} et gère les interactions spécifiques aux services publics, tels que les loyers variables basés sur les dés et le nombre de services possédés par le propriétaire. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_service___public_a4ea33e84d60de31971c4edf007fff800}\index{Service\_Public@{Service\_Public}!Service\_Public@{Service\_Public}}
+\index{Service\_Public@{Service\_Public}!Service\_Public@{Service\_Public}}
+\doxysubsubsection{\texorpdfstring{Service\_Public()}{Service\_Public()}}
+{\footnotesize\ttfamily \label{class_service___public_a4ea33e84d60de31971c4edf007fff800} 
+Service\+\_\+\+Public\+::\+Service\+\_\+\+Public (\begin{DoxyParamCaption}\item[{int}]{loyer}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_service___public}{Service\+\_\+\+Public}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loyer} & Loyer initial du service public. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_service___public_a0aed366e2d23d7f019ba708ee93b3aca}\index{Service\_Public@{Service\_Public}!actioncase@{actioncase}}
+\index{actioncase@{actioncase}!Service\_Public@{Service\_Public}}
+\doxysubsubsection{\texorpdfstring{actioncase()}{actioncase()}}
+{\footnotesize\ttfamily \label{class_service___public_a0aed366e2d23d7f019ba708ee93b3aca} 
+void Service\+\_\+\+Public\+::actioncase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_joueur}{Joueur}} \&}]{joueur}{, }\item[{vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&}]{joueurs}{}\end{DoxyParamCaption})}
+
+
+
+Réalise l\textquotesingle{}action à effectuer lorsqu\textquotesingle{}un joueur arrive sur cette case. 
+
+Si le service a un propriétaire, calcule le loyer dû et transfère les fonds. Sinon, propose au joueur d\textquotesingle{}acheter la propriété.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Référence au joueur actif. \\
+\hline
+{\em joueurs} & Liste des joueurs du jeu.\\
+\hline
+\end{DoxyParams}
+Si le service public appartient déjà à un joueur, calcule et applique le loyer dû en fonction des règles spécifiques. Sinon, propose au joueur d\textquotesingle{}acheter cette propriété.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Référence au joueur actif. \\
+\hline
+{\em joueurs} & Liste des joueurs du jeu. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Service\+\_\+\+Public.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Service\+\_\+\+Public.\+cpp\end{DoxyCompactItemize}

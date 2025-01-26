@@ -1,0 +1,259 @@
+\doxysection{Case\+Terrain Class Reference}
+\hypertarget{class_case_terrain}{}\label{class_case_terrain}\index{CaseTerrain@{CaseTerrain}}
+
+
+Classe représentant une case achetable de type terrain.  
+
+
+
+
+{\ttfamily \#include $<$Case\+Terrain.\+hpp$>$}
+
+Inheritance diagram for Case\+Terrain\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_case_terrain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_terrain_aa022241fb3d4b79fb6ff086cbfb4ae4c}{Case\+Terrain}} (int loyer, int groupe, int construction)
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré. \end{DoxyCompactList}\item 
+\Hypertarget{class_case_terrain_a15afb589d0b2c83ebce6c53dd6f935e4}\label{class_case_terrain_a15afb589d0b2c83ebce6c53dd6f935e4} 
+{\bfseries Case\+Terrain} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_terrain_a25a1a963726f8d46567e86729cf11888}{actioncase}} (\mbox{\hyperlink{class_joueur}{Joueur}} \&joueur, std\+::vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&joueurs, \mbox{\hyperlink{class_plateau}{Plateau}} \&plateau)
+\begin{DoxyCompactList}\small\item\em Déclenche l\textquotesingle{}action associée à la case terrain. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_terrain_ab910a5845f81cb028d02b2a65dca6f4e}{get\+Loyer}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le loyer de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_terrain_a5b22a73d4775cab0ddafd126faf149f8}{set\+Loyer}} (int loyer)
+\begin{DoxyCompactList}\small\item\em Mutateur pour le loyer de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_terrain_a0118d2d83e5e928b8815c1024cd2d903}{get\+Groupe}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le groupe de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_terrain_a8116b477df9a895995050e27d3144c29}{set\+Groupe}} (int groupe)
+\begin{DoxyCompactList}\small\item\em Définit le groupe auquel appartient la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_terrain_ad8d5c1df8a81064a514484779c50d82d}{get\+Construction}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nombre de constructions sur la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_terrain_a12da96eef35bca3e55feba6c5380e69d}{set\+Construction}} (int construction)
+\begin{DoxyCompactList}\small\item\em Définit le nombre de constructions sur la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_case___achetable}{Case\+\_\+\+Achetable}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case___achetable_a085bacb52916f85751cbfc30026abc2e}{Case\+\_\+\+Achetable}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case___achetable_a1ad93618122732a4b1d0a495d9401611}{Case\+\_\+\+Achetable}} (string proprio, int prix, bool hypo)
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case___achetable_a88c5e8eb8a59ff2d14418ffe7490d38a}{\texorpdfstring{$\sim$}{\string~}\+Case\+\_\+\+Achetable}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur de \doxylink{class_case___achetable}{Case\+\_\+\+Achetable}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_a33ccd1e385ca04375cc2ff8de2ae5ddd}{set\+Proprio}} (string proprio)
+\begin{DoxyCompactList}\small\item\em Définit le propriétaire de la case. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case___achetable_a090a99459ef0d577a4f374071dc54e48}{get\+Proprio}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le propriétaire de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_a2598cf4698152794e06e0d210a19f238}{set\+Prix}} (int prix)
+\begin{DoxyCompactList}\small\item\em Définit le prix de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case___achetable_a79d728d8706fcce07d9ddcdf555cc7a2}{get\+Prix}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le prix de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case___achetable_ac7b3dce6f4b7772a0a05a8172badaa01}{set\+Hypo}} (bool hypo)
+\begin{DoxyCompactList}\small\item\em Définit le statut hypothécaire de la case. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_case___achetable_ab6bbb46ccdd358129cd87652e8551f82}{get\+Hypo}} () const
+\begin{DoxyCompactList}\small\item\em Retourne le statut hypothécaire de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_case_aa491174fccfdd928ed30260fe6f2ac87}{Case}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case_a14237e17aab1829965adab76b747db6c}{Case}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Case} ()=default
+\begin{DoxyCompactList}\small\item\em Destructeur virtuel par défaut. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_case_a27b787303f627e1b117c9343adc34ae9}{get\+Nom}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le nom de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a023dc5283201bf21a2fcbccd29879382}{set\+Nom}} (const string \&\mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le nom de la case. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_case_a84969aa8e4c972d4603e643590a9ca71}{get\+Numero}} () const
+\begin{DoxyCompactList}\small\item\em Accesseur pour le numéro de la case. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_case_a1249be4efee83cf0fb38f78a541926a8}{set\+Numero}} (int \mbox{\hyperlink{class_case_a8718a616ffd1eaaee3853457509e251c}{numero}})
+\begin{DoxyCompactList}\small\item\em Mutateur pour le numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_case}{Case}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries nom}
+\begin{DoxyCompactList}\small\item\em Nom de la case. \end{DoxyCompactList}\item 
+int {\bfseries numero}
+\begin{DoxyCompactList}\small\item\em Numéro de la case. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant une case achetable de type terrain. 
+
+Les terrains peuvent être achetés, construits, et génèrent un loyer en fonction des propriétés. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_case_terrain_aa022241fb3d4b79fb6ff086cbfb4ae4c}\index{CaseTerrain@{CaseTerrain}!CaseTerrain@{CaseTerrain}}
+\index{CaseTerrain@{CaseTerrain}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{CaseTerrain()}{CaseTerrain()}}
+{\footnotesize\ttfamily \label{class_case_terrain_aa022241fb3d4b79fb6ff086cbfb4ae4c} 
+Case\+Terrain\+::\+Case\+Terrain (\begin{DoxyParamCaption}\item[{int}]{loyer}{, }\item[{int}]{groupe}{, }\item[{int}]{construction}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur paramétré. 
+
+Constructeur paramétré de la classe \doxylink{class_case_terrain}{Case\+Terrain}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em loyer} & Le loyer de base de la case. \\
+\hline
+{\em groupe} & Le groupe auquel appartient le terrain. \\
+\hline
+{\em construction} & Le nombre initial de constructions.\\
+\hline
+{\em loyer} & Le loyer de la case. \\
+\hline
+{\em groupe} & Le groupe auquel appartient le terrain. \\
+\hline
+{\em construction} & Le nombre initial de constructions sur la case. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_case_terrain_a25a1a963726f8d46567e86729cf11888}\index{CaseTerrain@{CaseTerrain}!actioncase@{actioncase}}
+\index{actioncase@{actioncase}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{actioncase()}{actioncase()}}
+{\footnotesize\ttfamily \label{class_case_terrain_a25a1a963726f8d46567e86729cf11888} 
+void Case\+Terrain\+::actioncase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_joueur}{Joueur}} \&}]{joueur}{, }\item[{std\+::vector$<$ \mbox{\hyperlink{class_joueur}{Joueur}} $>$ \&}]{joueurs}{, }\item[{\mbox{\hyperlink{class_plateau}{Plateau}} \&}]{plateau}{}\end{DoxyParamCaption})}
+
+
+
+Déclenche l\textquotesingle{}action associée à la case terrain. 
+
+Déclenche l\textquotesingle{}action liée à la case terrain.
+
+Détermine le comportement en fonction de la propriété du terrain (payer un loyer ou acheter la case si disponible).
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Le joueur actif. \\
+\hline
+{\em joueurs} & Liste des joueurs présents sur le plateau. \\
+\hline
+{\em plateau} & Référence au plateau de jeu pour vérifier les propriétés du groupe.\\
+\hline
+\end{DoxyParams}
+Cette méthode détermine si le joueur doit payer un loyer, peut acheter le terrain, ou si d\textquotesingle{}autres effets doivent être appliqués selon les règles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & Le joueur actif. \\
+\hline
+{\em joueurs} & Liste des joueurs présents sur le plateau. \\
+\hline
+{\em plateau} & Référence au plateau de jeu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_terrain_ad8d5c1df8a81064a514484779c50d82d}\index{CaseTerrain@{CaseTerrain}!getConstruction@{getConstruction}}
+\index{getConstruction@{getConstruction}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{getConstruction()}{getConstruction()}}
+{\footnotesize\ttfamily \label{class_case_terrain_ad8d5c1df8a81064a514484779c50d82d} 
+int Case\+Terrain\+::get\+Construction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le nombre de constructions sur la case. 
+
+Accesseur pour les constructions.
+
+\begin{DoxyReturn}{Returns}
+Le nombre de constructions sur la case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_terrain_a0118d2d83e5e928b8815c1024cd2d903}\index{CaseTerrain@{CaseTerrain}!getGroupe@{getGroupe}}
+\index{getGroupe@{getGroupe}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{getGroupe()}{getGroupe()}}
+{\footnotesize\ttfamily \label{class_case_terrain_a0118d2d83e5e928b8815c1024cd2d903} 
+int Case\+Terrain\+::get\+Groupe (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le groupe de la case. 
+
+Accesseur pour le groupe.
+
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}identifiant du groupe auquel appartient la case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_terrain_ab910a5845f81cb028d02b2a65dca6f4e}\index{CaseTerrain@{CaseTerrain}!getLoyer@{getLoyer}}
+\index{getLoyer@{getLoyer}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{getLoyer()}{getLoyer()}}
+{\footnotesize\ttfamily \label{class_case_terrain_ab910a5845f81cb028d02b2a65dca6f4e} 
+int Case\+Terrain\+::get\+Loyer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Accesseur pour le loyer de la case. 
+
+Accesseur pour le loyer.
+
+\begin{DoxyReturn}{Returns}
+Le loyer de la case. 
+\end{DoxyReturn}
+\Hypertarget{class_case_terrain_a12da96eef35bca3e55feba6c5380e69d}\index{CaseTerrain@{CaseTerrain}!setConstruction@{setConstruction}}
+\index{setConstruction@{setConstruction}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{setConstruction()}{setConstruction()}}
+{\footnotesize\ttfamily \label{class_case_terrain_a12da96eef35bca3e55feba6c5380e69d} 
+void Case\+Terrain\+::set\+Construction (\begin{DoxyParamCaption}\item[{int}]{construction}{}\end{DoxyParamCaption})}
+
+
+
+Définit le nombre de constructions sur la case. 
+
+Mutateur pour les constructions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em construction} & Le nouveau nombre de constructions. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_terrain_a8116b477df9a895995050e27d3144c29}\index{CaseTerrain@{CaseTerrain}!setGroupe@{setGroupe}}
+\index{setGroupe@{setGroupe}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{setGroupe()}{setGroupe()}}
+{\footnotesize\ttfamily \label{class_case_terrain_a8116b477df9a895995050e27d3144c29} 
+void Case\+Terrain\+::set\+Groupe (\begin{DoxyParamCaption}\item[{int}]{groupe}{}\end{DoxyParamCaption})}
+
+
+
+Définit le groupe auquel appartient la case. 
+
+Mutateur pour le groupe.
+
+
+\begin{DoxyParams}{Parameters}
+{\em groupe} & L\textquotesingle{}identifiant du groupe. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_case_terrain_a5b22a73d4775cab0ddafd126faf149f8}\index{CaseTerrain@{CaseTerrain}!setLoyer@{setLoyer}}
+\index{setLoyer@{setLoyer}!CaseTerrain@{CaseTerrain}}
+\doxysubsubsection{\texorpdfstring{setLoyer()}{setLoyer()}}
+{\footnotesize\ttfamily \label{class_case_terrain_a5b22a73d4775cab0ddafd126faf149f8} 
+void Case\+Terrain\+::set\+Loyer (\begin{DoxyParamCaption}\item[{int}]{loyer}{}\end{DoxyParamCaption})}
+
+
+
+Mutateur pour le loyer de la case. 
+
+Mutateur pour le loyer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em loyer} & La nouvelle valeur du loyer. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Case\+Terrain.\+hpp\item 
+C\+:/\+Users/\+Liam/\+Documents/\+SMP/\+TP4\+\_\+\+SSSK/tp6-\/note-\/\+Kortam\+\_\+\+Seye\+\_\+\+Small\+\_\+\+Soulard/src/Case\+Terrain.\+cpp\end{DoxyCompactItemize}

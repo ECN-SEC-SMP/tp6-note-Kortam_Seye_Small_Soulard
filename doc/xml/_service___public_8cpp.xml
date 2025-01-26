@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="_service___public_8cpp" kind="file" language="C++">
+    <compoundname>Service_Public.cpp</compoundname>
+    <includes refid="case_8hpp" local="yes">case.hpp</includes>
+    <includes refid="_case___achetable_8hpp" local="yes">Case_Achetable.hpp</includes>
+    <includes refid="_service___public_8hpp" local="yes">Service_Public.hpp</includes>
+    <includes refid="joueur_8hpp" local="yes">joueur.hpp</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>Case_Achetable.hpp</label>
+        <link refid="_case___achetable_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Service_Public.cpp</label>
+        <link refid="_service___public_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Service_Public.hpp</label>
+        <link refid="_service___public_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>joueur.hpp</label>
+        <link refid="joueur_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="9">
+        <label>stdexcept</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;case.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Case_Achetable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Service_Public.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;joueur.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_service___public_1a4ea33e84d60de31971c4edf007fff800" kindref="member">Service_Public::Service_Public</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loyer):loyer(loyer){}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_service___public_1a0aed366e2d23d7f019ba708ee93b3aca" kindref="member">Service_Public::actioncase</ref>(<ref refid="class_joueur" kindref="compound">Joueur</ref>&amp;<sp/>joueur,<sp/>vector&lt;Joueur&gt;&amp;<sp/>joueurs)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;actionpublic\n&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>==<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>etes<sp/>chez<sp/>vous.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ce<sp/>service<sp/>public<sp/>appartient<sp/>deja<sp/>a<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbServicesProprio<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>j<sp/>:<sp/>joueurs)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j.getNom()<sp/>==<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbServicesProprio<sp/>=<sp/>j.getNbServices();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Le<sp/>proprietaire<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>possede<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nbServicesProprio<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>services.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>des<sp/>=<sp/>joueur.<ref refid="class_joueur_1a380d5a67a06d9d8ce826b461654b5143" kindref="member">getDes</ref>();<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;des:<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>des);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nbServicesProprio<sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref><sp/>=<sp/>des<sp/>*<sp/>4;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nbServicesProprio<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref><sp/>=<sp/>des<sp/>*<sp/>10;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>payez<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos<sp/>de<sp/>loyer<sp/>a<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Votre<sp/>solde<sp/>etait<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kindref="member">getSolde</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-<ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Votre<sp/>solde<sp/>est<sp/>maintenant<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kindref="member">getSolde</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>j<sp/>:<sp/>joueurs)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j.getNom()<sp/>==<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>j.getNom()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>a<sp/>recu<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Le<sp/>solde<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>j.getNom()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>etait<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>j.getSolde()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j.addSolde(<ref refid="class_service___public_1acc80e668db7090f5b49de389b166eea1" kindref="member">loyer</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Le<sp/>solde<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>j.getNom()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>est<sp/>mtn<sp/>de<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>j.getSolde()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Appuyez<sp/>sur<sp/>&apos;c&apos;<sp/>pour<sp/>continuer...&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>c;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Voulez-vous<sp/>acheter<sp/>ce<sp/>service<sp/>public<sp/>pour<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos<sp/>?<sp/>(o/n):<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>reponse;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal"><sp/>||<sp/>reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(joueur.<ref refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kindref="member">getSolde</ref>()<sp/>&gt;=<sp/><ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-<ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" kindref="member">setProprio</ref>(joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>());</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>achete<sp/>le<sp/>service<sp/>public.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//joueur.setNbServices(joueur.getNbServices()<sp/>+<sp/>1);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1a065af39bd02030ffb1836900110c08bb" kindref="member">incrementNbServices</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>possédez<sp/>maintenant<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa588c5de9f5041a9deb5bdfa96a66b2b" kindref="member">getNbServices</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>services.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>n&apos;avez<sp/>pas<sp/>assez<sp/>de<sp/>monos<sp/>pour<sp/>acheter<sp/>ce<sp/>service<sp/>public.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal"><sp/>||<sp/>reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>choisi<sp/>de<sp/>ne<sp/>pas<sp/>acheter<sp/>le<sp/>service<sp/>public.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Reponse<sp/>invalide.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Service_Public.cpp"/>
+  </compounddef>
+</doxygen>

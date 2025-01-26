@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_case___achetable" kind="class" language="C++" prot="public">
+    <compoundname>Case_Achetable</compoundname>
+    <basecompoundref refid="class_case" prot="public" virt="non-virtual">Case</basecompoundref>
+    <derivedcompoundref refid="class_case_terrain" prot="public" virt="non-virtual">CaseTerrain</derivedcompoundref>
+    <derivedcompoundref refid="class_gare" prot="public" virt="non-virtual">Gare</derivedcompoundref>
+    <derivedcompoundref refid="class_service___public" prot="public" virt="non-virtual">Service_Public</derivedcompoundref>
+    <includes refid="_case___achetable_8hpp" local="no">Case_Achetable.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_case___achetable_1acf3970e5fb23f42d9fabed9397b41a4c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Case_Achetable::proprio</definition>
+        <argsstring></argsstring>
+        <name>proprio</name>
+        <qualifiedname>Case_Achetable::proprio</qualifiedname>
+        <briefdescription>
+<para>Propriétaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="20" column="12" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_case___achetable_1a21757a21d6abd451085f96ee2610e488" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Case_Achetable::prix</definition>
+        <argsstring></argsstring>
+        <name>prix</name>
+        <qualifiedname>Case_Achetable::prix</qualifiedname>
+        <briefdescription>
+<para>Prix de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="21" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_case___achetable_1a60cf22a600a287dab159b6b7fa1285b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Case_Achetable::hypo</definition>
+        <argsstring></argsstring>
+        <name>hypo</name>
+        <qualifiedname>Case_Achetable::hypo</qualifiedname>
+        <briefdescription>
+<para>Statut hypothécaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="22" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Case_Achetable::Case_Achetable</definition>
+        <argsstring>()</argsstring>
+        <name>Case_Achetable</name>
+        <qualifiedname>Case_Achetable::Case_Achetable</qualifiedname>
+        <briefdescription>
+<para>Constructeur par défaut de <ref refid="class_case___achetable" kindref="compound">Case_Achetable</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise la case avec des valeurs par défaut : pas de propriétaire, prix nul, et non hypothéquée. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="30" column="5" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a1ad93618122732a4b1d0a495d9401611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Case_Achetable::Case_Achetable</definition>
+        <argsstring>(string proprio, int prix, bool hypo)</argsstring>
+        <name>Case_Achetable</name>
+        <qualifiedname>Case_Achetable::Case_Achetable</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>proprio</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prix</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hypo</declname>
+        </param>
+        <briefdescription>
+<para>Constructeur paramétré de <ref refid="class_case___achetable" kindref="compound">Case_Achetable</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proprio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le propriétaire de la case. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le prix de la case. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hypo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le statut hypothécaire de la case (true si hypothéquée, false sinon).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>proprio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le propriétaire de la case. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le prix de la case. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hypo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le statut hypothécaire de la case. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="39" column="5" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a88c5e8eb8a59ff2d14418ffe7490d38a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Case_Achetable::~Case_Achetable</definition>
+        <argsstring>()</argsstring>
+        <name>~Case_Achetable</name>
+        <qualifiedname>Case_Achetable::~Case_Achetable</qualifiedname>
+        <briefdescription>
+<para>Destructeur de <ref refid="class_case___achetable" kindref="compound">Case_Achetable</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Détruit les ressources utilisées par l&apos;objet. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="46" column="5" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Case_Achetable::setProprio</definition>
+        <argsstring>(string proprio)</argsstring>
+        <name>setProprio</name>
+        <qualifiedname>Case_Achetable::setProprio</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>proprio</declname>
+          <defname>_proprio</defname>
+        </param>
+        <briefdescription>
+<para>Définit le propriétaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proprio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau propriétaire de la case.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_proprio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau propriétaire de la case. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="53" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string Case_Achetable::getProprio</definition>
+        <argsstring>() const</argsstring>
+        <name>getProprio</name>
+        <qualifiedname>Case_Achetable::getProprio</qualifiedname>
+        <briefdescription>
+<para>Retourne le propriétaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Le propriétaire actuel de la case. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="60" column="12" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a2598cf4698152794e06e0d210a19f238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Case_Achetable::setPrix</definition>
+        <argsstring>(int prix)</argsstring>
+        <name>setPrix</name>
+        <qualifiedname>Case_Achetable::setPrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>prix</declname>
+          <defname>_prix</defname>
+        </param>
+        <briefdescription>
+<para>Définit le prix de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>prix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau prix de la case.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_prix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau prix de la case. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="67" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Case_Achetable::getPrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getPrix</name>
+        <qualifiedname>Case_Achetable::getPrix</qualifiedname>
+        <briefdescription>
+<para>Retourne le prix de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Le prix actuel de la case. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="74" column="9" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1ac7b3dce6f4b7772a0a05a8172badaa01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Case_Achetable::setHypo</definition>
+        <argsstring>(bool hypo)</argsstring>
+        <name>setHypo</name>
+        <qualifiedname>Case_Achetable::setHypo</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>hypo</declname>
+          <defname>_hypo</defname>
+        </param>
+        <briefdescription>
+<para>Définit le statut hypothécaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hypo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau statut hypothécaire (true si hypothéquée, false sinon).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_hypo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Le nouveau statut hypothécaire (true si hypothéquée, false sinon). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="81" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_case___achetable_1ab6bbb46ccdd358129cd87652e8551f82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Case_Achetable::getHypo</definition>
+        <argsstring>() const</argsstring>
+        <name>getHypo</name>
+        <qualifiedname>Case_Achetable::getHypo</qualifiedname>
+        <briefdescription>
+<para>Retourne le statut hypothécaire de la case. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Le statut hypothécaire actuel (true si hypothéquée, false sinon). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="88" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.cpp" bodystart="83" bodyend="85"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Une classe représentant une propriété achetable dans le jeu. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>La classe <ref refid="class_case___achetable" kindref="compound">Case_Achetable</ref> hérite de la classe <ref refid="class_case" kindref="compound">Case</ref>. Elle inclut des attributs comme le propriétaire, le prix et l&apos;état hypothécaire. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Case</label>
+        <link refid="class_case"/>
+      </node>
+      <node id="3">
+        <label>CaseTerrain</label>
+        <link refid="class_case_terrain"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Case_Achetable</label>
+        <link refid="class_case___achetable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Gare</label>
+        <link refid="class_gare"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Service_Public</label>
+        <link refid="class_service___public"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Case</label>
+        <link refid="class_case"/>
+      </node>
+      <node id="1">
+        <label>Case_Achetable</label>
+        <link refid="class_case___achetable"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" line="17" column="1" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_Achetable.hpp" bodystart="18" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_case_1aa491174fccfdd928ed30260fe6f2ac87" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>Case</name></member>
+      <member refid="class_case_1a14237e17aab1829965adab76b747db6c" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>Case</name></member>
+      <member refid="class_case___achetable_1a085bacb52916f85751cbfc30026abc2e" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>Case_Achetable</name></member>
+      <member refid="class_case___achetable_1a1ad93618122732a4b1d0a495d9401611" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>Case_Achetable</name></member>
+      <member refid="class_case___achetable_1ab6bbb46ccdd358129cd87652e8551f82" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>getHypo</name></member>
+      <member refid="class_case_1a27b787303f627e1b117c9343adc34ae9" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>getNom</name></member>
+      <member refid="class_case_1a84969aa8e4c972d4603e643590a9ca71" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>getNumero</name></member>
+      <member refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>getPrix</name></member>
+      <member refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>getProprio</name></member>
+      <member refid="class_case___achetable_1a60cf22a600a287dab159b6b7fa1285b0" prot="private" virt="non-virtual"><scope>Case_Achetable</scope><name>hypo</name></member>
+      <member refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" prot="protected" virt="non-virtual"><scope>Case_Achetable</scope><name>nom</name></member>
+      <member refid="class_case_1a8718a616ffd1eaaee3853457509e251c" prot="protected" virt="non-virtual"><scope>Case_Achetable</scope><name>numero</name></member>
+      <member refid="class_case___achetable_1a21757a21d6abd451085f96ee2610e488" prot="private" virt="non-virtual"><scope>Case_Achetable</scope><name>prix</name></member>
+      <member refid="class_case___achetable_1acf3970e5fb23f42d9fabed9397b41a4c" prot="private" virt="non-virtual"><scope>Case_Achetable</scope><name>proprio</name></member>
+      <member refid="class_case___achetable_1ac7b3dce6f4b7772a0a05a8172badaa01" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>setHypo</name></member>
+      <member refid="class_case_1a023dc5283201bf21a2fcbccd29879382" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>setNom</name></member>
+      <member refid="class_case_1a1249be4efee83cf0fb38f78a541926a8" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>setNumero</name></member>
+      <member refid="class_case___achetable_1a2598cf4698152794e06e0d210a19f238" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>setPrix</name></member>
+      <member refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>setProprio</name></member>
+      <member refid="class_case_1ae9e95cbd69104353bd46fe5c2207e1b6" prot="public" virt="virtual"><scope>Case_Achetable</scope><name>~Case</name></member>
+      <member refid="class_case___achetable_1a88c5e8eb8a59ff2d14418ffe7490d38a" prot="public" virt="non-virtual"><scope>Case_Achetable</scope><name>~Case_Achetable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

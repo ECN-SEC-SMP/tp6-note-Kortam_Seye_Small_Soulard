@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="joueur_8cpp" kind="file" language="C++">
+    <compoundname>joueur.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">random</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">windows.h</includes>
+    <includes refid="case_8hpp" local="yes">case.hpp</includes>
+    <includes refid="_case_terrain_8hpp" local="yes">CaseTerrain.hpp</includes>
+    <includes refid="_case__non_achetable_8hpp" local="yes">Case_nonAchetable.hpp</includes>
+    <includes refid="_gare_8hpp" local="yes">Gare.hpp</includes>
+    <includes refid="_service___public_8hpp" local="yes">Service_Public.hpp</includes>
+    <includes refid="joueur_8hpp" local="yes">joueur.hpp</includes>
+    <includes refid="plateau_8hpp" local="yes">plateau.hpp</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>CaseTerrain.hpp</label>
+        <link refid="_case_terrain_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Case_Achetable.hpp</label>
+        <link refid="_case___achetable_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Case_nonAchetable.hpp</label>
+        <link refid="_case__non_achetable_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>Gare.hpp</label>
+        <link refid="_gare_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Service_Public.hpp</label>
+        <link refid="_service___public_8hpp_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp</label>
+        <link refid="joueur_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>joueur.hpp</label>
+        <link refid="joueur_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>plateau.hpp</label>
+        <link refid="plateau_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="5">
+        <label>ctime</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="15">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>random</label>
+      </node>
+      <node id="13">
+        <label>stdexcept</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="10">
+        <label>vector</label>
+      </node>
+      <node id="6">
+        <label>windows.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_resultat_lancer" prot="public">ResultatLancer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;windows.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Pour<sp/>Sleep()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;case.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;CaseTerrain.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Case_nonAchetable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Gare.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Service_Public.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;joueur.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;plateau.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="struct_resultat_lancer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_resultat_lancer" kindref="compound">ResultatLancer</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de1;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Resultat<sp/>du<sp/>premier<sp/>de</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de2;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Resultat<sp/>du<sp/>deuxième<sp/>de</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>somme;<sp/></highlight><highlight class="comment">//<sp/>Somme<sp/>des<sp/>deux<sp/>des</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="class_joueur_1add6c98be3020651d84f6d75ccc1d867e" kindref="member">Joueur::Joueur</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en_vie,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nom,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>solde,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_cartes_liberte,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en_prison)<sp/>:<sp/>en_vie(0),<sp/>nom(nom),<sp/>solde(solde),<sp/>position(position),<sp/>nb_cartes_liberte(nb_cartes_liberte),<sp/>en_prison(0)<sp/>{}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="class_joueur_1add6c98be3020651d84f6d75ccc1d867e" kindref="member">Joueur::Joueur</ref>()<sp/>:<sp/>en_vie(true),<sp/>nom(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),<sp/>solde(1500),<sp/>position(0),<sp/>nb_cartes_liberte(0),<sp/>en_prison(false)<sp/>{}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1adbac1a5f3f4616918f7e672f3a4498ae" kindref="member">Joueur::jouerTour</ref>(<ref refid="class_plateau" kindref="compound">Plateau</ref>&amp;<sp/>plateau,<sp/>vector&lt;Joueur&gt;&amp;<sp/>joueurs)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbdoubles<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>tourTermine<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>srand(static_cast&lt;unsigned<sp/>int&gt;(time(0)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>random_device<sp/>rd;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Entropie<sp/>(générateur<sp/>de<sp/>nombres<sp/>aléatoires<sp/>basé<sp/>sur<sp/>le<sp/>matériel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>mt19937<sp/>gen(rd());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Générateur<sp/>Mersenne<sp/>Twister</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>uniform_int_distribution&lt;&gt;<sp/>dis(1,<sp/>6);<sp/></highlight><highlight class="comment">//<sp/>Distribution<sp/>uniforme<sp/>pour<sp/>les<sp/>dés</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/>if<sp/>(peutConstruireMaisons())<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>construireMaisons();</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" kindref="member">getEnPrison</ref>()==</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>êtes<sp/>en<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>passé<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" kindref="member">getToursEnPrison</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>tours<sp/>en<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" kindref="member">getToursEnPrison</ref>()<sp/>&gt;=<sp/>3)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>êtes<sp/>libéré<sp/>de<sp/>prison<sp/>après<sp/>3<sp/>tours.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1adbac1a5f3f4616918f7e672f3a4498ae" kindref="member">jouerTour</ref>(plateau,<sp/>joueurs);<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" kindref="member">getNbCartesLiberte</ref>()&gt;0)<sp/>{<sp/></highlight><highlight class="comment">//<sp/>Si<sp/>le<sp/>joueur<sp/>possède<sp/>une<sp/>carte<sp/>de<sp/>sortie<sp/>de<sp/>prison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>utilisez<sp/>votre<sp/>carte<sp/>de<sp/>sortie<sp/>de<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a73d6debf2a2fc7824875513abeb94107" kindref="member">setNbCartesLiberte</ref>(<ref refid="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" kindref="member">getNbCartesLiberte</ref>()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Voulez-vous<sp/>payer<sp/>une<sp/>amende<sp/>de<sp/>50<sp/>pour<sp/>sortir<sp/>de<sp/>prison<sp/>?<sp/>(o/n):<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>choix;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>choix;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(choix<sp/>==<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal"><sp/>||<sp/>choix<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(solde<sp/>&gt;=<sp/>50)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>solde<sp/>-=<sp/>50;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>payé<sp/>l&apos;amende<sp/>et<sp/>êtes<sp/>libéré<sp/>de<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>n&apos;avez<sp/>pas<sp/>assez<sp/>d&apos;argent<sp/>pour<sp/>payer<sp/>l&apos;amende.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>essayez<sp/>de<sp/>faire<sp/>un<sp/>double<sp/>pour<sp/>sortir<sp/>de<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de1<sp/>=<sp/>dis(gen);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de2<sp/>=<sp/>dis(gen);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Lancer<sp/>des<sp/>dés:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>de1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>et<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>de2<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(de1<sp/>==<sp/>de2)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Double<sp/>!<sp/>Vous<sp/>êtes<sp/>libéré<sp/>de<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Pas<sp/>de<sp/>double.<sp/>Vous<sp/>restez<sp/>en<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1aa68fb11bd7d26dc3ca518c0b4aca7e96" kindref="member">incrementerToursEnPrison</ref>();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!tourTermine)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de1<sp/>=<sp/>dis(gen);<sp/></highlight><highlight class="comment">//<sp/>Lance<sp/>le<sp/>premier<sp/>dé</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>de2<sp/>=<sp/>dis(gen);<sp/></highlight><highlight class="comment">//<sp/>Lance<sp/>le<sp/>deuxième<sp/>dé</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>de1<sp/>=<sp/>rand()<sp/>%<sp/>6<sp/>+<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>de2<sp/>=<sp/>rand()<sp/>%<sp/>6<sp/>+<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Appuyez<sp/>sur<sp/>entree<sp/>pour<sp/>lancer<sp/>les<sp/>des&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin.ignore();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>somme<sp/>=<sp/>de1<sp/>+<sp/>de2;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a2f6a10a2f3c9d8dbdb9fd5dab89c3e31" kindref="member">setDes</ref>(somme);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>nom<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;:<sp/>lancer<sp/>des<sp/>des:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>de1<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>et<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>de2<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-<sp/>Somme:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>somme<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(de1<sp/>==<sp/>de2)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" kindref="member">getEnPrison</ref>()==</highlight><highlight class="keyword">false</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbdoubles++;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Double<sp/>!<sp/>Nouveau<sp/>tour&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nbdoubles<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Trois<sp/>doubles<sp/>consecutifs!<sp/>Le<sp/>joueur<sp/>va<sp/>en<sp/>prison.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a54ae10845d9e54d5a89a12a9c743e29c" kindref="member">setPosition</ref>(10);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tourTermine<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anciennePosition<sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position<sp/>=<sp/>(position<sp/>+<sp/>somme)<sp/>%<sp/>40;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(position<sp/>&lt;<sp/>anciennePosition)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>passez<sp/>par<sp/>la<sp/>case<sp/>depart<sp/>et<sp/>recevez<sp/>200<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(200);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Nouvelle<sp/>position:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>position<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Case*<sp/>caseActuelle<sp/>=<sp/>plateau.<ref refid="class_plateau_1a4b3bc13270213c58443f003c2663a181" kindref="member">getCase</ref>(position);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(caseActuelle)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>etes<sp/>sur<sp/>la<sp/>case:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>caseActuelle-&gt;<ref refid="class_case_1a27b787303f627e1b117c9343adc34ae9" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//cout<sp/>&lt;&lt;<sp/>&quot;Type<sp/>de<sp/>la<sp/>case:<sp/>&quot;<sp/>&lt;&lt;<sp/>typeid(*caseActuelle).name()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//caseActuelle-&gt;actioncase(*this);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*caseActuelle)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(Case_NonAchetable))<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">Case_NonAchetable*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(caseActuelle)-&gt;actioncase(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>joueurs);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*caseActuelle)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(CaseTerrain))<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">CaseTerrain*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(caseActuelle)-&gt;actioncase(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>joueurs,plateau);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*caseActuelle)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(Gare))<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">Gare*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(caseActuelle)-&gt;actioncase(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>joueurs);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*caseActuelle)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(Service_Public))<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal">Service_Public*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(caseActuelle)-&gt;actioncase(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>joueurs);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Type<sp/>de<sp/>case<sp/>inconnu.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Erreur:<sp/>case<sp/>non<sp/>trouvée.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>agir<sp/>En<sp/>Fonction<sp/>De<sp/>La<sp/>Case</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a380d5a67a06d9d8ce826b461654b5143" kindref="member">Joueur::getDes</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="189"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>des;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a2f6a10a2f3c9d8dbdb9fd5dab89c3e31" kindref="member">Joueur::setDes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>des)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;des<sp/>=<sp/>des;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1aa588c5de9f5041a9deb5bdfa96a66b2b" kindref="member">Joueur::getNbServices</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="207"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nb_services;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a9fb5dec287d41c6b611e147d0c8f2401" kindref="member">Joueur::setNbServices</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_services)</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nb_services<sp/>=<sp/>nb_services;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a065af39bd02030ffb1836900110c08bb" kindref="member">Joueur::incrementNbServices</ref>()</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>nb_services++;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a749d15543f359ee238fe0813a8c6722f" kindref="member">Joueur::getNbGares</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="233"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nb_gares;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a34d162886e24dbd0b5614ec10d0dde47" kindref="member">Joueur::setNbGares</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_gares)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nb_gares<sp/>=<sp/>nb_gares;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a75a29f1394b56ddeaf46314c202d5526" kindref="member">Joueur::geten_vie</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="251"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>en_vie;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1acc4e54ce6b2c6fccb77cf2925c45ccd4" kindref="member">Joueur::seten_vie</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en_vie)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;en_vie<sp/>=<sp/>en_vie;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">Joueur::getNom</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="269"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nom;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a1acb893d7ebb7fff056ce551beb6bbdb" kindref="member">Joueur::setNom</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nom)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nom<sp/>=<sp/>nom;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kindref="member">Joueur::getSolde</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="287"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>solde;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1ad445de3638ad860f6adfe32dad6cc5d2" kindref="member">Joueur::setSolde</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>solde)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;solde<sp/>=<sp/>solde;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">Joueur::addSolde</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>add)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;solde<sp/>=<sp/>this-&gt;solde<sp/>+<sp/>add;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a5a632164364e824b8a9f5733442716da" kindref="member">Joueur::getPosition</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="314"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a54ae10845d9e54d5a89a12a9c743e29c" kindref="member">Joueur::setPosition</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>position)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;position<sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a7631e7fc9f02a8b36e86c049ff0f7e43" kindref="member">Joueur::getNbCartesLiberte</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="332"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nb_cartes_liberte;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a73d6debf2a2fc7824875513abeb94107" kindref="member">Joueur::setNbCartesLiberte</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb_cartes_liberte)</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;nb_cartes_liberte<sp/>=<sp/>nb_cartes_liberte;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a6b643b3a2a2cec0b4949188cd09865eb" kindref="member">Joueur::getEnPrison</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="350"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>en_prison;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">Joueur::setEnPrison</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>en_prison)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;en_prison<sp/>=<sp/>en_prison;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a84fe9350b77f9fef62f8d7eb23212a10" kindref="member">Joueur::getToursEnPrison</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="368"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tours_en_prison;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1a9c46e4b685e6075419b37f1da025bbf1" kindref="member">Joueur::setToursEnPrison</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tours)</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tours_en_prison<sp/>=<sp/>tours;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_joueur_1aa68fb11bd7d26dc3ca518c0b4aca7e96" kindref="member">Joueur::incrementerToursEnPrison</ref>()</highlight></codeline>
+<codeline lineno="385"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;tours_en_prison++;</highlight></codeline>
+<codeline lineno="387"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/joueur.cpp"/>
+  </compounddef>
+</doxygen>

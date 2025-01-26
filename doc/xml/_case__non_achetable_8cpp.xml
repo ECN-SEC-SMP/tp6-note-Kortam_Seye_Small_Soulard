@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="_case__non_achetable_8cpp" kind="file" language="C++">
+    <compoundname>Case_nonAchetable.cpp</compoundname>
+    <includes refid="_case__non_achetable_8hpp" local="yes">Case_NonAchetable.hpp</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_nonAchetable.cpp</label>
+        <link refid="_case__non_achetable_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Case_NonAchetable.hpp</label>
+        <link refid="_case__non_achetable_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>joueur.hpp</label>
+        <link refid="joueur_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="7">
+        <label>stdexcept</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Case_NonAchetable.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="class_case___non_achetable_1ada7ac5824c652e9cc32a628bf2769b0a" kindref="member">Case_NonAchetable::Case_NonAchetable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>nom,<sp/>TypeCaseNonAchetable<sp/>type_case)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_case" kindref="compound">Case</ref>(nom),<sp/>type_case(type_case)<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>Case_NonAchetable::typeToString(TypeCaseNonAchetable<sp/>type)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813" kindref="member">TypeCaseNonAchetable::DEPART</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Depart&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0" kindref="member">TypeCaseNonAchetable::PRISON</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Prison&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d" kindref="member">TypeCaseNonAchetable::ALLEZ_EN_PRISON</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Allez<sp/>en<sp/>Prison&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af" kindref="member">TypeCaseNonAchetable::CHANCE</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Chance&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740" kindref="member">TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Caisse<sp/>de<sp/>Communaute&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309" kindref="member">TypeCaseNonAchetable::IMPOT</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Impot&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a" kindref="member">TypeCaseNonAchetable::TAXE_DE_LUXE</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Taxe<sp/>de<sp/>Luxe&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212" kindref="member">TypeCaseNonAchetable::PARC_GRATUIT</ref>:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Parc<sp/>Gratuit&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Inconnu&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1a03a9d785e4cbc9ad9dffa158d0ccb31a" kindref="member">Case_NonAchetable::actioncase</ref>(<ref refid="class_joueur" kindref="compound">Joueur</ref>&amp;<sp/>joueur,<sp/>vector&lt;Joueur&gt;&amp;<sp/>joueurs)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(type_case)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813" kindref="member">TypeCaseNonAchetable::DEPART</ref>:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>passe<sp/>par<sp/>la<sp/>case<sp/>Depart<sp/>et<sp/>gagne<sp/>200<sp/>monos.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0" kindref="member">TypeCaseNonAchetable::PRISON</ref>:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>est<sp/>en<sp/>prison<sp/>!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af" kindref="member">TypeCaseNonAchetable::CHANCE</ref>:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>pioche<sp/>une<sp/>carte<sp/>Chance.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740" kindref="member">TypeCaseNonAchetable::CAISSE_DE_COMMUNAUTE</ref>:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>pioche<sp/>une<sp/>carte<sp/>Caisse<sp/>de<sp/>Communauté.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309" kindref="member">TypeCaseNonAchetable::IMPOT</ref>:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-200);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>paie<sp/>200<sp/>monos<sp/>pour<sp/>l&apos;Impôt.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a" kindref="member">TypeCaseNonAchetable::TAXE_DE_LUXE</ref>:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-75);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>paie<sp/>75<sp/>monos<sp/>pour<sp/>la<sp/>Taxe<sp/>de<sp/>Luxe.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212" kindref="member">TypeCaseNonAchetable::PARC_GRATUIT</ref>:</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>se<sp/>repose<sp/>sur<sp/>le<sp/>Parc<sp/>Gratuit.<sp/>Rien<sp/>ne<sp/>se<sp/>passe.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="class_case___non_achetable_1af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d" kindref="member">TypeCaseNonAchetable::ALLEZ_EN_PRISON</ref>:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>va<sp/>directement<sp/>en<sp/>prison<sp/>!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1a9b8c907f0b458e4de47e650f2ae5a48d" kindref="member">setEnPrison</ref>(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/Case_nonAchetable.cpp"/>
+  </compounddef>
+</doxygen>

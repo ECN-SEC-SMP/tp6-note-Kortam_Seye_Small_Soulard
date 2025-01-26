@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="case_8cpp" kind="file" language="C++">
+    <compoundname>case.cpp</compoundname>
+    <includes refid="case_8hpp" local="yes">Case.hpp</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/case.cpp</label>
+        <link refid="case_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Case.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_case_1a14237e17aab1829965adab76b747db6c" kindref="member">Case::Case</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>nom)<sp/>:<sp/>nom(nom)<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="class_case_1a14237e17aab1829965adab76b747db6c" kindref="member">Case::Case</ref>()<sp/>:<sp/>nom(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*void<sp/>Case::action()<sp/>const<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>&quot;Case<sp/>neutre<sp/>:<sp/>aucun<sp/>effet.\n&quot;;</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">}*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_case_1a27b787303f627e1b117c9343adc34ae9" kindref="member">Case::getNom</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" kindref="member">nom</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_1a023dc5283201bf21a2fcbccd29879382" kindref="member">Case::setNom</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>nom)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" kindref="member">nom</ref><sp/>=<sp/><ref refid="class_case_1a89f24d04d3337ac40211b6b015b25fdf" kindref="member">nom</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/case.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,39 @@
+\doxysection{Case\+\_\+non\+Achetable.\+hpp}
+\hypertarget{_case__non_achetable_8hpp_source}{}\label{_case__non_achetable_8hpp_source}\index{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/Case\_nonAchetable.hpp@{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/Case\_nonAchetable.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CASE\_NONACHETABLE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CASE\_NONACHETABLE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}joueur.hpp"{}}\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_case___non_achetable_ada7ac5824c652e9cc32a628bf2769b0a}{Case\_NonAchetable}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_case_aa491174fccfdd928ed30260fe6f2ac87}{Case}}\ }
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{TypeCaseNonAchetable}}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a87bed6de370ecdc2534233a062b86813}{DEPART}},\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a3b9336e11e62de8c12854167e3dacbc0}{PRISON}},\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a843bc46254ad2ab4a7fd8ad7431fed9d}{ALLEZ\_EN\_PRISON}},\ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab96dd0178e8b30c6dcbde1899aee19af}{CHANCE}},\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ac9a4b97e066a76d8db4f170fe1b71740}{CAISSE\_DE\_COMMUNAUTE}},\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ab19e94ed778ec2dfc78e21ae579e7309}{IMPOT}},\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33a8a4efd2e57fc6380ccbf21fb7fef744a}{TAXE\_DE\_LUXE}},\ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33ae2b4b9cb2515f12d41cf54245e91e212}{PARC\_GRATUIT}}\ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_ada7ac5824c652e9cc32a628bf2769b0a}{Case\_NonAchetable}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_case_a89f24d04d3337ac40211b6b015b25fdf}{nom}},\ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{TypeCaseNonAchetable}}\ type\_case);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case___non_achetable_a03a9d785e4cbc9ad9dffa158d0ccb31a}{actioncase}}(\mbox{\hyperlink{class_joueur}{Joueur}}\&\ joueur,\ std::vector<Joueur>\&\ joueurs);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{TypeCaseNonAchetable}}\ type\_case;\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ typeToString(\mbox{\hyperlink{class_case___non_achetable_af64ad2723912eb40a16337981908fe33}{TypeCaseNonAchetable}}\ type);}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CASE\_NONACHETABLE\_H}}
+
+\end{DoxyCode}

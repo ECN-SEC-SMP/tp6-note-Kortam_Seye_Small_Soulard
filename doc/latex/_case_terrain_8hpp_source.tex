@@ -1,0 +1,43 @@
+\doxysection{Case\+Terrain.\+hpp}
+\hypertarget{_case_terrain_8hpp_source}{}\label{_case_terrain_8hpp_source}\index{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/CaseTerrain.hpp@{C:/Users/Liam/Documents/SMP/TP4\_SSSK/tp6-\/note-\/Kortam\_Seye\_Small\_Soulard/src/CaseTerrain.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CASETERRAIN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CASETERRAIN\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Case.hpp"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}Case\_Achetable.hpp"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}joueur.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}plateau.hpp"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_case_terrain_aa022241fb3d4b79fb6ff086cbfb4ae4c}{CaseTerrain}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_case___achetable_a085bacb52916f85751cbfc30026abc2e}{Case\_Achetable}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ loyer;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ groupe;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{int}\ construction;\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_case_terrain_a15afb589d0b2c83ebce6c53dd6f935e4}{CaseTerrain}}(\textcolor{keywordtype}{int}\ loyer,\ \textcolor{keywordtype}{int}\ groupe,\ \textcolor{keywordtype}{int}\ construction);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_case_terrain_a15afb589d0b2c83ebce6c53dd6f935e4}{CaseTerrain}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_terrain_a25a1a963726f8d46567e86729cf11888}{actioncase}}(\mbox{\hyperlink{class_joueur}{Joueur}}\&\ joueur,\ std::vector<Joueur>\&\ joueurs,\ \mbox{\hyperlink{class_plateau}{Plateau}}\&\ plateau);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_terrain_ab910a5845f81cb028d02b2a65dca6f4e}{getLoyer}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_terrain_a5b22a73d4775cab0ddafd126faf149f8}{setLoyer}}(\textcolor{keywordtype}{int}\ loyer);}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_terrain_a0118d2d83e5e928b8815c1024cd2d903}{getGroupe}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_terrain_a8116b477df9a895995050e27d3144c29}{setGroupe}}(\textcolor{keywordtype}{int}\ groupe);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_case_terrain_ad8d5c1df8a81064a514484779c50d82d}{getConstruction}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_case_terrain_a12da96eef35bca3e55feba6c5380e69d}{setConstruction}}(\textcolor{keywordtype}{int}\ construction);}
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CASETERRAIN\_H}}
+
+\end{DoxyCode}

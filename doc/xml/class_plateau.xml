@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="class_plateau" kind="class" language="C++" prot="public">
+    <compoundname>Plateau</compoundname>
+    <includes refid="plateau_8hpp" local="no">plateau.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_plateau_1ad952d2abb96959363559b1bbd1726da1" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="class_joueur" kindref="compound">Joueur</ref> &gt;</type>
+        <definition>vector&lt;Joueur&gt; Plateau::joueurs</definition>
+        <argsstring></argsstring>
+        <name>joueurs</name>
+        <qualifiedname>Plateau::joueurs</qualifiedname>
+        <briefdescription>
+<para>Liste des joueurs participants. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="41" column="12" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_plateau_1a69659473fa3383197b9492eefeb30f9d" prot="private" static="no" mutable="no">
+        <type>vector&lt; unique_ptr&lt; <ref refid="class_case" kindref="compound">Case</ref> &gt; &gt;</type>
+        <definition>vector&lt;unique_ptr&lt;Case&gt; &gt; Plateau::cases</definition>
+        <argsstring></argsstring>
+        <name>cases</name>
+        <qualifiedname>Plateau::cases</qualifiedname>
+        <briefdescription>
+<para>Liste des cases du plateau. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="42" column="12" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_plateau_1ab93fca97a3f61a3eec2ba0ce8a4081f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Plateau::initialiser</definition>
+        <argsstring>(const vector&lt; Joueur &gt; &amp;joueurs)</argsstring>
+        <name>initialiser</name>
+        <qualifiedname>Plateau::initialiser</qualifiedname>
+        <param>
+          <type>const vector&lt; <ref refid="class_joueur" kindref="compound">Joueur</ref> &gt; &amp;</type>
+          <declname>joueurs</declname>
+          <defname>Joueurs</defname>
+        </param>
+        <briefdescription>
+<para>Initialise le plateau de jeu avec les joueurs donnés. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialise le plateau avec des joueurs et les différentes cases.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vecteur des joueurs participants.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Crée toutes les cases et assigne la liste des joueurs.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Joueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Liste des joueurs participant au jeu. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="25" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.cpp" bodystart="44" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_plateau_1abc9de7ff5a1211e5e806d69938c36566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Plateau::commencerJeu</definition>
+        <argsstring>()</argsstring>
+        <name>commencerJeu</name>
+        <qualifiedname>Plateau::commencerJeu</qualifiedname>
+        <briefdescription>
+<para>Commence la boucle principale du jeu, permettant aux joueurs de jouer leurs tours. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Gère le déroulement du jeu jusqu&apos;à ce qu&apos;un joueur gagne.</para>
+<para>Les joueurs jouent chacun leur tour, et le jeu se termine lorsqu&apos;il ne reste qu&apos;un seul joueur en vie. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="30" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.cpp" bodystart="320" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="class_plateau_1a4b3bc13270213c58443f003c2663a181" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_case" kindref="compound">Case</ref> *</type>
+        <definition>Case * Plateau::getCase</definition>
+        <argsstring>(int index) const</argsstring>
+        <name>getCase</name>
+        <qualifiedname>Plateau::getCase</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Récupère une case par son index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index de la case à récupérer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointeur vers la case si l&apos;index est valide, sinon nullptr. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="38" column="10" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.cpp" bodystart="30" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Classe représentant le plateau de jeu Monopoly. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Gère les cases du plateau ainsi que les joueurs, et contrôle le déroulement du jeu. </para>
+    </detaileddescription>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" line="18" column="1" bodyfile="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/plateau.hpp" bodystart="18" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_plateau_1a69659473fa3383197b9492eefeb30f9d" prot="private" virt="non-virtual"><scope>Plateau</scope><name>cases</name></member>
+      <member refid="class_plateau_1abc9de7ff5a1211e5e806d69938c36566" prot="public" virt="non-virtual"><scope>Plateau</scope><name>commencerJeu</name></member>
+      <member refid="class_plateau_1a4b3bc13270213c58443f003c2663a181" prot="public" virt="non-virtual"><scope>Plateau</scope><name>getCase</name></member>
+      <member refid="class_plateau_1ab93fca97a3f61a3eec2ba0ce8a4081f3" prot="public" virt="non-virtual"><scope>Plateau</scope><name>initialiser</name></member>
+      <member refid="class_plateau_1ad952d2abb96959363559b1bbd1726da1" prot="private" virt="non-virtual"><scope>Plateau</scope><name>joueurs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

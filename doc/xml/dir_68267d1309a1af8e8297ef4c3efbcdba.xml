@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src</compoundname>
+    <innerfile refid="case_8cpp">case.cpp</innerfile>
+    <innerfile refid="case_8hpp">case.hpp</innerfile>
+    <innerfile refid="_case___achetable_8cpp">Case_Achetable.cpp</innerfile>
+    <innerfile refid="_case___achetable_8hpp">Case_Achetable.hpp</innerfile>
+    <innerfile refid="_case__non_achetable_8cpp">Case_nonAchetable.cpp</innerfile>
+    <innerfile refid="_case__non_achetable_8hpp">Case_nonAchetable.hpp</innerfile>
+    <innerfile refid="_case_terrain_8cpp">CaseTerrain.cpp</innerfile>
+    <innerfile refid="_case_terrain_8hpp">CaseTerrain.hpp</innerfile>
+    <innerfile refid="_gare_8cpp">Gare.cpp</innerfile>
+    <innerfile refid="_gare_8hpp">Gare.hpp</innerfile>
+    <innerfile refid="joueur_8cpp">joueur.cpp</innerfile>
+    <innerfile refid="joueur_8hpp">joueur.hpp</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="plateau_8cpp">plateau.cpp</innerfile>
+    <innerfile refid="plateau_8hpp">plateau.hpp</innerfile>
+    <innerfile refid="_service___public_8cpp">Service_Public.cpp</innerfile>
+    <innerfile refid="_service___public_8hpp">Service_Public.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/"/>
+  </compounddef>
+</doxygen>

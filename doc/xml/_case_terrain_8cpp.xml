@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.13.2" xml:lang="en-US">
+  <compounddef id="_case_terrain_8cpp" kind="file" language="C++">
+    <compoundname>CaseTerrain.cpp</compoundname>
+    <includes refid="_case_terrain_8hpp" local="yes">CaseTerrain.hpp</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">typeinfo</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/CaseTerrain.cpp</label>
+        <link refid="_case_terrain_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>CaseTerrain.hpp</label>
+        <link refid="_case_terrain_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Case_Achetable.hpp</label>
+        <link refid="_case___achetable_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Case.hpp</label>
+        <link refid="case_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>joueur.hpp</label>
+        <link refid="joueur_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>plateau.hpp</label>
+        <link refid="plateau_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>stdexcept</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>typeinfo</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;CaseTerrain.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_case_terrain_1a15afb589d0b2c83ebce6c53dd6f935e4" kindref="member">CaseTerrain::CaseTerrain</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loyer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>groupe,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>construction)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>loyer(loyer),<sp/>groupe(groupe),<sp/>construction(construction)<sp/>{}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="class_case_terrain_1a15afb589d0b2c83ebce6c53dd6f935e4" kindref="member">CaseTerrain::CaseTerrain</ref>()<sp/>:<sp/>loyer(0),<sp/>groupe(0),<sp/>construction(0)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1a25a1a963726f8d46567e86729cf11888" kindref="member">CaseTerrain::actioncase</ref>(<ref refid="class_joueur" kindref="compound">Joueur</ref>&amp;<sp/>joueur,<sp/>vector&lt;Joueur&gt;&amp;<sp/>joueurs,<sp/><ref refid="class_plateau" kindref="compound">Plateau</ref>&amp;<sp/>plateau)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>La<sp/>case<sp/>est<sp/>déjà<sp/>possédée</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>==<sp/>joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>êtes<sp/>sur<sp/>votre<sp/>propre<sp/>terrain.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ce<sp/>terrain<sp/>appartient<sp/>à<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loyer<sp/>=<sp/><ref refid="class_case_terrain_1ab910a5845f81cb028d02b2a65dca6f4e" kindref="member">getLoyer</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_case_terrain_1ad8d5c1df8a81064a514484779c50d82d" kindref="member">getConstruction</ref>()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loyer<sp/>*=<sp/>(1<sp/>+<sp/><ref refid="class_case_terrain_1ad8d5c1df8a81064a514484779c50d82d" kindref="member">getConstruction</ref>());<sp/></highlight><highlight class="comment">//<sp/>Augmente<sp/>le<sp/>loyer<sp/>en<sp/>fonction<sp/>des<sp/>constructions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Vérifie<sp/>si<sp/>tous<sp/>les<sp/>terrains<sp/>du<sp/>groupe<sp/>appartiennent<sp/>au<sp/>même<sp/>propriétaire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tabTerrains[]<sp/>=<sp/>{1,<sp/>3,<sp/>5,<sp/>6,<sp/>8,<sp/>9,<sp/>11,<sp/>13,<sp/>14,<sp/>15,<sp/>16,<sp/>18,<sp/>19,<sp/>21,<sp/>23,<sp/>24,<sp/>25,<sp/>26,<sp/>27,<sp/>29,<sp/>31,<sp/>32,<sp/>34,<sp/>35,<sp/>37,<sp/>39};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>memeProprietaire<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>groupe<sp/>=<sp/><ref refid="class_case_terrain_1a0118d2d83e5e928b8815c1024cd2d903" kindref="member">getGroupe</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>:<sp/>tabTerrains)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_case_1aa491174fccfdd928ed30260fe6f2ac87" kindref="member">Case</ref>*<sp/>caseTemp<sp/>=<sp/>plateau.<ref refid="class_plateau_1a4b3bc13270213c58443f003c2663a181" kindref="member">getCase</ref>(index);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(caseTemp<sp/>&amp;&amp;<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*caseTemp)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_case_terrain_1aa022241fb3d4b79fb6ff086cbfb4ae4c" kindref="member">CaseTerrain</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>terrain<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_case_terrain_1aa022241fb3d4b79fb6ff086cbfb4ae4c" kindref="member">CaseTerrain</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(caseTemp);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(terrain-&gt;getGroupe()<sp/>==<sp/>groupe<sp/>&amp;&amp;<sp/>terrain-&gt;getProprio()<sp/>!=<sp/>this-&gt;getProprio())<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memeProprietaire<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(memeProprietaire)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loyer<sp/>*=<sp/>2;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Paiement<sp/>du<sp/>loyer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>payez<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>loyer<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos<sp/>à<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-loyer);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>j<sp/>:<sp/>joueurs)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j.getNom()<sp/>==<sp/><ref refid="class_case___achetable_1a090a99459ef0d577a4f374071dc54e48" kindref="member">getProprio</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j.addSolde(loyer);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>La<sp/>case<sp/>n&apos;est<sp/>pas<sp/>encore<sp/>possédée</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Voulez-vous<sp/>acheter<sp/>ce<sp/>terrain<sp/>pour<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>monos<sp/>?<sp/>(o/n)<sp/>:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cin<sp/>&gt;&gt;<sp/>reponse;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;o&apos;</highlight><highlight class="normal"><sp/>||<sp/>reponse<sp/>==<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(joueur.<ref refid="class_joueur_1a690a8037f06c6ed9982a945c65ab00aa" kindref="member">getSolde</ref>()<sp/>&gt;=<sp/><ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>joueur.<ref refid="class_joueur_1aade0a43d680d95069f964fba1962f880" kindref="member">addSolde</ref>(-<ref refid="class_case___achetable_1a79d728d8706fcce07d9ddcdf555cc7a2" kindref="member">getPrix</ref>());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_case___achetable_1a33ccd1e385ca04375cc2ff8de2ae5ddd" kindref="member">setProprio</ref>(joueur.<ref refid="class_joueur_1aa2ff1bfeeb5e1f631750d70c06b8c6d0" kindref="member">getNom</ref>());</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>acheté<sp/>le<sp/>terrain.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>n&apos;avez<sp/>pas<sp/>assez<sp/>de<sp/>monos<sp/>pour<sp/>acheter<sp/>ce<sp/>terrain.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Vous<sp/>avez<sp/>choisi<sp/>de<sp/>ne<sp/>pas<sp/>acheter<sp/>le<sp/>terrain.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1ab910a5845f81cb028d02b2a65dca6f4e" kindref="member">CaseTerrain::getLoyer</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>loyer;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1a5b22a73d4775cab0ddafd126faf149f8" kindref="member">CaseTerrain::setLoyer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loyer)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;loyer<sp/>=<sp/>loyer;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1a0118d2d83e5e928b8815c1024cd2d903" kindref="member">CaseTerrain::getGroupe</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>groupe;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1a8116b477df9a895995050e27d3144c29" kindref="member">CaseTerrain::setGroupe</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>groupe)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;groupe<sp/>=<sp/>groupe;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1ad8d5c1df8a81064a514484779c50d82d" kindref="member">CaseTerrain::getConstruction</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>construction;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_case_terrain_1a12da96eef35bca3e55feba6c5380e69d" kindref="member">CaseTerrain::setConstruction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>construction)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;construction<sp/>=<sp/>construction;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Liam/Documents/SMP/TP4_SSSK/tp6-note-Kortam_Seye_Small_Soulard/src/CaseTerrain.cpp"/>
+  </compounddef>
+</doxygen>
